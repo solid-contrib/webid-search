@@ -1,121 +1,291 @@
 @prefix : <https://timea.solidcommunity.net/profile/card#>.
 @prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix cal: <http://www.w3.org/2002/12/cal/ical#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix ldp: <http://www.w3.org/ns/ldp#>.
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix schema: <http://schema.org/>.
 @prefix solid: <http://www.w3.org/ns/solid/terms#>.
 @prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix ui: <http://www.w3.org/ns/ui#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix p: <https://timea.solidcommunity.net/profile/>.
 @prefix time: <https://timea.solidcommunity.net/>.
-@prefix skill: <http://data.europa.eu/esco/skill/>.
-@prefix c32: <https://angelo.veltens.org/profile/card#>.
-@prefix c8: <https://jeff-zucker.solidcommunity.net/profile/card#>.
-@prefix inbo: <https://timea.solidcommunity.net/inbox/>.
-@prefix c36: <https://bourgeoa.solidcommunity.net/profile/card#>.
+@prefix c39: <https://testingsolidos.solidcommunity.net/profile/card#>.
+@prefix c41: <https://chunt.solidcommunity.net/profile/card#>.
+@prefix i: <https://timea.solidcommunity.net/inbox/>.
+@prefix te: <https://teamid.live/>.
+@prefix c2: <https://jeff-zucker.solidcommunity.net/profile/card#>.
+@prefix p: <https://timea.solidcommunity.net/profile/>.
 @prefix c37: <https://ewingson.solidcommunity.net/profile/card#>.
 @prefix c38: <https://noeldemartin.solidcommunity.net/profile/card#>.
-@prefix c39: <https://testingsolidos.solidcommunity.net/profile/card#>.
+@prefix c32: <https://angelo.veltens.org/profile/card#>.
 @prefix c40: <https://timbl.solidcommunity.net/profile/card#>.
-@prefix l: <https://www.w3.org/ns/iana/language-code/>.
-@prefix c41: <https://chunt.solidcommunity.net/profile/card#>.
-@prefix c: <https://solid.smessie.com/profile/card#>.
+@prefix sol: <https://solidcommunity.net/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix lan: <https://www.w3.org/ns/iana/language-code/>.
+@prefix c3: <https://timeat.pivot-test.solidproject.org:3000/profile/card#>.
+@prefix c4: <https://bourgeoa.solidcommunity.net/profile/card#>.
 
 skill:19a8293b-8e95-4de3-983f-77484079c389 schema:name "Java (computer programming)".
 skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7 schema:name "JavaScript".
 skill:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d schema:name "Javanese".
-p:card a foaf:PersonalProfileDocument;
+<> a foaf:PersonalProfileDocument;
     foaf:maker <#me>;
     foaf:primaryTopic <#me>.
 <#me> a schema:Person, foaf:Person;
     vcard:role "Software Engineer";
-    schema:knowsLanguage _:b498_b441_b172_b124_b122_n3-246, _:b498_b441_b172_b124_b122_n3-248;
+    schema:knowsLanguage _:b1057_n3-383, _:b1057_n3-385;
     schema:skills <#id1634289338819>, <#id1635929500934>, <#id1655232789144>;
+    wf:attachment c3:me;
+    wf:participation <#id1770034978739>;
     vcard:bday "1986-12-14"^^xsd:date;
     vcard:fn "Timea Turdean";
     vcard:hasAddress <#id1651218114290>;
     vcard:hasEmail <#id1628260052971>;
-    vcard:hasPhoto <https://timea.solidcommunity.net/profile/18238146_10155235814682370_4572264504492849633_o.jpg>;
+    vcard:hasPhoto <18238146_10155235814682370_4572264504492849633_o.jpg>;
     vcard:hasTelephone <#id1655232781826>;
-    vcard:note "Hello Solidverse!";
-    acl:trustedApp _:b498_b441_b172_b124_b122_n3-250, _:b498_b441_b172_b124_b122_n3-251, _:b498_b441_b172_b124_b122_n3-252, _:b498_b441_b172_b124_b122_n3-253, _:b498_b441_b172_b124_b122_n3-254, _:b498_b441_b172_b124_b122_n3-256, _:b498_b441_b172_b124_b122_n3-257, _:b498_b441_b172_b124_b122_n3-258, _:b498_b441_b172_b124_b122_n3-259, _:b498_b441_b172_b124_b122_n3-260, _:b498_b441_b172_b124_b122_n3-261, _:b498_b441_b172_b124_b122_n3-262, _:b498_b441_b172_b124_b122_n3-263, _:b498_b441_b172_b124_b122_n3-264, _:b498_b441_b172_b124_b122_n3-265, _:b498_b441_b172_b124_b122_n3-266, _:b498_b441_b172_b124_b122_n3-267, _:b498_b441_b172_b124_b122_n3-268, _:b498_b441_b172_b124_b122_n3-269, _:b498_b441_b172_b124_b122_n3-270, _:b498_b441_b172_b124_b122_n3-271, _:b498_b441_b172_b124_b122_n3-272;
-    ldp:inbox <https://timea.solidcommunity.net/inbox/>;
-    space:preferencesFile <https://timea.solidcommunity.net/settings/prefs.ttl>;
-    space:storage <https://timea.solidcommunity.net/>;
-    solid:account <https://timea.solidcommunity.net/>;
+    vcard:note "Hello Solidverse!hei";
+    acl:trustedApp _:b1057_n3-386, _:b1057_n3-387, _:b1057_n3-388, _:b1057_n3-389, _:b1057_n3-390, _:b1057_n3-391, _:b1057_n3-392, _:b1057_n3-393, _:b1057_n3-394, _:b1057_n3-395, _:b1057_n3-396, _:b1057_n3-397, _:b1057_n3-398, _:b1057_n3-399, _:b1057_n3-400, _:b1057_n3-401, _:b1057_n3-402, _:b1057_n3-403, _:b1057_n3-404, _:b1057_n3-405, _:b1057_n3-406, _:b1057_n3-407, _:b1057_n3-408, _:b1057_n3-409, _:b1057_n3-410, _:b1057_n3-411, _:b1057_n3-412, _:b1057_n3-413, _:b1057_n3-414, _:b1057_n3-415, _:b1057_n3-416, _:b1057_n3-417, _:b1057_n3-418, _:b1057_n3-419, _:b1057_n3-420, _:b1057_n3-421, _:b1057_n3-422, _:b1057_n3-423, _:b1057_n3-424, _:b1057_n3-425, _:b1057_n3-426, _:b1057_n3-427, _:b1057_n3-428, _:b1057_n3-429, _:b1057_n3-430, _:b1057_n3-431, _:b1057_n3-432, _:b1057_n3-433, _:b1057_n3-434, _:b1057_n3-435, _:b1057_n3-436, _:b1057_n3-437, _:b1057_n3-438, _:b1057_n3-439, _:b1057_n3-440, _:b1057_n3-441, _:b1057_n3-442, _:b1057_n3-443, _:b1057_n3-444, _:b1057_n3-445, _:b1057_n3-446, _:b1057_n3-447, _:b1057_n3-448, _:b1057_n3-449, _:b1057_n3-450, _:b1057_n3-451, _:b1057_n3-452, _:b1057_n3-453, _:b1057_n3-454, _:b1057_n3-455, _:b1057_n3-456, _:b1057_n3-457, _:b1057_n3-458, _:b1057_n3-459, _:b1057_n3-460, _:b1057_n3-461, _:b1057_n3-462, _:b1057_n3-463, _:b1057_n3-464, _:b1057_n3-465, _:b1057_n3-466, _:b1057_n3-467, _:b1057_n3-468, _:b1057_n3-469, _:b1057_n3-470, _:b1057_n3-471, _:b1057_n3-472, _:b1057_n3-473, _:b1057_n3-474, _:b1057_n3-475, _:b1057_n3-476, _:b1057_n3-477, _:b1057_n3-478, _:b1057_n3-479, _:b1057_n3-480, _:b1057_n3-481, _:b1057_n3-482, _:b1057_n3-483, _:b1057_n3-484, _:b1057_n3-485, _:b1057_n3-486;
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../Settings/Preferences.ttl>;
+    space:storage <../>;
+    solid:account <../>;
     solid:oidcIssuer <https://solidcommunity.net/>, <https://teamid.live/>;
+    solid:oidcIssuerRegistrationToken "bddef624-e74a-4aca-b2c8-289806cf6ee2";
     solid:preferredObjectPronoun "her";
     solid:preferredRelativePronoun "hers";
     solid:preferredSubjectPronoun "she";
-    solid:privateTypeIndex <https://timea.solidcommunity.net/settings/privateTypeIndex.ttl>;
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
     solid:profileBackgroundColor "#73baff"^^xsd:color;
-    solid:publicTypeIndex <https://timea.solidcommunity.net/settings/publicTypeIndex.ttl>, <https://timea.solidcommunity.net/profile/publicTypeIndex.ttl>;
-    foaf:knows <#me>, c32:me, c36:me, c41:me, c37:me, c8:me, c38:me, c40:me, c39:me;
-    foaf:name "Timea Turdean";
-    solid:oidcIssuerRegistrationToken "bddef624-e74a-4aca-b2c8-289806cf6ee2".
-_:b498_b441_b172_b124_b122_n3-246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1635929591644>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b498_b441_b172_b124_b122_n3-247.
-_:b498_b441_b172_b124_b122_n3-248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1644420692100>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b498_b441_b172_b124_b122_n3-249.
+    solid:publicTypeIndex <publicTypeIndex.ttl>;
+    ui:sharedPreferences <#SharedPreferences>;
+    foaf:account _:b1057_n3-487, _:b1057_n3-489, _:b1057_n3-491;
+    foaf:knows c32:me, c4:me, c41:me, c37:me, c2:me, c38:me, c39:me, c40:me;
+    foaf:name "Timea Turdean".
+_:b1057_n3-383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770974719414>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b1057_n3-384.
+_:b1057_n3-385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770974719414>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
 <#id1634289338819> solid:publicId skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7.
 <#id1635929500934> solid:publicId skill:19a8293b-8e95-4de3-983f-77484079c389.
 <#id1655232789144> solid:publicId skill:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d.
+<#id1770034978739> cal:dtstart "2026-02-02T12:22:58Z"^^xsd:dateTime;
+    wf:participant <#me>;
+    ui:backgroundColor "#ede9cc".
 <#id1628260052971> a vcard:Home;
     vcard:value <mailto:timea.turdean@gmail.com>.
-_:b498_b441_b172_b124_b122_n3-250 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <http://localhost:3000>.
-_:b498_b441_b172_b124_b122_n3-251 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <http://localhost:3001>.
-_:b498_b441_b172_b124_b122_n3-252 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <http://localhost:8080>.
-_:b498_b441_b172_b124_b122_n3-253 acl:mode acl:Append, acl:Read, acl:Write;
+<#id1655232781826> vcard:value <tel:08966666>.
+_:b1057_n3-386 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <http://podpro.fly.dev:443>.
-_:b498_b441_b172_b124_b122_n3-254 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-387 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b1057_n3-388 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b1057_n3-389 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b1057_n3-390 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b1057_n3-391 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>, <http://webapp.dededeals.es>.
+_:b1057_n3-392 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <http://webapp.dededeals.es>.
-_:b498_b441_b172_b124_b122_n3-256 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <https://localhost:8443>.
-_:b498_b441_b172_b124_b122_n3-257 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-393 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b1057_n3-394 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b1057_n3-395 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b1057_n3-396 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b1057_n3-397 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://melvincarvalho.github.io>.
-_:b498_b441_b172_b124_b122_n3-258 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-398 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b1057_n3-399 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b1057_n3-400 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b1057_n3-401 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b1057_n3-402 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b1057_n3-403 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://pod-os-browser.netlify.app>.
-_:b498_b441_b172_b124_b122_n3-259 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-404 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b1057_n3-405 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b1057_n3-406 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b1057_n3-407 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b1057_n3-408 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b1057_n3-409 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://podpro.dev>.
-_:b498_b441_b172_b124_b122_n3-260 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-410 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b1057_n3-411 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b1057_n3-412 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b1057_n3-413 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b1057_n3-414 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b1057_n3-415 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://ramen.noeldemartin.com>.
-_:b498_b441_b172_b124_b122_n3-261 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-416 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b1057_n3-417 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b1057_n3-418 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b1057_n3-419 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b1057_n3-420 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b1057_n3-421 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://rdfjs.vercel.app>.
-_:b498_b441_b172_b124_b122_n3-262 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-422 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b1057_n3-423 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b1057_n3-424 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b1057_n3-425 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b1057_n3-426 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b1057_n3-427 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://rrustom.github.io>.
-_:b498_b441_b172_b124_b122_n3-264 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-428 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b1057_n3-429 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b1057_n3-430 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b1057_n3-431 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b1057_n3-432 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b1057_n3-433 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://sleepy.bike>.
-_:b498_b441_b172_b124_b122_n3-265 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-434 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b1057_n3-435 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b1057_n3-436 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b1057_n3-437 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b1057_n3-438 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b1057_n3-439 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://solid.redpencil.io>.
-_:b498_b441_b172_b124_b122_n3-266 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-440 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b1057_n3-441 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b1057_n3-442 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b1057_n3-443 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b1057_n3-444 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b1057_n3-445 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://solid.smessie.com>.
-_:b498_b441_b172_b124_b122_n3-267 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-446 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b1057_n3-447 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b1057_n3-448 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b1057_n3-449 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b1057_n3-450 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b1057_n3-451 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://solidelight.stieger.io>.
-_:b498_b441_b172_b124_b122_n3-268 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-452 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b1057_n3-453 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b1057_n3-454 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b1057_n3-455 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b1057_n3-456 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b1057_n3-457 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://solidos.github.io>.
-_:b498_b441_b172_b124_b122_n3-269 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-458 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b1057_n3-459 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b1057_n3-460 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b1057_n3-461 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b1057_n3-462 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b1057_n3-463 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://survey-api.demo.konsolidate.eu>.
-_:b498_b441_b172_b124_b122_n3-270 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-464 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b1057_n3-465 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b1057_n3-466 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b1057_n3-467 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b1057_n3-468 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b1057_n3-469 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://timbl.com>.
-_:b498_b441_b172_b124_b122_n3-271 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-470 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b1057_n3-471 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b1057_n3-472 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b1057_n3-473 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b1057_n3-474 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b1057_n3-475 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://timbl.solidcommunity.net:8443>.
-_:b498_b441_b172_b124_b122_n3-272 acl:mode acl:Append, acl:Read, acl:Write;
+_:b1057_n3-476 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b1057_n3-477 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b1057_n3-478 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b1057_n3-479 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b1057_n3-480 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b1057_n3-481 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://umai.noeldemartin.com>.
-<#id1635929591644> solid:publicId l:en.
-_:b498_b441_b172_b124_b122_n3-247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1646414710220>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-<#id1644420692100> solid:publicId l:en.
-_:b498_b441_b172_b124_b122_n3-249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1655232957134>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-l:en schema:name "English"@en.
-<#id1646414710220> solid:publicId l:de.
-<#id1655232957134> solid:publicId l:de.
-l:de schema:name "German"@en.
+_:b1057_n3-482 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b1057_n3-483 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b1057_n3-484 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b1057_n3-485 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b1057_n3-486 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b1057_n3-487 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770976265376>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b1057_n3-488.
+_:b1057_n3-489 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770976277843>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b1057_n3-490.
+_:b1057_n3-491 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770976277843>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b1057_n3-492.
 <#id1629189338421> a solid:CurrentRole;
     vcard:role "";
     schema:description "Working on SolidOS";
@@ -125,3 +295,19 @@ l:de schema:name "German"@en.
 <#id1634289234819> schema:name "Inrupt";
     a schema:ResearchOrganization.
 <#id1652973530958> org:member <#me>.
+<#id1770974719414> solid:publicId lan:en.
+lan:en schema:name "English"@en.
+<#id1770974760053> solid:publicId lan:de.
+lan:de schema:name "German"@en.
+<#id1770976265376> a soc:FacebookAccount;
+    foaf:accountName "timeaturdean".
+<#id1770976277843> a soc:LinkedInAccount;
+    foaf:accountName "timeaturdean".
+_:b1057_n3-384 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770974760053>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:b1057_n3-488 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770976277843>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:b1057_n3-490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770976265376>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:b1057_n3-492 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770976265376>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
