@@ -7,53 +7,53 @@
 @prefix solid: <http://www.w3.org/ns/solid/terms#>.
 @prefix space: <http://www.w3.org/ns/pim/space#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
-@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix Set: <https://chunt.solidcommunity.net/Settings/>.
+@prefix set: <https://chunt.solidcommunity.net/settings/>.
 @prefix occup: <http://data.europa.eu/esco/occupation/>.
 @prefix c1: <https://timea.solidcommunity.net/profile/card#>.
 @prefix chu: <https://chunt.solidcommunity.net/>.
 @prefix inbox: <https://chunt.solidcommunity.net/inbox/>.
-@prefix pro: <https://chunt.solidcommunity.net/profile/>.
-@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix wd: <http://www.wikidata.org/entity/>.
 @prefix c40: <https://timbl.solidcommunity.net/profile/card#>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
 @prefix l: <https://www.w3.org/ns/iana/language-code/>.
 @prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
-@prefix ent: <http://www.wikidata.org/entity/>.
 @prefix sol: <https://solidcommunity.net/>.
 
 skill:19a8293b-8e95-4de3-983f-77484079c389 schema:name "Java (computer programming)", "Java (programmation informatique)".
 skill:2164e860-7f20-48bc-b98c-5d9f8a561550 schema:name "design computer network".
 skill:487fd260-be20-4980-a8e4-b819f0b549f1 schema:name "add computer components".
-ent:Q1420011 schema:name "Tuskegee'de frengi testi"@tr.
-pro:card a foaf:PersonalProfileDocument;
-    space:preferencesFile <https://chunt.solidcommunity.net/Settings/Preferences.ttl>;
-    solid:publicTypeIndex <https://chunt.solidcommunity.net/profile/publicTypeIndex.ttl>;
+wd:Q1420011 schema:name "Tuskegee'de frengi testi"@tr.
+<> a foaf:PersonalProfileDocument;
+    space:preferencesFile <../Settings/Preferences.ttl>;
+    solid:publicTypeIndex <publicTypeIndex.ttl>;
     foaf:maker <#me>;
     foaf:primaryTopic <#me>.
 <#me> a schema:Person, foaf:Person, soc:blue, soc:round;
-    space:preferencesFile <https://chunt.solidcommunity.net/settings/prefs.ttl>;
-    solid:publicTypeIndex <https://chunt.solidcommunity.net/settings/publicTypeIndex.ttl>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
     vcard:role "Team member of SolidOS Since '22";
-    solid:publicId ent:Q1420011;
-    schema:knowsLanguage _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1545, _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1547;
+    solid:publicId wd:Q1420011;
+    schema:knowsLanguage _:b396_b390_b380_b375_b370_b365_b360_n3-227, _:b396_b390_b380_b375_b370_b365_b360_n3-228;
     schema:skills <#id1671035762214>, <#id1740449298562>, <#id1740449319502>;
     vcard:bday "1989-06-02"^^xsd:date;
     vcard:fn "Chase";
     vcard:hasAddress <#id1743980443584>;
-    vcard:hasPhoto <https://chunt.solidcommunity.net/profile/44913708_494109507768475_5780795319197368320_n.jpg>;
+    vcard:hasPhoto <01e9688d-b39f-4296-b560-c190aca9a8fc.jpg>, <6a99698d-7a08-4f5d-9b89-116bde1a4043.jpg>, <b3a56617-be0b-47d3-93d6-738172876409.jpg>, <image_0.jpg>, <image_2.jpg>, <image_3.jpg>;
     vcard:note "";
     vcard:organization-name "SolidOS";
-    acl:trustedApp _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1548, _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1549, _:e_bn_6tcxw50;
-    ldp:inbox <https://chunt.solidcommunity.net/inbox/>;
-    space:storage <https://chunt.solidcommunity.net/>;
-    solid:account <https://chunt.solidcommunity.net/>;
+    acl:trustedApp _:b396_b390_b380_b375_b370_b365_b360_n3-230, _:b396_b390_b380_b375_b370_b365_b360_n3-231, _:b396_b390_b380_b375_b370_b365_b360_n3-232, _:b396_b390_b380_b375_b370_b365_b360_n3-233, _:b396_b390_b380_b375_b370_b365_b360_n3-234, _:b396_b390_b380_b375_b370_b365_b360_n3-235, _:b396_b390_b380_b375_b370_b365_b360_n3-236, _:b396_b390_b380_b375_b370_b365_b360_n3-237, _:b396_b390_b380_b375_b370_b365_b360_n3-238, _:b396_b390_b380_b375_b370_b365_b360_n3-239, _:b396_b390_b380_b375_b370_b365_b360_n3-240, _:b396_b390_b380_b375_b370_b365_b360_n3-241, _:b396_b390_b380_b375_b370_b365_b360_n3-242, _:b396_b390_b380_b375_b370_b365_b360_n3-243, _:b396_b390_b380_b375_b370_b365_b360_n3-244, _:b396_b390_b380_b375_b370_b365_b360_n3-245;
+    ldp:inbox <../inbox/>;
+    space:storage <../>;
+    solid:account <../>;
     solid:cornerDotColor "#ff6b6b"^^xsd:color;
     solid:cornerSquareColor "#fd3030"^^xsd:color;
     solid:oidcIssuer <https://solidcommunity.net/>;
     solid:preferredObjectPronoun "";
     solid:preferredRelativePronoun "";
     solid:preferredSubjectPronoun "";
-    solid:privateTypeIndex <https://chunt.solidcommunity.net/settings/privateTypeIndex.ttl>;
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
     solid:profileBackgroundColor "#ffffff"^^xsd:color;
     solid:profileHigh "#b917d9"^^xsd:color;
     solid:profileHighlightColor "#351d1d"^^xsd:color;
@@ -62,31 +62,58 @@ pro:card a foaf:PersonalProfileDocument;
     solid:Role "Bob";
     solid:testing "#bca4a4"^^xsd:color;
     solid:testingT 231223.2;
-    foaf:account _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1550;
+    foaf:account _:b396_b390_b380_b375_b370_b365_b360_n3-246;
     foaf:knows <#me>, c40:me, c1:me;
     foaf:name "Chase";
     foaf:nick "".
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1545 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1678310156289>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1546.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1547 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1678310153127>;
+_:b396_b390_b380_b375_b370_b365_b360_n3-227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1678310153127>;
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1678310156289>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b396_b390_b380_b375_b370_b365_b360_n3-229.
 <#id1671035762214> solid:publicId skill:487fd260-be20-4980-a8e4-b819f0b549f1.
 <#id1740449298562> solid:publicId skill:2164e860-7f20-48bc-b98c-5d9f8a561550.
 <#id1740449319502> solid:publicId skill:19a8293b-8e95-4de3-983f-77484079c389.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1548 acl:mode acl:Append, acl:Read, acl:Write;
+_:b396_b390_b380_b375_b370_b365_b360_n3-230 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <capacitor://localhost>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-231 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <capacitor://localhost>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-232 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <capacitor://localhost>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-233 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <capacitor://localhost>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-234 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <com.awesomeproject://callback>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-235 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <com.awesomeproject://callback>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-236 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <com.awesomeproject://callback>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-237 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <com.awesomeproject://callback>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-238 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <http://localhost:8080>.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1549 acl:mode acl:Append, acl:Read, acl:Write;
+_:b396_b390_b380_b375_b370_b365_b360_n3-239 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:8080>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-240 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:8080>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-241 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:8080>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-242 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://localhost:8443>.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1550 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1736013212056>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-<#id1678310156289> solid:publicId l:fr.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1546 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1678310153127>;
+_:b396_b390_b380_b375_b370_b365_b360_n3-243 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://localhost:8443>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-244 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://localhost:8443>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-245 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://localhost:8443>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1736013212056>;
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
 <#id1678310153127> solid:publicId l:en.
-<#id1736013212056> a soc:dots, soc:dot, soc:extra-rounded.
-l:fr schema:name "French"@en.
+<#id1678310156289> solid:publicId l:fr.
+_:b396_b390_b380_b375_b370_b365_b360_n3-229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1678310153127>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1736013212056> a soc:dots, soc:Digg, soc:dot, soc:extra-rounded.
 l:en schema:name "English"@en.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_e_bn_jag4s170 acl:mode acl:Append, acl:Write.
+l:fr schema:name "French"@en.
 <#id1655758623314> a solid:PastRole;
     vcard:role "";
     schema:description "";
@@ -127,5 +154,7 @@ _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12
 <#id1736012449131> a soc:rounded.
 <#id1738208897085> vcard:value <tel:3333333333333333333333333333333333333332222222222222222222222222222223333333333333333333333333333322222222222222222222222222222222222222222222222222222222222222222222222222222222222223333333333333333333333333333333333333333333333333222222222222222222222222222222222222222222222222222222>.
 <#id1739929199232> org:member <#me>.
-_:e_bn_6tcxw50 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <capacitor://localhost>.
+_:b396_b390_b380_b375_b370_b365_b360_n3-247 acl:mode acl:Append, acl:Write.
+_:b396_b390_b380_b375_b370_b365_b360_n3-248 acl:mode acl:Append, acl:Write.
+_:b396_b390_b380_b375_b370_b365_b360_n3-249 acl:mode acl:Append, acl:Write.
+_:b396_b390_b380_b375_b370_b365_b360_n3-250 acl:mode acl:Append, acl:Write.
