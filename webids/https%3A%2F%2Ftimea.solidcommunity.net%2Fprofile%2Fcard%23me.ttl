@@ -1,127 +1,726 @@
 @prefix : <https://timea.solidcommunity.net/profile/card#>.
 @prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix cal: <http://www.w3.org/2002/12/cal/ical#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix ldp: <http://www.w3.org/ns/ldp#>.
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix schema: <http://schema.org/>.
 @prefix solid: <http://www.w3.org/ns/solid/terms#>.
 @prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix ui: <http://www.w3.org/ns/ui#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix p: <https://timea.solidcommunity.net/profile/>.
 @prefix time: <https://timea.solidcommunity.net/>.
-@prefix skill: <http://data.europa.eu/esco/skill/>.
-@prefix c32: <https://angelo.veltens.org/profile/card#>.
-@prefix c8: <https://jeff-zucker.solidcommunity.net/profile/card#>.
-@prefix inbo: <https://timea.solidcommunity.net/inbox/>.
+@prefix c39: <https://testingsolidos.solidcommunity.net/profile/card#>.
+@prefix c41: <https://chunt.solidcommunity.net/profile/card#>.
+@prefix i: <https://timea.solidcommunity.net/inbox/>.
+@prefix te: <https://teamid.live/>.
+@prefix c2: <https://jeff-zucker.solidcommunity.net/profile/card#>.
+@prefix p: <https://timea.solidcommunity.net/profile/>.
 @prefix c36: <https://bourgeoa.solidcommunity.net/profile/card#>.
 @prefix c37: <https://ewingson.solidcommunity.net/profile/card#>.
 @prefix c38: <https://noeldemartin.solidcommunity.net/profile/card#>.
-@prefix c39: <https://testingsolidos.solidcommunity.net/profile/card#>.
 @prefix c40: <https://timbl.solidcommunity.net/profile/card#>.
-@prefix l: <https://www.w3.org/ns/iana/language-code/>.
-@prefix c41: <https://chunt.solidcommunity.net/profile/card#>.
-@prefix c: <https://solid.smessie.com/profile/card#>.
+@prefix c32: <https://angelo.veltens.org/profile/card#>.
+@prefix sol: <https://solidcommunity.net/>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix lan: <https://www.w3.org/ns/iana/language-code/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix c1: <https://timeat.pivot-test.solidproject.org:3000/profile/card#>.
 
 skill:19a8293b-8e95-4de3-983f-77484079c389 schema:name "Java (computer programming)".
 skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7 schema:name "JavaScript".
 skill:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d schema:name "Javanese".
-p:card a foaf:PersonalProfileDocument;
+<> a foaf:PersonalProfileDocument;
     foaf:maker <#me>;
     foaf:primaryTopic <#me>.
 <#me> a schema:Person, foaf:Person;
     vcard:role "Software Engineer";
-    schema:knowsLanguage _:b498_b441_b172_b124_b122_n3-246, _:b498_b441_b172_b124_b122_n3-248;
+    schema:knowsLanguage _:b3378_b3894_b3555_b6937_b6928_n3-3778, _:b3378_b3894_b3555_b6937_b6928_n3-3780, _:b3378_b3894_b3555_b6937_b6928_n3-3782;
     schema:skills <#id1634289338819>, <#id1635929500934>, <#id1655232789144>;
+    wf:attachment c1:me;
+    wf:participation <#id1770034978739>;
     vcard:bday "1986-12-14"^^xsd:date;
     vcard:fn "Timea Turdean";
-    vcard:hasAddress <#id1651218114290>;
     vcard:hasEmail <#id1628260052971>;
-    vcard:hasPhoto <https://timea.solidcommunity.net/profile/18238146_10155235814682370_4572264504492849633_o.jpg>;
+    vcard:hasPhoto <18238146_10155235814682370_4572264504492849633_o.jpg>;
     vcard:hasTelephone <#id1655232781826>;
-    vcard:note "Hello Solidverse!";
-    acl:trustedApp _:b498_b441_b172_b124_b122_n3-250, _:b498_b441_b172_b124_b122_n3-251, _:b498_b441_b172_b124_b122_n3-252, _:b498_b441_b172_b124_b122_n3-253, _:b498_b441_b172_b124_b122_n3-254, _:b498_b441_b172_b124_b122_n3-256, _:b498_b441_b172_b124_b122_n3-257, _:b498_b441_b172_b124_b122_n3-258, _:b498_b441_b172_b124_b122_n3-259, _:b498_b441_b172_b124_b122_n3-260, _:b498_b441_b172_b124_b122_n3-261, _:b498_b441_b172_b124_b122_n3-262, _:b498_b441_b172_b124_b122_n3-263, _:b498_b441_b172_b124_b122_n3-264, _:b498_b441_b172_b124_b122_n3-265, _:b498_b441_b172_b124_b122_n3-266, _:b498_b441_b172_b124_b122_n3-267, _:b498_b441_b172_b124_b122_n3-268, _:b498_b441_b172_b124_b122_n3-269, _:b498_b441_b172_b124_b122_n3-270, _:b498_b441_b172_b124_b122_n3-271, _:b498_b441_b172_b124_b122_n3-272;
-    ldp:inbox <https://timea.solidcommunity.net/inbox/>;
-    space:preferencesFile <https://timea.solidcommunity.net/settings/prefs.ttl>;
-    space:storage <https://timea.solidcommunity.net/>;
-    solid:account <https://timea.solidcommunity.net/>;
+    vcard:note "Hello Solidverse!hei";
+    acl:trustedApp _:b3378_b3894_b3555_b6937_b6928_n3-3784, _:b3378_b3894_b3555_b6937_b6928_n3-3785, _:b3378_b3894_b3555_b6937_b6928_n3-3786, _:b3378_b3894_b3555_b6937_b6928_n3-3787, _:b3378_b3894_b3555_b6937_b6928_n3-3788, _:b3378_b3894_b3555_b6937_b6928_n3-3789, _:b3378_b3894_b3555_b6937_b6928_n3-3790, _:b3378_b3894_b3555_b6937_b6928_n3-3791, _:b3378_b3894_b3555_b6937_b6928_n3-3792, _:b3378_b3894_b3555_b6937_b6928_n3-3793, _:b3378_b3894_b3555_b6937_b6928_n3-3794, _:b3378_b3894_b3555_b6937_b6928_n3-3795, _:b3378_b3894_b3555_b6937_b6928_n3-3796, _:b3378_b3894_b3555_b6937_b6928_n3-3797, _:b3378_b3894_b3555_b6937_b6928_n3-3798, _:b3378_b3894_b3555_b6937_b6928_n3-3799, _:b3378_b3894_b3555_b6937_b6928_n3-3800, _:b3378_b3894_b3555_b6937_b6928_n3-3801, _:b3378_b3894_b3555_b6937_b6928_n3-3802, _:b3378_b3894_b3555_b6937_b6928_n3-3803, _:b3378_b3894_b3555_b6937_b6928_n3-3804, _:b3378_b3894_b3555_b6937_b6928_n3-3805, _:b3378_b3894_b3555_b6937_b6928_n3-3806, _:b3378_b3894_b3555_b6937_b6928_n3-3807, _:b3378_b3894_b3555_b6937_b6928_n3-3808, _:b3378_b3894_b3555_b6937_b6928_n3-3809, _:b3378_b3894_b3555_b6937_b6928_n3-3810, _:b3378_b3894_b3555_b6937_b6928_n3-3811, _:b3378_b3894_b3555_b6937_b6928_n3-3812, _:b3378_b3894_b3555_b6937_b6928_n3-3813, _:b3378_b3894_b3555_b6937_b6928_n3-3814, _:b3378_b3894_b3555_b6937_b6928_n3-3815, _:b3378_b3894_b3555_b6937_b6928_n3-3816, _:b3378_b3894_b3555_b6937_b6928_n3-3817, _:b3378_b3894_b3555_b6937_b6928_n3-3818, _:b3378_b3894_b3555_b6937_b6928_n3-3819, _:b3378_b3894_b3555_b6937_b6928_n3-3820, _:b3378_b3894_b3555_b6937_b6928_n3-3821, _:b3378_b3894_b3555_b6937_b6928_n3-3822, _:b3378_b3894_b3555_b6937_b6928_n3-3823, _:b3378_b3894_b3555_b6937_b6928_n3-3824, _:b3378_b3894_b3555_b6937_b6928_n3-3825, _:b3378_b3894_b3555_b6937_b6928_n3-3826, _:b3378_b3894_b3555_b6937_b6928_n3-3827, _:b3378_b3894_b3555_b6937_b6928_n3-3828, _:b3378_b3894_b3555_b6937_b6928_n3-3829, _:b3378_b3894_b3555_b6937_b6928_n3-3830, _:b3378_b3894_b3555_b6937_b6928_n3-3831, _:b3378_b3894_b3555_b6937_b6928_n3-3832, _:b3378_b3894_b3555_b6937_b6928_n3-3833, _:b3378_b3894_b3555_b6937_b6928_n3-3834, _:b3378_b3894_b3555_b6937_b6928_n3-3835, _:b3378_b3894_b3555_b6937_b6928_n3-3836, _:b3378_b3894_b3555_b6937_b6928_n3-3837, _:b3378_b3894_b3555_b6937_b6928_n3-3838, _:b3378_b3894_b3555_b6937_b6928_n3-3839, _:b3378_b3894_b3555_b6937_b6928_n3-3840, _:b3378_b3894_b3555_b6937_b6928_n3-3841, _:b3378_b3894_b3555_b6937_b6928_n3-3842, _:b3378_b3894_b3555_b6937_b6928_n3-3843, _:b3378_b3894_b3555_b6937_b6928_n3-3844, _:b3378_b3894_b3555_b6937_b6928_n3-3845, _:b3378_b3894_b3555_b6937_b6928_n3-3846, _:b3378_b3894_b3555_b6937_b6928_n3-3847, _:b3378_b3894_b3555_b6937_b6928_n3-3848, _:b3378_b3894_b3555_b6937_b6928_n3-3849, _:b3378_b3894_b3555_b6937_b6928_n3-3850, _:b3378_b3894_b3555_b6937_b6928_n3-3851, _:b3378_b3894_b3555_b6937_b6928_n3-3852, _:b3378_b3894_b3555_b6937_b6928_n3-3853, _:b3378_b3894_b3555_b6937_b6928_n3-3854, _:b3378_b3894_b3555_b6937_b6928_n3-3855, _:b3378_b3894_b3555_b6937_b6928_n3-3856, _:b3378_b3894_b3555_b6937_b6928_n3-3857, _:b3378_b3894_b3555_b6937_b6928_n3-3858, _:b3378_b3894_b3555_b6937_b6928_n3-3859, _:b3378_b3894_b3555_b6937_b6928_n3-3860, _:b3378_b3894_b3555_b6937_b6928_n3-3861, _:b3378_b3894_b3555_b6937_b6928_n3-3862, _:b3378_b3894_b3555_b6937_b6928_n3-3863, _:b3378_b3894_b3555_b6937_b6928_n3-3864, _:b3378_b3894_b3555_b6937_b6928_n3-3865, _:b3378_b3894_b3555_b6937_b6928_n3-3866, _:b3378_b3894_b3555_b6937_b6928_n3-3867, _:b3378_b3894_b3555_b6937_b6928_n3-3868, _:b3378_b3894_b3555_b6937_b6928_n3-3869, _:b3378_b3894_b3555_b6937_b6928_n3-3870, _:b3378_b3894_b3555_b6937_b6928_n3-3871, _:b3378_b3894_b3555_b6937_b6928_n3-3872, _:b3378_b3894_b3555_b6937_b6928_n3-3873, _:b3378_b3894_b3555_b6937_b6928_n3-3874, _:b3378_b3894_b3555_b6937_b6928_n3-3875, _:b3378_b3894_b3555_b6937_b6928_n3-3876, _:b3378_b3894_b3555_b6937_b6928_n3-3877, _:b3378_b3894_b3555_b6937_b6928_n3-3878, _:b3378_b3894_b3555_b6937_b6928_n3-3879, _:b3378_b3894_b3555_b6937_b6928_n3-3880, _:b3378_b3894_b3555_b6937_b6928_n3-3881, _:b3378_b3894_b3555_b6937_b6928_n3-3882, _:b3378_b3894_b3555_b6937_b6928_n3-3883, _:b3378_b3894_b3555_b6937_b6928_n3-3884, _:b3378_b3894_b3555_b6937_b6928_n3-3885, _:b3378_b3894_b3555_b6937_b6928_n3-3886, _:b3378_b3894_b3555_b6937_b6928_n3-3887, _:b3378_b3894_b3555_b6937_b6928_n3-3888, _:b3378_b3894_b3555_b6937_b6928_n3-3889, _:b3378_b3894_b3555_b6937_b6928_n3-3890, _:b3378_b3894_b3555_b6937_b6928_n3-3891, _:b3378_b3894_b3555_b6937_b6928_n3-3892, _:b3378_b3894_b3555_b6937_b6928_n3-3893, _:b3378_b3894_b3555_b6937_b6928_n3-3894, _:b3378_b3894_b3555_b6937_b6928_n3-3895, _:b3378_b3894_b3555_b6937_b6928_n3-3896, _:b3378_b3894_b3555_b6937_b6928_n3-3897, _:b3378_b3894_b3555_b6937_b6928_n3-3898, _:b3378_b3894_b3555_b6937_b6928_n3-3899, _:b3378_b3894_b3555_b6937_b6928_n3-3900, _:b3378_b3894_b3555_b6937_b6928_n3-3901, _:b3378_b3894_b3555_b6937_b6928_n3-3902, _:b3378_b3894_b3555_b6937_b6928_n3-3903, _:b3378_b3894_b3555_b6937_b6928_n3-3904, _:b3378_b3894_b3555_b6937_b6928_n3-3905, _:b3378_b3894_b3555_b6937_b6928_n3-3906, _:b3378_b3894_b3555_b6937_b6928_n3-3907, _:b3378_b3894_b3555_b6937_b6928_n3-3908, _:b3378_b3894_b3555_b6937_b6928_n3-3909, _:b3378_b3894_b3555_b6937_b6928_n3-3910, _:b3378_b3894_b3555_b6937_b6928_n3-3911, _:b3378_b3894_b3555_b6937_b6928_n3-3912, _:b3378_b3894_b3555_b6937_b6928_n3-3913, _:b3378_b3894_b3555_b6937_b6928_n3-3914, _:b3378_b3894_b3555_b6937_b6928_n3-3915, _:b3378_b3894_b3555_b6937_b6928_n3-3916, _:b3378_b3894_b3555_b6937_b6928_n3-3917, _:b3378_b3894_b3555_b6937_b6928_n3-3918, _:b3378_b3894_b3555_b6937_b6928_n3-3919, _:b3378_b3894_b3555_b6937_b6928_n3-3920, _:b3378_b3894_b3555_b6937_b6928_n3-3921, _:b3378_b3894_b3555_b6937_b6928_n3-3922, _:b3378_b3894_b3555_b6937_b6928_n3-3923, _:b3378_b3894_b3555_b6937_b6928_n3-3924, _:b3378_b3894_b3555_b6937_b6928_n3-3925, _:b3378_b3894_b3555_b6937_b6928_n3-3926, _:b3378_b3894_b3555_b6937_b6928_n3-3927, _:b3378_b3894_b3555_b6937_b6928_n3-3928, _:b3378_b3894_b3555_b6937_b6928_n3-3929, _:b3378_b3894_b3555_b6937_b6928_n3-3930, _:b3378_b3894_b3555_b6937_b6928_n3-3931, _:b3378_b3894_b3555_b6937_b6928_n3-3932, _:b3378_b3894_b3555_b6937_b6928_n3-3933, _:b3378_b3894_b3555_b6937_b6928_n3-3934, _:b3378_b3894_b3555_b6937_b6928_n3-3935, _:b3378_b3894_b3555_b6937_b6928_n3-3936, _:b3378_b3894_b3555_b6937_b6928_n3-3937, _:b3378_b3894_b3555_b6937_b6928_n3-3938, _:b3378_b3894_b3555_b6937_b6928_n3-3939, _:b3378_b3894_b3555_b6937_b6928_n3-3940, _:b3378_b3894_b3555_b6937_b6928_n3-3941, _:b3378_b3894_b3555_b6937_b6928_n3-3942, _:b3378_b3894_b3555_b6937_b6928_n3-3943, _:b3378_b3894_b3555_b6937_b6928_n3-3944, _:b3378_b3894_b3555_b6937_b6928_n3-3945, _:b3378_b3894_b3555_b6937_b6928_n3-3946, _:b3378_b3894_b3555_b6937_b6928_n3-3947, _:b3378_b3894_b3555_b6937_b6928_n3-3948, _:b3378_b3894_b3555_b6937_b6928_n3-3949, _:b3378_b3894_b3555_b6937_b6928_n3-3950, _:b3378_b3894_b3555_b6937_b6928_n3-3951, _:b3378_b3894_b3555_b6937_b6928_n3-3952, _:b3378_b3894_b3555_b6937_b6928_n3-3953, _:b3378_b3894_b3555_b6937_b6928_n3-3954, _:b3378_b3894_b3555_b6937_b6928_n3-3955, _:b3378_b3894_b3555_b6937_b6928_n3-3956, _:b3378_b3894_b3555_b6937_b6928_n3-3957, _:b3378_b3894_b3555_b6937_b6928_n3-3958, _:b3378_b3894_b3555_b6937_b6928_n3-3959, _:b3378_b3894_b3555_b6937_b6928_n3-3960, _:b3378_b3894_b3555_b6937_b6928_n3-3961, _:b3378_b3894_b3555_b6937_b6928_n3-3962, _:b3378_b3894_b3555_b6937_b6928_n3-3963, _:b3378_b3894_b3555_b6937_b6928_n3-3964, _:b3378_b3894_b3555_b6937_b6928_n3-3965, _:b3378_b3894_b3555_b6937_b6928_n3-3966, _:b3378_b3894_b3555_b6937_b6928_n3-3967, _:b3378_b3894_b3555_b6937_b6928_n3-3968, _:b3378_b3894_b3555_b6937_b6928_n3-3969, _:b3378_b3894_b3555_b6937_b6928_n3-3970, _:b3378_b3894_b3555_b6937_b6928_n3-3971, _:b3378_b3894_b3555_b6937_b6928_n3-3972, _:b3378_b3894_b3555_b6937_b6928_n3-3973, _:b3378_b3894_b3555_b6937_b6928_n3-3974, _:b3378_b3894_b3555_b6937_b6928_n3-3975, _:b3378_b3894_b3555_b6937_b6928_n3-3976, _:b3378_b3894_b3555_b6937_b6928_n3-3977, _:b3378_b3894_b3555_b6937_b6928_n3-3978, _:b3378_b3894_b3555_b6937_b6928_n3-3979, _:b3378_b3894_b3555_b6937_b6928_n3-3980, _:b3378_b3894_b3555_b6937_b6928_n3-3981, _:b3378_b3894_b3555_b6937_b6928_n3-3982, _:b3378_b3894_b3555_b6937_b6928_n3-3983, _:b3378_b3894_b3555_b6937_b6928_n3-3984, _:b3378_b3894_b3555_b6937_b6928_n3-3985, _:b3378_b3894_b3555_b6937_b6928_n3-3986, _:b3378_b3894_b3555_b6937_b6928_n3-3987, _:b3378_b3894_b3555_b6937_b6928_n3-3988, _:b3378_b3894_b3555_b6937_b6928_n3-3989, _:b3378_b3894_b3555_b6937_b6928_n3-3990, _:b3378_b3894_b3555_b6937_b6928_n3-3991, _:b3378_b3894_b3555_b6937_b6928_n3-3992, _:b3378_b3894_b3555_b6937_b6928_n3-3993, _:b3378_b3894_b3555_b6937_b6928_n3-3994, _:b3378_b3894_b3555_b6937_b6928_n3-3995, _:b3378_b3894_b3555_b6937_b6928_n3-3996, _:b3378_b3894_b3555_b6937_b6928_n3-3997, _:b3378_b3894_b3555_b6937_b6928_n3-3998, _:b3378_b3894_b3555_b6937_b6928_n3-3999, _:b3378_b3894_b3555_b6937_b6928_n3-4000, _:b3378_b3894_b3555_b6937_b6928_n3-4001, _:b3378_b3894_b3555_b6937_b6928_n3-4002, _:b3378_b3894_b3555_b6937_b6928_n3-4003, _:b3378_b3894_b3555_b6937_b6928_n3-4004, _:b3378_b3894_b3555_b6937_b6928_n3-4005, _:b3378_b3894_b3555_b6937_b6928_n3-4006, _:b3378_b3894_b3555_b6937_b6928_n3-4007, _:b3378_b3894_b3555_b6937_b6928_n3-4008, _:b3378_b3894_b3555_b6937_b6928_n3-4009, _:b3378_b3894_b3555_b6937_b6928_n3-4010, _:b3378_b3894_b3555_b6937_b6928_n3-4011, _:b3378_b3894_b3555_b6937_b6928_n3-4012, _:b3378_b3894_b3555_b6937_b6928_n3-4013, _:b3378_b3894_b3555_b6937_b6928_n3-4014, _:b3378_b3894_b3555_b6937_b6928_n3-4015, _:b3378_b3894_b3555_b6937_b6928_n3-4016, _:b3378_b3894_b3555_b6937_b6928_n3-4017, _:b3378_b3894_b3555_b6937_b6928_n3-4018, _:b3378_b3894_b3555_b6937_b6928_n3-4019, _:b3378_b3894_b3555_b6937_b6928_n3-4020, _:b3378_b3894_b3555_b6937_b6928_n3-4021, _:b3378_b3894_b3555_b6937_b6928_n3-4022, _:b3378_b3894_b3555_b6937_b6928_n3-4023, _:b3378_b3894_b3555_b6937_b6928_n3-4024, _:b3378_b3894_b3555_b6937_b6928_n3-4025, _:b3378_b3894_b3555_b6937_b6928_n3-4026, _:b3378_b3894_b3555_b6937_b6928_n3-4027, _:b3378_b3894_b3555_b6937_b6928_n3-4028, _:b3378_b3894_b3555_b6937_b6928_n3-4029, _:b3378_b3894_b3555_b6937_b6928_n3-4030, _:b3378_b3894_b3555_b6937_b6928_n3-4031, _:b3378_b3894_b3555_b6937_b6928_n3-4032, _:b3378_b3894_b3555_b6937_b6928_n3-4033, _:b3378_b3894_b3555_b6937_b6928_n3-4034, _:b3378_b3894_b3555_b6937_b6928_n3-4035, _:b3378_b3894_b3555_b6937_b6928_n3-4036, _:b3378_b3894_b3555_b6937_b6928_n3-4037, _:b3378_b3894_b3555_b6937_b6928_n3-4038, _:b3378_b3894_b3555_b6937_b6928_n3-4039, _:b3378_b3894_b3555_b6937_b6928_n3-4040, _:b3378_b3894_b3555_b6937_b6928_n3-4041, _:b3378_b3894_b3555_b6937_b6928_n3-4042, _:b3378_b3894_b3555_b6937_b6928_n3-4043, _:b3378_b3894_b3555_b6937_b6928_n3-4044, _:b3378_b3894_b3555_b6937_b6928_n3-4045, _:b3378_b3894_b3555_b6937_b6928_n3-4046, _:b3378_b3894_b3555_b6937_b6928_n3-4047, _:b3378_b3894_b3555_b6937_b6928_n3-4048, _:b3378_b3894_b3555_b6937_b6928_n3-4049, _:b3378_b3894_b3555_b6937_b6928_n3-4050, _:b3378_b3894_b3555_b6937_b6928_n3-4051, _:b3378_b3894_b3555_b6937_b6928_n3-4052, _:b3378_b3894_b3555_b6937_b6928_n3-4053, _:b3378_b3894_b3555_b6937_b6928_n3-4054, _:b3378_b3894_b3555_b6937_b6928_n3-4055, _:b3378_b3894_b3555_b6937_b6928_n3-4056, _:b3378_b3894_b3555_b6937_b6928_n3-4057, _:b3378_b3894_b3555_b6937_b6928_n3-4058, _:b3378_b3894_b3555_b6937_b6928_n3-4059, _:b3378_b3894_b3555_b6937_b6928_n3-4060, _:b3378_b3894_b3555_b6937_b6928_n3-4061, _:b3378_b3894_b3555_b6937_b6928_n3-4062, _:b3378_b3894_b3555_b6937_b6928_n3-4063, _:b3378_b3894_b3555_b6937_b6928_n3-4064, _:b3378_b3894_b3555_b6937_b6928_n3-4065, _:b3378_b3894_b3555_b6937_b6928_n3-4066, _:b3378_b3894_b3555_b6937_b6928_n3-4067, _:b3378_b3894_b3555_b6937_b6928_n3-4068, _:b3378_b3894_b3555_b6937_b6928_n3-4069, _:b3378_b3894_b3555_b6937_b6928_n3-4070, _:b3378_b3894_b3555_b6937_b6928_n3-4071, _:b3378_b3894_b3555_b6937_b6928_n3-4072, _:b3378_b3894_b3555_b6937_b6928_n3-4073, _:b3378_b3894_b3555_b6937_b6928_n3-4074, _:b3378_b3894_b3555_b6937_b6928_n3-4075, _:b3378_b3894_b3555_b6937_b6928_n3-4076, _:b3378_b3894_b3555_b6937_b6928_n3-4077, _:b3378_b3894_b3555_b6937_b6928_n3-4078, _:b3378_b3894_b3555_b6937_b6928_n3-4079, _:b3378_b3894_b3555_b6937_b6928_n3-4080, _:b3378_b3894_b3555_b6937_b6928_n3-4081, _:b3378_b3894_b3555_b6937_b6928_n3-4082, _:b3378_b3894_b3555_b6937_b6928_n3-4083, _:b3378_b3894_b3555_b6937_b6928_n3-4084, _:b3378_b3894_b3555_b6937_b6928_n3-4085, _:b3378_b3894_b3555_b6937_b6928_n3-4086;
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../Settings/Preferences.ttl>;
+    space:storage <../>;
+    solid:account <../>;
     solid:oidcIssuer <https://solidcommunity.net/>, <https://teamid.live/>;
+    solid:oidcIssuerRegistrationToken "bddef624-e74a-4aca-b2c8-289806cf6ee2";
     solid:preferredObjectPronoun "her";
     solid:preferredRelativePronoun "hers";
     solid:preferredSubjectPronoun "she";
-    solid:privateTypeIndex <https://timea.solidcommunity.net/settings/privateTypeIndex.ttl>;
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
     solid:profileBackgroundColor "#73baff"^^xsd:color;
-    solid:publicTypeIndex <https://timea.solidcommunity.net/settings/publicTypeIndex.ttl>, <https://timea.solidcommunity.net/profile/publicTypeIndex.ttl>;
-    foaf:knows <#me>, c32:me, c36:me, c41:me, c37:me, c8:me, c38:me, c40:me, c39:me;
+    solid:publicTypeIndex <publicTypeIndex.ttl>;
+    ui:sharedPreferences <#SharedPreferences>;
+    foaf:account _:b3378_b3894_b3555_b6937_b6928_n3-4087, _:b3378_b3894_b3555_b6937_b6928_n3-4089;
+    foaf:knows c32:me, c36:me, c41:me, c37:me, c2:me, c38:me, c39:me, c40:me;
     foaf:name "Timea Turdean";
-    solid:oidcIssuerRegistrationToken "bddef624-e74a-4aca-b2c8-289806cf6ee2".
-_:b498_b441_b172_b124_b122_n3-246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1635929591644>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b498_b441_b172_b124_b122_n3-247.
-_:b498_b441_b172_b124_b122_n3-248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1644420692100>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b498_b441_b172_b124_b122_n3-249.
+    foaf:nick "Imy";
+    vcard:organization-name "Self Employed".
+_:b3378_b3894_b3555_b6937_b6928_n3-3778 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1771844559879>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b3378_b3894_b3555_b6937_b6928_n3-3779.
+_:b3378_b3894_b3555_b6937_b6928_n3-3780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770974719414>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b3378_b3894_b3555_b6937_b6928_n3-3781.
+_:b3378_b3894_b3555_b6937_b6928_n3-3782 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770974719414>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b3378_b3894_b3555_b6937_b6928_n3-3783.
 <#id1634289338819> solid:publicId skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7.
 <#id1635929500934> solid:publicId skill:19a8293b-8e95-4de3-983f-77484079c389.
 <#id1655232789144> solid:publicId skill:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d.
+<#id1770034978739> cal:dtstart "2026-02-02T12:22:58Z"^^xsd:dateTime;
+    wf:participant <#me>;
+    ui:backgroundColor "#ede9cc".
 <#id1628260052971> a vcard:Home;
     vcard:value <mailto:timea.turdean@gmail.com>.
-_:b498_b441_b172_b124_b122_n3-250 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <http://localhost:3000>.
-_:b498_b441_b172_b124_b122_n3-251 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <http://localhost:3001>.
-_:b498_b441_b172_b124_b122_n3-252 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <http://localhost:8080>.
-_:b498_b441_b172_b124_b122_n3-253 acl:mode acl:Append, acl:Read, acl:Write;
+<#id1655232781826> vcard:value <tel:08966666>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3784 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <http://podpro.fly.dev:443>.
-_:b498_b441_b172_b124_b122_n3-254 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3785 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3786 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3787 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3788 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3789 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3790 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3791 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3792 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3793 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3794 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3795 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3796 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3797 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3798 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3799 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>, <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3800 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>, <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3801 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>, <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3802 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <http://webapp.dededeals.es>.
-_:b498_b441_b172_b124_b122_n3-256 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <https://localhost:8443>.
-_:b498_b441_b172_b124_b122_n3-257 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3803 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3804 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3805 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3806 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3807 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3808 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3809 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3810 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3811 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3812 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3813 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3814 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3815 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3816 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3817 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://melvincarvalho.github.io>.
-_:b498_b441_b172_b124_b122_n3-258 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3818 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3819 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3820 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3821 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3822 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3823 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3824 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3825 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3826 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3827 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3828 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3829 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3830 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3831 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3832 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3833 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3834 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3835 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://pod-os-browser.netlify.app>.
-_:b498_b441_b172_b124_b122_n3-259 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3836 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3837 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3838 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3839 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3840 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3841 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3842 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3843 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3844 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3845 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3846 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3847 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3848 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3849 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3850 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3851 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3852 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3853 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://podpro.dev>.
-_:b498_b441_b172_b124_b122_n3-260 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3854 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3855 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3856 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3857 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3858 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3859 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3860 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3861 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3862 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3863 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3864 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3865 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3866 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3867 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3868 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3869 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3870 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3871 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://ramen.noeldemartin.com>.
-_:b498_b441_b172_b124_b122_n3-261 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3872 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3873 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3874 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3875 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3876 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3877 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3878 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3879 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3880 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3881 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3882 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3883 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3884 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3885 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3886 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3887 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3888 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3889 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://rdfjs.vercel.app>.
-_:b498_b441_b172_b124_b122_n3-262 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3890 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3891 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3892 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3893 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3894 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3895 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3896 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3897 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3898 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3899 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3900 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3901 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3902 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3903 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3904 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3905 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3906 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3907 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://rrustom.github.io>.
-_:b498_b441_b172_b124_b122_n3-264 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3908 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3909 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3910 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3911 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3912 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3913 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3914 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3915 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3916 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3917 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3918 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3919 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3920 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3921 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3922 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3923 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3924 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3925 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://sleepy.bike>.
-_:b498_b441_b172_b124_b122_n3-265 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3926 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3927 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3928 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3929 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3930 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3931 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3932 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3933 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3934 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3935 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3936 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3937 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3938 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3939 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3940 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3941 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3942 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3943 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://solid.redpencil.io>.
-_:b498_b441_b172_b124_b122_n3-266 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3944 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3945 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3946 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3947 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3948 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3949 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3950 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3951 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3952 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3953 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3954 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3955 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3956 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3957 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3958 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3959 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3960 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3961 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://solid.smessie.com>.
-_:b498_b441_b172_b124_b122_n3-267 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3962 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3963 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3964 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3965 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3966 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3967 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3968 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3969 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3970 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3971 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3972 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3973 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3974 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3975 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3976 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3977 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3978 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3979 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://solidelight.stieger.io>.
-_:b498_b441_b172_b124_b122_n3-268 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3980 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3981 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3982 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3983 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3984 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3985 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3986 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3987 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3988 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3989 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3990 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3991 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3992 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3993 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3994 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3995 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3996 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3997 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://solidos.github.io>.
-_:b498_b441_b172_b124_b122_n3-269 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-3998 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-3999 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4000 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4001 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4002 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4003 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4004 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4005 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4006 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4007 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4008 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4009 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4010 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4011 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4012 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4013 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4014 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4015 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://survey-api.demo.konsolidate.eu>.
-_:b498_b441_b172_b124_b122_n3-270 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-4016 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4017 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4018 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4019 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4020 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4021 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4022 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4023 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4024 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4025 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4026 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4027 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4028 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4029 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4030 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4031 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4032 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4033 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://timbl.com>.
-_:b498_b441_b172_b124_b122_n3-271 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-4034 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4035 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4036 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4037 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4038 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4039 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4040 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4041 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4042 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4043 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4044 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4045 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4046 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4047 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4048 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4049 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4050 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4051 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://timbl.solidcommunity.net:8443>.
-_:b498_b441_b172_b124_b122_n3-272 acl:mode acl:Append, acl:Read, acl:Write;
+_:b3378_b3894_b3555_b6937_b6928_n3-4052 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4053 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4054 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4055 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4056 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4057 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4058 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4059 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4060 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4061 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4062 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4063 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4064 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4065 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4066 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4067 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4068 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4069 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://umai.noeldemartin.com>.
-<#id1635929591644> solid:publicId l:en.
-_:b498_b441_b172_b124_b122_n3-247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1646414710220>;
+_:b3378_b3894_b3555_b6937_b6928_n3-4070 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4071 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4072 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4073 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4074 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4075 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4076 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4077 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4078 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4079 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4080 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4081 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4082 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4083 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4084 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4085 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4086 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b3378_b3894_b3555_b6937_b6928_n3-4087 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770976265376>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b3378_b3894_b3555_b6937_b6928_n3-4088.
+_:b3378_b3894_b3555_b6937_b6928_n3-4089 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770976277843>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b3378_b3894_b3555_b6937_b6928_n3-4090.
+<#id1771844559879> solid:publicId lan:de.
+_:b3378_b3894_b3555_b6937_b6928_n3-3779 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770974719414>;
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-<#id1644420692100> solid:publicId l:en.
-_:b498_b441_b172_b124_b122_n3-249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1655232957134>;
+<#id1770974719414> solid:publicId lan:en.
+_:b3378_b3894_b3555_b6937_b6928_n3-3781 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770974760053>;
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-l:en schema:name "English"@en.
-<#id1646414710220> solid:publicId l:de.
-<#id1655232957134> solid:publicId l:de.
-l:de schema:name "German"@en.
+_:b3378_b3894_b3555_b6937_b6928_n3-3783 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1771844516418>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1770976265376> a soc:FacebookAccount;
+    foaf:accountName "timeaturdean".
+_:b3378_b3894_b3555_b6937_b6928_n3-4088 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770976277843>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1770976277843> a soc:LinkedInAccount;
+    foaf:accountName "timeaturdean".
+_:b3378_b3894_b3555_b6937_b6928_n3-4090 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770976265376>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+lan:de schema:name "German"@en.
+lan:en schema:name "English"@en.
+<#id1770974760053> solid:publicId lan:de.
+<#id1771844516418> solid:publicId lan:de.
 <#id1629189338421> a solid:CurrentRole;
-    vcard:role "";
+    vcard:role "Team lead";
     schema:description "Working on SolidOS";
     schema:startDate "2021-08-02"^^xsd:date;
     org:member <#me>;
-    org:organization <#id1634289234819>, <#id1651258958937>, <#id1651260070066>.
+    org:organization <#id1634289234819>, <#id1651258958937>, <#id1651260070066>;
+    org:role <http://data.europa.eu/esco/occupation/8e24c53a-9dc6-46d1-986b-48a93f20df2a>.
 <#id1634289234819> schema:name "Inrupt";
     a schema:ResearchOrganization.
+<http://data.europa.eu/esco/occupation/8e24c53a-9dc6-46d1-986b-48a93f20df2a> schema:name "Produktionsteamleiter im Bereich Gartenbau/Produktionsteamleiterin im Bereich Gartenbau".
 <#id1652973530958> org:member <#me>.
+<#id1771844723778> org:member <#me>.
+<#id1772623689127> schema:name "SelfEmployed".
