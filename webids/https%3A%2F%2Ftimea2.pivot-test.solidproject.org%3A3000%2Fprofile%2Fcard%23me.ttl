@@ -1,0 +1,26 @@
+@prefix : <#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix inbox: </inbox/>.
+@prefix set: </settings/>.
+@prefix timea: </>.
+@prefix pivot: <https://pivot-test.solidproject.org:3000/>.
+
+<> a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a foaf:Person;
+    vcard:fn "Timea 2";
+    vcard:note "asdvc";
+    vcard:organization-name "whatever";
+    vcard:role "something";
+    ldp:inbox inbox:;
+    space:preferencesFile set:prefs.ttl;
+    space:storage timea:;
+    solid:oidcIssuer pivot:;
+    solid:privateTypeIndex set:privateTypeIndex.ttl;
+    solid:publicTypeIndex set:publicTypeIndex.ttl;
+    foaf:account ( :id1771512080026 ).
