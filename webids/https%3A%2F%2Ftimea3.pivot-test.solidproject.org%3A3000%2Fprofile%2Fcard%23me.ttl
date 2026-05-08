@@ -1,0 +1,91 @@
+@prefix : <https://timea3.pivot-test.solidproject.org:3000/profile/card#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix ui: <http://www.w3.org/ns/ui#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix occup: <http://data.europa.eu/esco/occupation/>.
+@prefix inbox: <https://timea3.pivot-test.solidproject.org:3000/inbox/>.
+@prefix set: <https://timea3.pivot-test.solidproject.org:3000/settings/>.
+@prefix timea: <https://timea3.pivot-test.solidproject.org:3000/>.
+@prefix pivot: <https://pivot-test.solidproject.org:3000/>.
+@prefix p: <https://timea.solidcommunity.net/profile/>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix lan: <https://www.w3.org/ns/iana/language-code/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix card: <https://timea.solidcommunity.net/profile/card#>.
+
+occup:f2b15a0e-e65a-438a-affb-29b9d50b77d1 schema:name "software developer".
+skill:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d schema:name "Javanese".
+<> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a foaf:Person;
+    schema:description "y<dv<fgysdfg";
+    schema:knowsLanguage _:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_b368_n3-10;
+    schema:skills <#id1774000037607>;
+    wf:attachment <https://timea.solidcommunity.net/profile/18238146_10155235814682370_4572264504492849633_o.jpg>;
+    vcard:bday "2026-04-01";
+    vcard:fn "Timea 3 Test";
+    vcard:hasAddress <#id1774973026154>;
+    vcard:hasEmail <#id1773741782052>, <#id1773741793521>, <#id1778157965576>;
+    vcard:hasPhoto <solidos.png>;
+    vcard:hasTelephone <#id1773741795749>, <#id1774973020575>;
+    vcard:nickname "Imy";
+    vcard:note "text measfasqrq";
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    space:storage <../>;
+    solid:community "https://timea.solidcommunity.net/profile/card#me", "https://timea4.pivot-test.solidproject.org:3000/profile/card#me";
+    solid:oidcIssuer <https://pivot-test.solidproject.org:3000/>;
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#c83737"^^xsd:color;
+    solid:publicTypeIndex <publicTypeIndex.ttl>, <../settings/publicTypeIndex.ttl>;
+    ui:sharedPreferences <#SharedPreferences>;
+    foaf:account _:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_e_n37670;
+    foaf:knows "https://timea4.pivot-test.solidproject.org:3000/profile/card#me", card:me, <https://timea2.pivot-test.solidproject.org:3000/profile/card#me>, <https://angelo.veltens.org/profile/card#me>;
+    foaf:nick "Imy";
+    vcard:role "Tech Lead".
+_:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_b368_n3-10 rdf:first <#id1776890561061>;
+    rdf:rest _:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_b368_n3-11.
+<#id1774973026154> vcard:street-address "Selma-Steinmetz-Gasse 6,7";
+    vcard:locality "Vienna";
+    vcard:postal-code "1210";
+    vcard:country-name "Austria".
+<#id1778157965576> a vcard:Home;
+    vcard:value <mailto:timea.turdean@gmail.com>.
+_:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_e_n37670 rdf:first <#id1776974936305>;
+    rdf:rest _:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_e_n37770.
+<#id1776890561061> solid:publicId lan:es.
+_:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_b368_n3-11 rdf:first <#id1776890561062>;
+    rdf:rest _:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_b368_n3-12.
+_:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_e_n37770 rdf:first <#id1776974972048>;
+    rdf:rest _:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_e_n37870.
+lan:es schema:name "Spanish"@en.
+<#id1776890561062> solid:publicId lan:en.
+_:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_b368_n3-12 rdf:first <#id1776890561063>;
+    rdf:rest rdf:nil.
+<#id1776974972048> a soc:WhatsAppAccount.
+_:b383_b376_b374_b372_b369_b367_b365_b357_b2542_b1173_e_n37870 rdf:first <#id1774975018719>;
+    rdf:rest rdf:nil.
+lan:en schema:name "English"@en.
+<#id1776890561063> solid:publicId lan:de.
+lan:de schema:name "German"@en.
+<#id1773653094066> solid:publicId skill:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d.
+<#id1773738248352> a solid:PastRole;
+    schema:description "I work on teh SolidOS grant";
+    vcard:role "software developer - software developer";
+    schema:startDate "2026-02-01"^^xsd:date;
+    org:member <#me>;
+    org:organization <#id1776974904863>;
+    org:role occup:f2b15a0e-e65a-438a-affb-29b9d50b77d1.
+<#id1776974904863> schema:name "Self Employed";
+    a schema:Other, vcard:Organization;
+    org:location "Vienna".
+<#id1773934979608> solid:publicId lan:it.

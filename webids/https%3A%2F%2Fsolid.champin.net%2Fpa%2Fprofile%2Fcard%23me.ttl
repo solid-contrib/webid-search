@@ -18,7 +18,7 @@
     <http://www.w3.org/ns/pim/space#preferencesFile> <https://solid.champin.net/pa/settings/preferences.ttl>;
     ldp:inbox <https://solid.champin.net/pa/inbox/>;
     <http://www.w3.org/ns/pim/space#storage> <https://solid.champin.net/pa/>, <https://p20n.solidcommunity.net/>;
-    <http://www.w3.org/ns/solid/terms#publicTypeIndex> <https://solid.champin.net/pa/profile/publicTypeIndex.ttl>;
+    <http://www.w3.org/ns/solid/terms#publicTypeIndex> <https://solid.champin.net/pa/settings/publicTypeIndex>;
     rdfs:seeAlso <https://solid.champin.net/pa/profile/known>;
     <http://www.w3.org/2006/vcard/ns#organization-name> "W3C / Inria";
     <http://www.w3.org/ns/auth/acl#trustedApp> _:b1642_b1125_e_bn_j80z55.
