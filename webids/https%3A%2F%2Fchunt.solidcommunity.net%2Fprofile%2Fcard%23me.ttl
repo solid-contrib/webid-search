@@ -7,53 +7,51 @@
 @prefix solid: <http://www.w3.org/ns/solid/terms#>.
 @prefix space: <http://www.w3.org/ns/pim/space#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
-@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix occup: <http://data.europa.eu/esco/occupation/>.
-@prefix c1: <https://timea.solidcommunity.net/profile/card#>.
-@prefix chu: <https://chunt.solidcommunity.net/>.
 @prefix inbox: <https://chunt.solidcommunity.net/inbox/>.
-@prefix pro: <https://chunt.solidcommunity.net/profile/>.
-@prefix skill: <http://data.europa.eu/esco/skill/>.
-@prefix c40: <https://timbl.solidcommunity.net/profile/card#>.
+@prefix chu: <https://chunt.solidcommunity.net/>.
+@prefix wd: <http://www.wikidata.org/entity/>.
 @prefix l: <https://www.w3.org/ns/iana/language-code/>.
-@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
-@prefix ent: <http://www.wikidata.org/entity/>.
+@prefix c40: <https://timbl.solidcommunity.net/profile/card#>.
 @prefix sol: <https://solidcommunity.net/>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix Se: <https://chunt.solidcommunity.net/Settings/>.
+@prefix se: <https://chunt.solidcommunity.net/settings/>.
+@prefix car: <https://timea.solidcommunity.net/profile/card#>.
 
 skill:19a8293b-8e95-4de3-983f-77484079c389 schema:name "Java (computer programming)", "Java (programmation informatique)".
 skill:2164e860-7f20-48bc-b98c-5d9f8a561550 schema:name "design computer network".
 skill:487fd260-be20-4980-a8e4-b819f0b549f1 schema:name "add computer components".
-ent:Q1420011 schema:name "Tuskegee'de frengi testi"@tr.
-pro:card a foaf:PersonalProfileDocument;
-    space:preferencesFile <https://chunt.solidcommunity.net/Settings/Preferences.ttl>;
-    solid:publicTypeIndex <https://chunt.solidcommunity.net/profile/publicTypeIndex.ttl>;
+wd:Q1420011 schema:name "Tuskegee'de frengi testi"@tr.
+<> a foaf:PersonalProfileDocument;
+    space:preferencesFile <../Settings/Preferences.ttl>;
+    solid:publicTypeIndex <publicTypeIndex.ttl>;
     foaf:maker <#me>;
     foaf:primaryTopic <#me>.
 <#me> a schema:Person, foaf:Person, soc:blue, soc:round;
-    space:preferencesFile <https://chunt.solidcommunity.net/settings/prefs.ttl>;
-    solid:publicTypeIndex <https://chunt.solidcommunity.net/settings/publicTypeIndex.ttl>;
-    vcard:role "Team member of SolidOS Since '22";
-    solid:publicId ent:Q1420011;
-    schema:knowsLanguage _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1545, _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1547;
-    schema:skills <#id1671035762214>, <#id1740449298562>, <#id1740449319502>;
-    vcard:bday "1989-06-02"^^xsd:date;
+    space:preferencesFile <../Settings/Preferences.ttl>, <../settings/prefs.ttl>;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
+    solid:publicId wd:Q1420011;
+    schema:knowsLanguage _:b16823_n3-4384;
+    schema:skills <#id1671035762214>, <#id1740449319502>, <#id1776992746344>;
     vcard:fn "Chase";
     vcard:hasAddress <#id1743980443584>;
-    vcard:hasPhoto <https://chunt.solidcommunity.net/profile/44913708_494109507768475_5780795319197368320_n.jpg>;
-    vcard:note "";
+    vcard:hasPhoto <01e9688d-b39f-4296-b560-c190aca9a8fc.jpg>, <a1705132257_10.jpg>, <image_0.jpg>;
+    vcard:note "Hi, just a small town guy enjoying life. Anima Christi";
     vcard:organization-name "SolidOS";
-    acl:trustedApp _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1548, _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1549, _:e_bn_6tcxw50;
-    ldp:inbox <https://chunt.solidcommunity.net/inbox/>;
-    space:storage <https://chunt.solidcommunity.net/>;
-    solid:account <https://chunt.solidcommunity.net/>;
+    vcard:role "Team member of SolidOS Since '22";
+    acl:trustedApp _:b16823_n3-4385, _:b16823_n3-4386, _:b16823_n3-4387, _:b16823_n3-4388, _:b16823_n3-4389, _:b16823_n3-4390, _:b16823_n3-4391, _:b16823_n3-4392, _:b16823_n3-4393, _:b16823_n3-4394, _:b16823_n3-4395, _:b16823_n3-4396, _:b16823_n3-4397, _:b16823_n3-4398, _:b16823_n3-4399, _:b16823_n3-4400, _:b16823_n3-4401, _:b16823_n3-4402, _:b16823_n3-4403, _:b16823_n3-4404, _:b16823_n3-4405, _:b16823_n3-4406, _:b16823_n3-4407, _:b16823_n3-4408, _:b16823_n3-4409, _:b16823_n3-4410, _:b16823_n3-4411, _:b16823_n3-4412;
+    ldp:inbox <../inbox/>;
+    space:storage <../>;
+    solid:account <../>;
     solid:cornerDotColor "#ff6b6b"^^xsd:color;
     solid:cornerSquareColor "#fd3030"^^xsd:color;
     solid:oidcIssuer <https://solidcommunity.net/>;
     solid:preferredObjectPronoun "";
     solid:preferredRelativePronoun "";
     solid:preferredSubjectPronoun "";
-    solid:privateTypeIndex <https://chunt.solidcommunity.net/settings/privateTypeIndex.ttl>;
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
     solid:profileBackgroundColor "#ffffff"^^xsd:color;
     solid:profileHigh "#b917d9"^^xsd:color;
     solid:profileHighlightColor "#351d1d"^^xsd:color;
@@ -62,57 +60,24 @@ pro:card a foaf:PersonalProfileDocument;
     solid:Role "Bob";
     solid:testing "#bca4a4"^^xsd:color;
     solid:testingT 231223.2;
-    foaf:account _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1550;
-    foaf:knows <#me>, c40:me, c1:me;
-    foaf:name "Chase";
-    foaf:nick "".
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1545 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1678310156289>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1546.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1547 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1678310153127>;
+    foaf:account _:b16823_n3-4413;
+    foaf:knows <#me>, c40:me, car:me;
+    foaf:name "Chase".
+_:b16823_n3-4384 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1776986191680>;
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
 <#id1671035762214> solid:publicId skill:487fd260-be20-4980-a8e4-b819f0b549f1.
-<#id1740449298562> solid:publicId skill:2164e860-7f20-48bc-b98c-5d9f8a561550.
 <#id1740449319502> solid:publicId skill:19a8293b-8e95-4de3-983f-77484079c389.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1548 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <http://localhost:8080>.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1549 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <https://localhost:8443>.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1550 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1736013212056>;
+_:b16823_n3-4385 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <capacitor://localhost>.
+_:b16823_n3-4411 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <myapp://redirect>.
+_:b16823_n3-4412 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <myapp://redirect>.
+_:b16823_n3-4413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1736013212056>;
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-<#id1678310156289> solid:publicId l:fr.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_b7595_b7569_b70_b67_b38232_b11690_b1569_b1422_b4751_b3498_b3360_b3358_b3356_b3354_b59603_b17148_b17146_n3-1546 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1678310153127>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-<#id1678310153127> solid:publicId l:en.
-<#id1736013212056> a soc:dots, soc:dot, soc:extra-rounded.
-l:fr schema:name "French"@en.
-l:en schema:name "English"@en.
-_:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12485_b7598_b7596_e_bn_jag4s170 acl:mode acl:Append, acl:Write.
-<#id1655758623314> a solid:PastRole;
-    vcard:role "";
-    schema:description "";
-    schema:endDate "2022-06-15"^^xsd:date;
-    schema:startDate "2023-03-20"^^xsd:date;
-    org:member <#me>;
-    org:organization <#id1655768224729>, <#id1655831052262>, <#id1656102458545>.
-<#id1655768224729> schema:name "".
-<#id1655828985721> a solid:PastRole;
-    vcard:role "Test";
-    schema:description "";
-    schema:endDate "2024-03-15"^^xsd:date;
-    schema:startDate "2022-03-17"^^xsd:date;
-    org:member <#me>;
-    org:organization <#id1661791214683>;
-    org:role occup:50af07f0-7a75-424e-a66d-5a9deea10f4c.
-<#id1656270036503> a solid:PastRole;
-    vcard:role "Test2";
-    schema:description "";
-    schema:endDate "2023-04-15"^^xsd:date;
-    schema:startDate "2022-07-02"^^xsd:date;
-    org:member <#me>;
-    org:organization <#id1661791214683>;
-    org:role occup:50af07f0-7a75-424e-a66d-5a9deea10f4c.
 <#id1664641759052> vcard:value <mailto:test@solidos.com>.
 <#id1676948862869> solid:publicId l:en.
+l:en schema:name "English"@en.
 <#id1678228140299> solid:publicId l:fr.
 <#id1724797929667> a vcard:Cell;
     vcard:value <tel:660-225-0000>.
@@ -125,7 +90,24 @@ _:b617_b615_b86_b84_b82_b80_b13945_b13880_b13662_b13658_b12491_b12489_b12487_b12
 <#id1736012440622> a soc:extraRounded.
 <#id1736012441402> a soc:rounded.
 <#id1736012449131> a soc:rounded.
-<#id1738208897085> vcard:value <tel:3333333333333333333333333333333333333332222222222222222222222222222223333333333333333333333333333322222222222222222222222222222222222222222222222222222222222222222222222222222222222223333333333333333333333333333333333333333333333333222222222222222222222222222222222222222222222222222222>.
+<#id1736013212056> a soc:dots, soc:Digg, soc:dot, soc:extra-rounded.
+<#id1738208897085> vcard:value <tel:2>.
 <#id1739929199232> org:member <#me>.
-_:e_bn_6tcxw50 acl:mode acl:Append, acl:Read, acl:Write;
-    acl:origin <capacitor://localhost>.
+<#id1740449298562> solid:publicId skill:2164e860-7f20-48bc-b98c-5d9f8a561550.
+<#id1776986191680> solid:publicId l:en.
+_:b16823_n3-4414 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4415 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4416 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4417 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4418 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4419 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4420 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4421 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4422 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4423 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4424 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4425 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4426 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4427 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4428 acl:mode acl:Append, acl:Write.
+_:b16823_n3-4429 acl:mode acl:Append, acl:Write.
