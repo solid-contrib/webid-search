@@ -1,0 +1,66 @@
+@prefix : <https://bourgeoa.pivot-test.solidproject.org:3000/profile/card#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix set: <https://bourgeoa.pivot-test.solidproject.org:3000/settings/>.
+@prefix bou: <https://bourgeoa.pivot-test.solidproject.org:3000/>.
+@prefix inbox: <https://bourgeoa.pivot-test.solidproject.org:3000/inbox/>.
+@prefix piv: <https://pivot-test.solidproject.org:3000/>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix car: <https://timea.solidcommunity.net/profile/card#>.
+@prefix card: <https://solidos.solidcommunity.net/profile/card#>.
+@prefix ca: <https://solidproject.solidcommunity.net/profile/card#>.
+
+skill:e4c205f6-55ba-4bed-9c5d-2032058300c0 schema:name "compétence financière".
+<> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a foaf:Person;
+    schema:knowsLanguage _:b1190_b1188_n3-19, _:b1190_b1188_n3-20;
+    schema:skills <#id1769972154917>;
+    vcard:bday "1947-08-10";
+    vcard:fn "Bourgeoa";
+    vcard:hasAddress <#id1769972676716>;
+    vcard:hasEmail <#id1769972681596>;
+    vcard:hasPhoto <1000005688.jpg>;
+    vcard:hasTelephone <#id1769972684580>;
+    vcard:url _:b1190_b1188_n3-22;
+    acl:trustedApp _:b1190_b1188_n3-23;
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    space:storage <../>;
+    solid:community card:me, ca:me;
+    solid:oidcIssuer <https://pivot-test.solidproject.org:3000/>;
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
+    foaf:account <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>, _:b1190_b1188_n3-24, _:b1190_b1188_n3-25;
+    foaf:knows <../>, car:me.
+_:b1190_b1188_n3-19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1776074733179>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:b1190_b1188_n3-20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1776074761427>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b1190_b1188_n3-21.
+<#id1769972154917> solid:publicId skill:e4c205f6-55ba-4bed-9c5d-2032058300c0.
+_:b1190_b1188_n3-22 a vcard:WebID;
+    vcard:value "https://bourgeoa.solidcommunity.net/profile/card#me".
+_:b1190_b1188_n3-23 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://tester>.
+_:b1190_b1188_n3-24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1769936445876>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:b1190_b1188_n3-25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770888119548>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1776074761427> schema:name "English";
+    solid:publicId l:en.
+_:b1190_b1188_n3-21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1776074761428>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1769936592747> org:member <#me>.
+<#id1769936609851> org:member <#me>.
+l:en schema:name "English"@en.
+<#id1776074761428> schema:name "French";
+    solid:publicId l:fr.
+l:fr schema:name "French"@en.
