@@ -1,0 +1,71 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix set: </settings/>.
+@prefix bou: </>.
+@prefix piv: <https://pivot-test.solidproject.org:3000/>.
+@prefix car: <https://timea.solidcommunity.net/profile/card#>.
+@prefix ca: <https://solidproject.solidcommunity.net/profile/card#>.
+@prefix c: <https://solidos.solidcommunity.net/profile/card#>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix inb: </inbox/>.
+
+skill:e4c205f6-55ba-4bed-9c5d-2032058300c0
+schema:name "comp\u00e9tence financi\u00e8re".
+<> a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1769936592747 org:member :me.
+
+:id1769936609851 org:member :me.
+
+:id1769972154917 solid:publicId skill:e4c205f6-55ba-4bed-9c5d-2032058300c0 .
+
+:id1776074761427 schema:name "English"; solid:publicId l:en.
+
+:id1776074761428 schema:name "French"; solid:publicId l:fr.
+
+:id1779792297771 solid:publicId l:it.
+
+:me
+    a foaf:Person;
+    schema:knowsLanguage ( :id1779792297771 :id1776074761427 :id1776074761428 );
+    schema:skills :id1769972154917;
+    vcard:bday "1947-08-10";
+    vcard:fn "Bourgeoa";
+    vcard:hasAddress :id1769972676716;
+    vcard:hasEmail :id1769972681596;
+    vcard:hasPhoto <1000005688.jpg>;
+    vcard:hasTelephone :id1769972684580;
+    vcard:url
+            [
+                a vcard:WebID;
+                vcard:value
+                "https://bourgeoa.solidcommunity.net/profile/card#me"
+            ];
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://tester>
+            ];
+    ldp:inbox inb:;
+    space:preferencesFile set:prefs.ttl;
+    space:storage bou:;
+    solid:community c:me, ca:me;
+    solid:oidcIssuer piv:;
+    solid:privateTypeIndex set:privateTypeIndex.ttl;
+    solid:publicTypeIndex set:publicTypeIndex.ttl;
+    foaf:account ( ), ( :id1769936445876 ), ( :id1770888119548 );
+    foaf:knows bou:, car:me.
+l:en schema:name "English"@en.
+
+l:fr schema:name "French"@en.
+
+l:it schema:name "Italian"@en.
+
