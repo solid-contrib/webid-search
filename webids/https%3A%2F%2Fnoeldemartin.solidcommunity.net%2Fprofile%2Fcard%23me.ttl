@@ -1,4 +1,4 @@
-@prefix : <#>.
+@prefix : <https://noeldemartin.solidcommunity.net/profile/card#>.
 @prefix acl: <http://www.w3.org/ns/auth/acl#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix ldp: <http://www.w3.org/ns/ldp#>.
@@ -7,153 +7,87 @@
 @prefix solid: <http://www.w3.org/ns/solid/terms#>.
 @prefix space: <http://www.w3.org/ns/pim/space#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
-@prefix pro: <./>.
-@prefix inbox: </inbox/>.
-@prefix noe: </>.
+@prefix pro: <https://noeldemartin.solidcommunity.net/profile/>.
+@prefix inbox: <https://noeldemartin.solidcommunity.net/inbox/>.
+@prefix noe: <https://noeldemartin.solidcommunity.net/>.
 
-pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
-
-:me
-    a schema:Person, foaf:Person;
+<> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a schema:Person, foaf:Person;
     vcard:fn "Noel De Martin";
     vcard:hasPhoto <Avatar_laravel.png>;
     vcard:note "Learn more about me at https://noeldemartin.com";
-    acl:trustedApp
-        [ acl:mode acl:Append, acl:Read, acl:Write; acl:origin <blob://> ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <http://192.168.0.17:5173>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <http://localhost:3000>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <http://localhost:5173>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <http://localhost:8081>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <http://podpro.dev:443>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://0dataapp.github.io>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://aerogel.js.org>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://api.liqid.chat>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://bourgeoa.github.io>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://empty-solid-app.5apps.com>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://example.solidweb.org>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://fiddle.jshell.net>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://focus.noeldemartin.com>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://ibex.darcy.is>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://itme.online>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://noeldemartin.github.io>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://otto-aa.github.io>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://oxfordhcc.github.io>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://penny.vincenttunru.com>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://pod-browser.vercel.app>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://pod-chat.com>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://pod-os-browser.netlify.app>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://podbrowser.inrupt.com>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://podpro.dev>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://ramen.noeldemartin.com>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://sleepy.bike>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://solidcryptpad.github.io>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://umai.netlify.app>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://umai.noeldemartin.com>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://whyineedtofillusername.github.io>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://www.forkknifeswoon.com>
-            ];
-    ldp:inbox inbox:;
-    space:preferencesFile </settings/prefs.ttl>;
-    space:storage noe:;
-    solid:account noe:;
+    acl:trustedApp _:b21653_b21637_n3-2054, _:b21653_b21637_n3-2055, _:b21653_b21637_n3-2056, _:b21653_b21637_n3-2057, _:b21653_b21637_n3-2058, _:b21653_b21637_n3-2059, _:b21653_b21637_n3-2060, _:b21653_b21637_n3-2061, _:b21653_b21637_n3-2062, _:b21653_b21637_n3-2063, _:b21653_b21637_n3-2064, _:b21653_b21637_n3-2065, _:b21653_b21637_n3-2066, _:b21653_b21637_n3-2067, _:b21653_b21637_n3-2068, _:b21653_b21637_n3-2069, _:b21653_b21637_n3-2070, _:b21653_b21637_n3-2071, _:b21653_b21637_n3-2072, _:b21653_b21637_n3-2073, _:b21653_b21637_n3-2074, _:b21653_b21637_n3-2075, _:b21653_b21637_n3-2076, _:b21653_b21637_n3-2077, _:b21653_b21637_n3-2078, _:b21653_b21637_n3-2079, _:b21653_b21637_n3-2080, _:b21653_b21637_n3-2081, _:b21653_b21637_n3-2082, _:b21653_b21637_n3-2083, _:b21653_b21637_n3-2084, _:b21653_b21637_n3-2085;
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    space:storage <../>;
+    solid:account <../>;
     solid:oidcIssuer <https://solidcommunity.net/>;
-    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
-    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
     foaf:name "Noel De Martin".
-:personalWebsite
-    a solid:CurrentRole;
-    vcard:role
-        "Check out my personal website to learn more about me: https://noeldemartin.com";
-    org:member :me.
+_:b21653_b21637_n3-2054 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <blob://>.
+_:b21653_b21637_n3-2055 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://192.168.0.17:5173>.
+_:b21653_b21637_n3-2056 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:3000>.
+_:b21653_b21637_n3-2057 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:5173>.
+_:b21653_b21637_n3-2058 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:8081>.
+_:b21653_b21637_n3-2059 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.dev:443>.
+_:b21653_b21637_n3-2060 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://0dataapp.github.io>.
+_:b21653_b21637_n3-2061 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://aerogel.js.org>.
+_:b21653_b21637_n3-2062 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://api.liqid.chat>.
+_:b21653_b21637_n3-2063 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.github.io>.
+_:b21653_b21637_n3-2064 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://empty-solid-app.5apps.com>.
+_:b21653_b21637_n3-2065 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://example.solidweb.org>.
+_:b21653_b21637_n3-2066 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://fiddle.jshell.net>.
+_:b21653_b21637_n3-2067 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://focus.noeldemartin.com>.
+_:b21653_b21637_n3-2068 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ibex.darcy.is>.
+_:b21653_b21637_n3-2069 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://itme.online>.
+_:b21653_b21637_n3-2070 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://noeldemartin.github.io>.
+_:b21653_b21637_n3-2071 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://otto-aa.github.io>.
+_:b21653_b21637_n3-2072 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://oxfordhcc.github.io>.
+_:b21653_b21637_n3-2073 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://penny.vincenttunru.com>.
+_:b21653_b21637_n3-2074 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-browser.vercel.app>.
+_:b21653_b21637_n3-2075 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-chat.com>.
+_:b21653_b21637_n3-2076 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b21653_b21637_n3-2077 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podbrowser.inrupt.com>.
+_:b21653_b21637_n3-2078 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b21653_b21637_n3-2079 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b21653_b21637_n3-2080 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b21653_b21637_n3-2081 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidcryptpad.github.io>.
+_:b21653_b21637_n3-2082 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.netlify.app>.
+_:b21653_b21637_n3-2083 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b21653_b21637_n3-2084 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://whyineedtofillusername.github.io>.
+_:b21653_b21637_n3-2085 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://www.forkknifeswoon.com>.
