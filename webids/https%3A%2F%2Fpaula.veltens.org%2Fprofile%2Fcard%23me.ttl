@@ -8,4 +8,5 @@
     solid:oidcIssuer <https://paula.veltens.org/>;
     solid:publicTypeIndex <https://paula.veltens.org/profile/publicTypeIndex.ttl>;
     <http://www.w3.org/ns/pim/space#preferencesFile> <https://paula.veltens.org/Settings/Preferences.ttl>;
-    <http://www.w3.org/2006/vcard/ns#fn> "Paula".
+    <http://www.w3.org/2006/vcard/ns#fn> "Paula";
+    foaf:name "Paula".
