@@ -1,0 +1,136 @@
+@prefix : <https://pod.mpeters.dev/michael/profile/card#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix lan: <https://www.w3.org/ns/iana/language-code/>.
+@prefix inbox: <https://pod.mpeters.dev/michael/inbox/>.
+@prefix set: <https://pod.mpeters.dev/michael/settings/>.
+@prefix mic: <https://pod.mpeters.dev/michael/>.
+@prefix pod: <https://pod.mpeters.dev/>.
+@prefix card: <http://localhost:3000/alice/profile/card#>.
+@prefix v: <https://www.w3.org/ns/cid/v1#>.
+@prefix lws: <https://www.w3.org/ns/lws#>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+
+<> a foaf:PersonalProfileDocument.
+<#id1777218171020> vcard:country-name "Germany";
+    vcard:locality "Hamburg";
+    vcard:region "Hamburg".
+<#id1777218195590> a soc:BlueSkyAccount;
+    foaf:accountName "https://mpeters.dev".
+<#id1777218341760> a soc:MastodonAccount;
+    foaf:accountName "https://techhub.social/m5x5".
+<#id1777218341761> a soc:TwitterAccount;
+    foaf:accountName "m5x5p".
+<#id1780692356590> a soc:MatrixAccount;
+    foaf:accountName "@m5x5:matrix.org".
+<#id1780692356591> a soc:LinkedInAccount;
+    foaf:accountName "m5x5/".
+<#id1780692356592> a soc:GithubAccount;
+    foaf:accountName "https://github.com/m5x5".
+<#id1780692557852> a solid:CurrentRole;
+    schema:description "I built landing pages, maintained SaaS products, and worked with modern web technologies like HTML5, CSS3, JavaScript, React, Next.js, Vite, Astro, Twig, Node, SASS, GSAP, and CMS solutions like Typo3. I also built 3D experiences with Three.js and Babylon.js, shipped pixel-perfect UIs with TailwindCSS/SCSS/PostCSS, and used Docker, DDEV, and NGINX for DevOps.";
+    schema:startDate "2022-06-01"^^xsd:date;
+    vcard:role "Web Developer";
+    org:member <#me>;
+    org:organization <#id1783092709737>.
+<#me> a schema:Person, foaf:Person;
+    schema:knowsLanguage _:b15404_n3-3953, _:b15404_n3-3954, _:b15404_n3-3955;
+    schema:mainEntityOfPage <>;
+    schema:skills <#id1780692724393>, <#id1780692724394>, <#id1780692724395>, "JavaScript";
+    vcard:fn "Michael Peters";
+    vcard:hasAddress <#id1777218171020>;
+    vcard:hasEmail <#id1780692778767>;
+    vcard:hasPhoto <Michael%20Peters%20Avatar.png>;
+    vcard:note "Leidenschaftlicher Web Entwickler mit starkem Hintergrund in Frontend Entwicklung. Engagiert, jeden Tag als Entwickler zu wachsen."@de, "Passionate Web Developer with a strong background in Frontend Development. Committed to growing as a developer every day..";
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../settings/prefs.jsonld>;
+    space:storage <../>;
+    solid:oidcIssuer <../../>;
+    solid:oidcIssuerRegistrationToken "1db6eb07-b462-48ef-8670-53a77c77d8f9";
+    solid:privateTypeIndex <../settings/privateTypeIndex-af7e476c-fe95-48e3-bd71-48364e741a39>, <../settings/privateTypeIndex-f227258e-2a8a-4c81-a2f7-eb0ca54295d5>, <../settings/privateTypeIndex.jsonld>;
+    solid:publicTypeIndex <../settings/publicTypeIndex>, <../settings/publicTypeIndex-25bdd23a-18ea-48fe-b0db-5c192c0634d3>, <../settings/publicTypeIndex-62f3c1fc-a5fd-412f-9284-18cf497f8f35>, <../settings/publicTypeIndex.jsonld>;
+    foaf:account _:b15404_n3-3957;
+    foaf:homepage "https://mpeters.dev";
+    foaf:isPrimaryTopicOf <>;
+    foaf:knows card:me;
+    foaf:mbox "mailto:inbox@mpeters.dev";
+    foaf:name "michael";
+    v:service <#oidc>.
+_:b15404_n3-3953 rdf:first <#id1777218538325>;
+    rdf:rest rdf:nil.
+_:b15404_n3-3954 rdf:first <#id1777218556885>;
+    rdf:rest rdf:nil.
+_:b15404_n3-3955 rdf:first <#id1777218579002>;
+    rdf:rest _:b15404_n3-3956.
+<#id1780692724393> solid:publicId <skill:e5d1f825-60ed-4bdd-872a-e748c387f777>.
+<#id1780692724394> solid:publicId <skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7>.
+<#id1780692724395> solid:publicId <skill:69bbd53f-fbb0-4476-b4b2-ef7844464e28>.
+<#id1780692778767> a vcard:Home;
+    vcard:value <mailto:contact@mpeters.dev>.
+_:b15404_n3-3957 rdf:first <#id1780692356590>;
+    rdf:rest _:b15404_n3-3958.
+<#oidc> a lws:OpenIdProvider;
+    v:serviceEndpoint <../../>.
+<skill:e5d1f825-60ed-4bdd-872a-e748c387f777> schema:name "CSS".
+<skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7> schema:name "JavaScript".
+<skill:69bbd53f-fbb0-4476-b4b2-ef7844464e28> schema:name "web programming".
+_:b15404_n3-3956 rdf:first <#id1777218579003>;
+    rdf:rest rdf:nil.
+_:b15404_n3-3958 rdf:first <#id1777218341760>;
+    rdf:rest _:b15404_n3-3959.
+_:b15404_n3-3959 rdf:first <#id1780692356592>;
+    rdf:rest _:b15404_n3-3960.
+_:b15404_n3-3960 rdf:first <#id1777218195590>;
+    rdf:rest _:b15404_n3-3961.
+_:b15404_n3-3961 rdf:first <#id1777218341761>;
+    rdf:rest _:b15404_n3-3962.
+_:b15404_n3-3962 rdf:first <#id1780692356591>;
+    rdf:rest rdf:nil.
+<#id1783092470919> a solid:PastRole;
+    schema:startDate "2020-06-01"^^xsd:date;
+    vcard:role "Cross-platform productivity system Leptum";
+    org:member <#me>;
+    org:organization <#id1783092709738>;
+    schema:endDate "2022-08-01"^^xsd:date.
+<#id1783092709737> a schema:Corporation, vcard:Organization;
+    schema:uri "https://webschuppen.com";
+    org:location "Hamburg".
+<#id1783092709738> a schema:Corporation, vcard:Organization;
+    schema:name "Self-Employed".
+<#id1783092709739> a solid:PastRole;
+    schema:startDate "2017-04-01"^^xsd:date;
+    vcard:role "Image hosting website";
+    org:member <#me>;
+    org:organization <#id1783092709740>;
+    schema:endDate "2018-06-01"^^xsd:date.
+<#id1783092709740> a schema:Corporation, vcard:Organization;
+    schema:name "Self-employed".
+<#id1783092709741> a solid:PastRole;
+    schema:startDate "2016-01-01"^^xsd:date;
+    vcard:role "Organization & communication platform for schools (Schoolab)";
+    org:member <#me>;
+    org:organization <#id1783092709742>;
+    schema:endDate "2019-01-01"^^xsd:date.
+<#id1783092709742> a schema:Corporation, vcard:Organization;
+    schema:name "Self-employed".
+<#id1783092709743> a solid:PastRole;
+    schema:startDate "2017-07-01"^^xsd:date;
+    vcard:role "Full-stack Developer (React.js, Node.js)";
+    org:member <#me>;
+    org:organization <#id1783092709744>;
+    schema:endDate "2022-07-01"^^xsd:date.
+<#id1783092709744> a schema:Corporation, vcard:Organization;
+    schema:name "Self-Employed".
+<#id1777218538325> solid:publicId lan:de.
+<#id1777218556885> solid:publicId lan:en.
+<#id1777218579002> solid:publicId lan:en.
+<#id1777218579003> solid:publicId lan:de.
+lan:de schema:name "German".
+lan:en schema:name "English".
