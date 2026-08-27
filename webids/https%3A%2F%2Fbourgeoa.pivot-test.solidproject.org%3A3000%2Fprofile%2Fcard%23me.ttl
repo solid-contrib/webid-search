@@ -1,0 +1,78 @@
+@prefix : <https://bourgeoa.pivot-test.solidproject.org:3000/profile/card#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix as: <https://www.w3.org/ns/activitystreams#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix set: <https://bourgeoa.pivot-test.solidproject.org:3000/settings/>.
+@prefix bou: <https://bourgeoa.pivot-test.solidproject.org:3000/>.
+@prefix piv: <https://pivot-test.solidproject.org:3000/>.
+@prefix car: <https://timea.solidcommunity.net/profile/card#>.
+@prefix ca: <https://solidproject.solidcommunity.net/profile/card#>.
+@prefix c: <https://solidos.solidcommunity.net/profile/card#>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix inb: <https://bourgeoa.pivot-test.solidproject.org:3000/inbox/>.
+@prefix ap: <https://bourgeoa.pivot-test.solidproject.org:3000/activitypods-js/ap/>.
+
+skill:e4c205f6-55ba-4bed-9c5d-2032058300c0 schema:name "compétence financière".
+ap:actor a foaf:OnlineAccount, as:Person;
+    foaf:accountName "@bourgeoa@bourgeoa.pivot-test.solidproject.org:3000".
+<> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a foaf:Person;
+    schema:knowsLanguage _:n3-131;
+    schema:skills <#id1769972154917>;
+    vcard:bday "1947-08-10";
+    vcard:fn "Bourgeoa", "bourgeoa";
+    vcard:hasAddress <#id1769972676716>;
+    vcard:hasEmail <#id1769972681596>;
+    vcard:hasPhoto <1000005688.jpg>;
+    vcard:hasTelephone <#id1769972684580>;
+    vcard:nickname "Alain";
+    vcard:note "Test bio";
+    vcard:url _:n3-134;
+    acl:trustedApp _:n3-135;
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    space:storage <../>;
+    solid:community c:me, ca:me;
+    solid:oidcIssuer <https://pivot-test.solidproject.org:3000/>;
+    solid:preferredObjectPronoun "Him";
+    solid:preferredSubjectPronoun "He";
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
+    foaf:account ap:actor, <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>, _:n3-136, _:n3-137;
+    foaf:knows <../>, car:me;
+    foaf:nick "Alain";
+    foaf:name "bourgeoa".
+<#id1769936592747> org:member <#me>.
+<#id1769936609851> org:member <#me>.
+<#id1769972154917> solid:publicId skill:e4c205f6-55ba-4bed-9c5d-2032058300c0.
+<#id1776074761427> schema:name "English";
+    solid:publicId l:en.
+l:en schema:name "English"@en.
+<#id1776074761428> schema:name "French";
+    solid:publicId l:fr.
+l:fr schema:name "French"@en.
+<#id1779792297771> solid:publicId l:it.
+l:it schema:name "Italian"@en.
+_:n3-131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1779792297771>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-132.
+_:n3-132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1776074761427>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-133.
+_:n3-133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1776074761428>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:n3-134 a vcard:WebID;
+    vcard:value "https://bourgeoa.solidcommunity.net/profile/card#me".
+_:n3-135 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://tester>.
+_:n3-136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1769936445876>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:n3-137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770888119548>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
