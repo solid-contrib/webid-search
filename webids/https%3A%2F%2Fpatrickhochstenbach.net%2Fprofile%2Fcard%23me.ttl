@@ -16,7 +16,7 @@
     <http://dbpedia.org/ontology/orcidId> "0000-0001-8390-6171";
     <http://xmlns.com/foaf/0.1/mbox> <mailto:patrick.hochstenbach@ugent.be>;
     <http://www.w3.org/2006/vcard/ns#email> <mailto:patrick.hochstenbach@ugent.be>;
-    <http://www.w3.org/2006/vcard/ns#title> "PhD Student"@en, "Library IT"@en;
+    <http://www.w3.org/2006/vcard/ns#title> "Postdoctoral researcher"@en, "Data integrator"@en;
     <http://www.w3.org/ns/ldp#inbox> <https://patrickhochstenbach.net/inbox/>;
     <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://patrickhochstenbach.net/>;
     <http://www.w3.org/ns/pim/space#storage> <https://patrickhochstenbach.net/>, <https://hochstenbach.inrupt.net/>, <https://hochstenbach.solidcommunity.net/>;
