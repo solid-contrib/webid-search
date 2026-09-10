@@ -1,0 +1,23 @@
+@prefix : <#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix set: </settings/>.
+@prefix bou: </>.
+@prefix pivot: <https://pivot-test.solidproject.org:3000/>.
+@prefix inb: </inbox/>.
+
+<> a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a foaf:Person;
+    vcard:fn "bourgeoa", "bourgeoa:3000";
+    ldp:inbox inb:;
+    space:preferencesFile set:prefs.ttl;
+    space:storage bou:;
+    solid:oidcIssuer pivot:;
+    solid:privateTypeIndex set:privateTypeIndex.ttl;
+    solid:publicTypeIndex set:publicTypeIndex.ttl;
+    foaf:name "bourgeoa".
