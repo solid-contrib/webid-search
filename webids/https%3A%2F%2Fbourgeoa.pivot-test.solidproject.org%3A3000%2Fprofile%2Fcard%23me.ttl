@@ -1,0 +1,25 @@
+@prefix : <https://bourgeoa.pivot-test.solidproject.org:3000/profile/card#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix set: <https://bourgeoa.pivot-test.solidproject.org:3000/settings/>.
+@prefix bou: <https://bourgeoa.pivot-test.solidproject.org:3000/>.
+@prefix pivot: <https://pivot-test.solidproject.org:3000/>.
+@prefix inb: <https://bourgeoa.pivot-test.solidproject.org:3000/inbox/>.
+
+<https://bourgeoa.pivot-test.solidproject.org:3000> solid:oidcIssuerRegistrationToken "3de3e196-84a8-4e3d-88cb-58db168986fe".
+<> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a foaf:Person;
+    vcard:fn "bourgeoa", "bourgeoa:3000";
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    space:storage <../>;
+    solid:oidcIssuer <https://pivot-test.solidproject.org:3000/>;
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
+    foaf:name "bourgeoa";
+    foaf:knows <https://pod.mpeters.dev/michael/profile/card#me>.
