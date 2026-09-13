@@ -1,0 +1,151 @@
+@prefix : <https://timea.pivot-test.solidproject.org:3000/profile/card#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix cal: <http://www.w3.org/2002/12/cal/ical#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix ui: <http://www.w3.org/ns/ui#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix c39: <https://testingsolidos.solidcommunity.net/profile/card#>.
+@prefix c41: <https://chunt.solidcommunity.net/profile/card#>.
+@prefix te: <https://teamid.live/>.
+@prefix c2: <https://jeff-zucker.solidcommunity.net/profile/card#>.
+@prefix c37: <https://ewingson.solidcommunity.net/profile/card#>.
+@prefix c38: <https://noeldemartin.solidcommunity.net/profile/card#>.
+@prefix c32: <https://angelo.veltens.org/profile/card#>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix c40: <https://timbl.solidcommunity.net/profile/card#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix soli: <https://solidcommunity.net/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix c0: <https://bourgeoa.solidcommunity.net/profile/card#>.
+@prefix so: <http://localhost:8080/socialMedia.ttl#>.
+@prefix in: <https://timea.pivot-test.solidproject.org:3000/inbox/>.
+@prefix Set: <https://timea.pivot-test.solidproject.org:3000/Settings/>.
+@prefix timea: <https://timea.pivot-test.solidproject.org:3000/>.
+@prefix sett: <https://timea.pivot-test.solidproject.org:3000/settings/>.
+
+skill:19a8293b-8e95-4de3-983f-77484079c389 schema:name "Java (computer programming)".
+skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7 schema:name "JavaScript".
+skill:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d schema:name "Javanese".
+<> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a schema:Person, foaf:Person;
+    vcard:role "Software Engineer";
+    schema:knowsLanguage _:n3-644, _:n3-646;
+    schema:skills <#id1634289338819>, <#id1635929500934>, <#id1655232789144>;
+    wf:participation <#id1770034978739>;
+    vcard:bday "1986-12-14"^^xsd:date;
+    vcard:fn "Timea Turdean";
+    vcard:hasAddress <#id1651218114290>;
+    vcard:hasEmail <#id1628260052971>;
+    vcard:hasPhoto <18238146_10155235814682370_4572264504492849633_o.jpg>;
+    vcard:hasTelephone <#id1655232781826>;
+    vcard:note "Hello Solidverse!";
+    acl:trustedApp _:n3-648, _:n3-649, _:n3-650, _:n3-651, _:n3-652, _:n3-653, _:n3-654, _:n3-655, _:n3-656, _:n3-657, _:n3-658, _:n3-659, _:n3-660, _:n3-661, _:n3-662, _:n3-663, _:n3-664;
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../Settings/Preferences.ttl>;
+    space:storage <../>;
+    solid:account <../>;
+    solid:oidcIssuer <https://solidcommunity.net/>, <https://teamid.live/>;
+    solid:oidcIssuerRegistrationToken "bddef624-e74a-4aca-b2c8-289806cf6ee2";
+    solid:preferredObjectPronoun "her";
+    solid:preferredRelativePronoun "hers";
+    solid:preferredSubjectPronoun "she";
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#73baff"^^xsd:color;
+    solid:publicTypeIndex <publicTypeIndex.ttl>;
+    ui:sharedPreferences <#SharedPreferences>;
+    foaf:account <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>, _:n3-665;
+    foaf:Account _:n3-669;
+    foaf:knows c32:me, c0:me, c41:me, c37:me, c2:me, c38:me, c39:me, c40:me;
+    foaf:name "Timea Turdean".
+<#id1628260052971> a vcard:Home;
+    vcard:value <mailto:timea.turdean@gmail.com>.
+<#id1629189338421> a solid:CurrentRole;
+    schema:description "Working on SolidOS";
+    schema:startDate "2021-08-02"^^xsd:date;
+    vcard:role "";
+    org:member <#me>;
+    org:organization <#id1634289234819>, <#id1651258958937>, <#id1651260070066>.
+<#id1634289234819> schema:name "Inrupt";
+    a schema:ResearchOrganization.
+<#id1634289338819> solid:publicId skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7.
+<#id1635929500934> solid:publicId skill:19a8293b-8e95-4de3-983f-77484079c389.
+<#id1635929591644> solid:publicId l:en.
+l:en schema:name "English"@en.
+<#id1644420692100> solid:publicId l:en.
+<#id1646414710220> solid:publicId l:de.
+l:de schema:name "German"@en.
+<#id1652973530958> org:member <#me>.
+<#id1655232789144> solid:publicId skill:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d.
+<#id1655232957134> solid:publicId l:de.
+<#id1770034978739> cal:dtstart "2026-02-02T12:22:58Z"^^xsd:dateTime;
+    wf:participant <#me>;
+    ui:backgroundColor "#ede9cc".
+<#id1770717982785> a soc:FacebookAccount.
+<#id1770717988736> a soc:BlueSkyAccount.
+<#id1770801055511> a soc:TwitterAccount;
+    foaf:accountName "https://x.com/TimeaTurdean".
+<#id1770801824675> a so:BlueSkyAccount.
+_:n3-644 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1635929591644>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-645.
+_:n3-645 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1646414710220>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:n3-646 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1644420692100>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-647.
+_:n3-647 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1655232957134>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:n3-648 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:n3-649 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:n3-650 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:n3-651 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:n3-652 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:n3-653 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:n3-654 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:n3-655 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:n3-656 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:n3-657 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:n3-658 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:n3-659 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:n3-660 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:n3-661 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:n3-662 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:n3-663 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:n3-664 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:n3-665 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770717982785>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-666.
+_:n3-666 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770717988736>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-667.
+_:n3-667 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770801055511>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-668.
+_:n3-668 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770801127605>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:n3-669 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770801824675>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-670.
+_:n3-670 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1770801832534>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1770801832534> a so:Digg.
