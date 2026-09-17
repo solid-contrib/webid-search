@@ -1,0 +1,62 @@
+@prefix : <https://timea2.pivot-test.solidproject.org:3000/profile/card#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix inbox: <https://timea2.pivot-test.solidproject.org:3000/inbox/>.
+@prefix set: <https://timea2.pivot-test.solidproject.org:3000/settings/>.
+@prefix timea: <https://timea2.pivot-test.solidproject.org:3000/>.
+@prefix pivot: <https://pivot-test.solidproject.org:3000/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+
+<> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a foaf:Person;
+    vcard:bday "2026-08-06";
+    vcard:fn "Timea 2";
+    vcard:hasAddress <#id1788163770143>;
+    vcard:hasEmail <#id1788163769969>;
+    vcard:hasTelephone <#id1788163769826>;
+    vcard:nickname "Imy";
+    vcard:note "asdvc";
+    vcard:organization-name "whatever";
+    vcard:role "something";
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    space:storage <../>;
+    solid:oidcIssuer <https://pivot-test.solidproject.org:3000/>;
+    solid:preferredObjectPronoun "Her";
+    solid:preferredSubjectPronoun "She";
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
+    foaf:account _:b4219_n3-99;
+    foaf:nick "Imy";
+    foaf:knows <https://solidos.solidcommunity.net/profile/card>, <https://timea.solidcommunity.net/profile/card>.
+<#id1788163770143> vcard:country-name "Austria";
+    vcard:locality "Vienna";
+    vcard:postal-code "1210";
+    vcard:street-address "Selma-Steinmetz-Gasse 6, 7".
+<#id1788163769969> a vcard:Home;
+    vcard:value <mailto:timea.turdean@gmail.com>.
+<#id1788163769826> a vcard:Cell;
+    vcard:value <tel:436803153771>.
+_:b4219_n3-99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1788165515946>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1788164656906> a solid:CurrentRole;
+    org:member <#me>;
+    org:organization <#id1788164656907>.
+<#id1788164656907> a schema:Corporation, vcard:Organization.
+<#id1788164656908> a solid:FutureRole;
+    org:member <#me>;
+    org:organization <#id1788164656909>;
+    schema:description "hfkjhfjhfjk k.jgkljgkjg";
+    schema:endDate "2026-10-01"^^xsd:date;
+    schema:startDate "2026-04-01"^^xsd:date.
+<#id1788164656909> a schema:Corporation, vcard:Organization.
+<#id1788165515946> a soc:FacebookAccount;
+    foaf:accountName "timeaturdean".
