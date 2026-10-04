@@ -44,7 +44,7 @@
     dbo:birthPlace dbp:Ostend;
     dbo:birthDate "1987-02-28"^^xsd:date;
     foaf:birthday "02-28";
-    foaf:age 38;
+    foaf:age 39;
     foaf:gender "male"@en;
     dbo:location dbp:Ghent;
     foaf:based_near dbp:Ghent;
@@ -176,11 +176,23 @@ p:cyrus_afrasiabi a foaf:Person;
   rdfs:label "Cyrus Afrasiabi"@en.
 :me foaf:knows p:cyrus_afrasiabi.
 
+p:nitin_agrawal a foaf:Person;
+  foaf:givenName "Nitin"@en;
+  foaf:familyName "Agrawal"@en;
+  rdfs:label "Nitin Agrawal"@en.
+:me foaf:knows p:nitin_agrawal.
+
 p:marina_aguado a foaf:Person;
   foaf:givenName "Marina"@en;
   foaf:familyName "Aguado"@en;
   rdfs:label "Marina Aguado"@en.
 :me foaf:knows p:marina_aguado.
+
+p:ines_akaichi a foaf:Person;
+  foaf:givenName "Inès"@en;
+  foaf:familyName "Akaichi"@en;
+  rdfs:label "Inès Akaichi"@en.
+:me foaf:knows p:ines_akaichi.
 
 p:mehwish_alam a foaf:Person;
   foaf:givenName "Mehwish"@en;
@@ -193,6 +205,12 @@ p:harith_alani a foaf:Person;
   foaf:familyName "Alani"@en;
   rdfs:label "Harith Alani"@en.
 :me foaf:knows p:harith_alani.
+
+p:wael_s_albayaydh a foaf:Person;
+  foaf:givenName "Wael S."@en;
+  foaf:familyName "Albayaydh"@en;
+  rdfs:label "Wael S. Albayaydh"@en.
+:me foaf:knows p:wael_s_albayaydh.
 
 p:flor_karina_amanqui a foaf:Person;
   foaf:givenName "Flor Karina"@en;
@@ -211,6 +229,12 @@ p:grigoris_antoniou a foaf:Person;
   foaf:familyName "Antoniou"@en;
   rdfs:label "Grigoris Antoniou"@en.
 :me foaf:knows p:grigoris_antoniou.
+
+p:doerthe_arndt a foaf:Person;
+  foaf:givenName "Doerthe"@en;
+  foaf:familyName "Arndt"@en;
+  rdfs:label "Doerthe Arndt"@en.
+:me foaf:knows p:doerthe_arndt.
 
 p:dorthe_arndt a foaf:Person;
   foaf:givenName "Dörthe"@en;
@@ -302,6 +326,12 @@ p:jabran_bhatti a foaf:Person;
   rdfs:label "Jabran Bhatti"@en.
 :me foaf:knows p:jabran_bhatti.
 
+p:reuben_binns a foaf:Person;
+  foaf:givenName "Reuben"@en;
+  foaf:familyName "Binns"@en;
+  rdfs:label "Reuben Binns"@en.
+:me foaf:knows p:reuben_binns.
+
 p:victor_de_boer a foaf:Person;
   foaf:givenName "Victor"@en;
   foaf:familyName "de Boer"@en;
@@ -332,17 +362,23 @@ p:pieter_bonte a foaf:Person;
   rdfs:label "Pieter Bonte"@en.
 :me foaf:knows p:pieter_bonte.
 
+p:reinoud_bosch a foaf:Person;
+  foaf:givenName "Reinoud"@en;
+  foaf:familyName "Bosch"@en;
+  rdfs:label "Reinoud Bosch"@en.
+:me foaf:knows p:reinoud_bosch.
+
 p:wouter_van_den_bosch a foaf:Person;
   foaf:givenName "Wouter"@en;
   foaf:familyName "Van den Bosch"@en;
   rdfs:label "Wouter Van den Bosch"@en.
 :me foaf:knows p:wouter_van_den_bosch.
 
-p:reinoud_bosch a foaf:Person;
-  foaf:givenName "Reinoud"@en;
-  foaf:familyName "Bosch"@en;
-  rdfs:label "Reinoud Bosch"@en.
-:me foaf:knows p:reinoud_bosch.
+p:gabriele_bozzi a foaf:Person;
+  foaf:givenName "Gabriele"@en;
+  foaf:familyName "Bozzi"@en;
+  rdfs:label "Gabriele Bozzi"@en.
+:me foaf:knows p:gabriele_bozzi.
 
 p:john_breslin a foaf:Person;
   foaf:givenName "John"@en;
@@ -451,6 +487,12 @@ p:paolo_ciccarese a foaf:Person;
   foaf:familyName "Ciccarese"@en;
   rdfs:label "Paolo Ciccarese"@en.
 :me foaf:knows p:paolo_ciccarese.
+
+p:a_cimmino a foaf:Person;
+  foaf:givenName "A."@en;
+  foaf:familyName "Cimmino"@en;
+  rdfs:label "A. Cimmino"@en.
+:me foaf:knows p:a_cimmino.
 
 p:andrea_cimmino a foaf:Person;
   foaf:givenName "Andrea"@en;
@@ -619,6 +661,18 @@ p:pieterjan_de_potter a foaf:Person;
   foaf:familyName "De Roo"@en;
   rdfs:label "Jos De Roo"@en.
 :me foaf:knows <https://josd.github.io/card.rdf#me>.
+
+p:lennert_de_rouck a foaf:Person;
+  foaf:givenName "Lennert"@en;
+  foaf:familyName "De Rouck"@en;
+  rdfs:label "Lennert De Rouck"@en.
+:me foaf:knows p:lennert_de_rouck.
+
+p:jitse_de_smet a foaf:Person;
+  foaf:givenName "Jitse"@en;
+  foaf:familyName "De Smet"@en;
+  rdfs:label "Jitse De Smet"@en.
+:me foaf:knows p:jitse_de_smet.
 
 p:filip_de_turck a foaf:Person;
   foaf:givenName "Filip"@en;
@@ -890,6 +944,12 @@ p:stijn_goedertier a foaf:Person;
   rdfs:label "Stijn Goedertier"@en.
 :me foaf:knows p:stijn_goedertier.
 
+p:naman_goel a foaf:Person;
+  foaf:givenName "Naman"@en;
+  foaf:familyName "Goel"@en;
+  rdfs:label "Naman Goel"@en.
+:me foaf:knows p:naman_goel.
+
 p:simon_gottschalk a foaf:Person;
   foaf:givenName "Simon"@en;
   foaf:familyName "Gottschalk"@en;
@@ -1118,11 +1178,23 @@ p:sabrina_kirrane a foaf:Person;
   rdfs:label "Sabrina Kirrane"@en.
 :me foaf:knows p:sabrina_kirrane.
 
+p:marlin_kisia a foaf:Person;
+  foaf:givenName "Marlin"@en;
+  foaf:familyName "Kisia"@en;
+  rdfs:label "Marlin Kisia"@en.
+:me foaf:knows p:marlin_kisia.
+
 <https://solid.kjernsmo.net/profile/card#me> a foaf:Person;
   foaf:givenName "Kjetil"@en;
   foaf:familyName "Kjernsmo"@en;
   rdfs:label "Kjetil Kjernsmo"@en.
 :me foaf:knows <https://solid.kjernsmo.net/profile/card#me>.
+
+p:martin_klein a foaf:Person;
+  foaf:givenName "Martin"@en;
+  foaf:familyName "Klein"@en;
+  rdfs:label "Martin Klein"@en.
+:me foaf:knows p:martin_klein.
 
 p:kenny_knecht a foaf:Person;
   foaf:givenName "Kenny"@en;
@@ -1189,6 +1261,12 @@ p:tobias_kuhn a foaf:Person;
   foaf:familyName "Kuhn"@en;
   rdfs:label "Tobias Kuhn"@en.
 :me foaf:knows p:tobias_kuhn.
+
+p:gabriela_kurteva a foaf:Person;
+  foaf:givenName "Gabriela"@en;
+  foaf:familyName "Kurteva"@en;
+  rdfs:label "Gabriela Kurteva"@en.
+:me foaf:knows p:gabriela_kurteva.
 
 p:thomas_kurz a foaf:Person;
   foaf:givenName "Thomas"@en;
@@ -1405,6 +1483,12 @@ p:philippe_michiels a foaf:Person;
   foaf:familyName "Michiels"@en;
   rdfs:label "Philippe Michiels"@en.
 :me foaf:knows p:philippe_michiels.
+
+p:maarten_de_mildt a foaf:Person;
+  foaf:givenName "Maarten"@en;
+  foaf:familyName "de Mildt"@en;
+  rdfs:label "Maarten de Mildt"@en.
+:me foaf:knows p:maarten_de_mildt.
 
 p:pascal_molli a foaf:Person;
   foaf:givenName "Pascal"@en;
@@ -1640,11 +1724,23 @@ p:giuseppe_rizzo a foaf:Person;
   rdfs:label "Giuseppe Rizzo"@en.
 :me foaf:knows p:giuseppe_rizzo.
 
+p:v_rodriguez_doncel a foaf:Person;
+  foaf:givenName "V."@en;
+  foaf:familyName "Rodriguez-Doncel"@en;
+  rdfs:label "V. Rodriguez-Doncel"@en.
+:me foaf:knows p:v_rodriguez_doncel.
+
 p:philipp_rohde a foaf:Person;
   foaf:givenName "Philipp"@en;
   foaf:familyName "Rohde"@en;
   rdfs:label "Philipp Rohde"@en.
 :me foaf:knows p:philipp_rohde.
+
+p:julian_andres_rojas_melendez a foaf:Person;
+  foaf:givenName "Julián Andrés"@en;
+  foaf:familyName "Rojas Meléndez"@en;
+  rdfs:label "Julián Andrés Rojas Meléndez"@en.
+:me foaf:knows p:julian_andres_rojas_melendez.
 
 <https://julianrojas.org/#me> a foaf:Person;
   foaf:givenName "Julián"@en;
@@ -1748,11 +1844,23 @@ p:thomas_seidl a foaf:Person;
   rdfs:label "Thomas Seidl"@en.
 :me foaf:knows p:thomas_seidl.
 
+p:y_sellami a foaf:Person;
+  foaf:givenName "Y."@en;
+  foaf:familyName "Sellami"@en;
+  rdfs:label "Y. Sellami"@en.
+:me foaf:knows p:y_sellami.
+
 p:tom_seymoens a foaf:Person;
   foaf:givenName "Tom"@en;
   foaf:familyName "Seymoens"@en;
   rdfs:label "Tom Seymoens"@en.
 :me foaf:knows p:tom_seymoens.
+
+p:nigel_shadbolt a foaf:Person;
+  foaf:givenName "Nigel"@en;
+  foaf:familyName "Shadbolt"@en;
+  rdfs:label "Nigel Shadbolt"@en.
+:me foaf:knows p:nigel_shadbolt.
 
 p:harihar_shankar a foaf:Person;
   foaf:givenName "Harihar"@en;
@@ -1826,6 +1934,18 @@ p:steffen_stadtmuller a foaf:Person;
   rdfs:label "Steffen Stadtmüller"@en.
 :me foaf:knows p:steffen_stadtmuller.
 
+p:jake_stein a foaf:Person;
+  foaf:givenName "Jake"@en;
+  foaf:familyName "Stein"@en;
+  rdfs:label "Jake Stein"@en.
+:me foaf:knows p:jake_stein.
+
+p:jonas_steinbach a foaf:Person;
+  foaf:givenName "Jonas"@en;
+  foaf:familyName "Steinbach"@en;
+  rdfs:label "Jonas Steinbach"@en.
+:me foaf:knows p:jonas_steinbach.
+
 <http://tomayac.com/thomas_steiner.rdf#me> a foaf:Person;
   foaf:givenName "Thomas"@en;
   foaf:familyName "Steiner"@en;
@@ -1874,6 +1994,18 @@ p:hideaki_takeda a foaf:Person;
   rdfs:label "Hideaki Takeda"@en.
 :me foaf:knows p:hideaki_takeda.
 
+p:bryan_elliott_tam a foaf:Person;
+  foaf:givenName "Bryan Elliott"@en;
+  foaf:familyName "Tam"@en;
+  rdfs:label "Bryan Elliott Tam"@en.
+:me foaf:knows p:bryan_elliott_tam.
+
+p:bryan_elliott_tam a foaf:Person;
+  foaf:givenName "Bryan-Elliott"@en;
+  foaf:familyName "Tam"@en;
+  rdfs:label "Bryan-Elliott Tam"@en.
+:me foaf:knows p:bryan_elliott_tam.
+
 p:io_taxidou a foaf:Person;
   foaf:givenName "Io"@en;
   foaf:familyName "Taxidou"@en;
@@ -1885,6 +2017,12 @@ p:joseph_tennis a foaf:Person;
   foaf:familyName "Tennis"@en;
   rdfs:label "Joseph Tennis"@en.
 :me foaf:knows p:joseph_tennis.
+
+p:wouter_termont a foaf:Person;
+  foaf:givenName "Wouter"@en;
+  foaf:familyName "Termont"@en;
+  rdfs:label "Wouter Termont"@en.
+:me foaf:knows p:wouter_termont.
 
 p:raymond_terryn a foaf:Person;
   foaf:givenName "Raymond"@en;
@@ -1987,6 +2125,12 @@ p:davy_van_deursen a foaf:Person;
   foaf:familyName "Van Deursen"@en;
   rdfs:label "Davy Van Deursen"@en.
 :me foaf:knows p:davy_van_deursen.
+
+p:casper_van_gheluwe a foaf:Person;
+  foaf:givenName "Casper"@en;
+  foaf:familyName "Van Gheluwe"@en;
+  rdfs:label "Casper Van Gheluwe"@en.
+:me foaf:knows p:casper_van_gheluwe.
 
 p:joachim_van_herwegen a foaf:Person;
   foaf:givenName "Joachim"@en;
@@ -2240,6 +2384,18 @@ p:younes_zeboudj a foaf:Person;
   rdfs:label "Younes Zeboudj"@en.
 :me foaf:knows p:younes_zeboudj.
 
+p:jun_zhao a foaf:Person;
+  foaf:givenName "Jun"@en;
+  foaf:familyName "Zhao"@en;
+  rdfs:label "Jun Zhao"@en.
+:me foaf:knows p:jun_zhao.
+
+p:rui_zhao a foaf:Person;
+  foaf:givenName "Rui"@en;
+  foaf:familyName "Zhao"@en;
+  rdfs:label "Rui Zhao"@en.
+:me foaf:knows p:rui_zhao.
+
 p:claudia_d_amato a foaf:Person;
   foaf:givenName "Claudia"@en;
   foaf:familyName "d’Amato"@en;
@@ -2318,11 +2474,71 @@ p:claudia_d_amato a foaf:Person;
 
 # Publications
 
-<https://ruben.verborgh.org/publications/eschauzier_iswc_2025/#publication> a schema:ScholarlyArticle;
+<https://ruben.verborgh.org/publications/tam_swj_2026/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/tam_swj_2026/>;
+  rdfs:label """Traveling with a Map: Reducing the Search Space of Link Traversal Queries Using RDF Shapes"""@en;
+  foaf:maker p:bryan_elliott_tam, p:joachim_van_herwegen, <https://pietercolpaert.be/#me>, :me, <https://www.rubensworks.net/#me>;
+  bibo:authorList (p:bryan_elliott_tam p:joachim_van_herwegen <https://pietercolpaert.be/#me> :me <https://www.rubensworks.net/#me>).
+
+<https://dx.doi.org/10.1016/j.dib.2026.113216> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/esteves_dib_2026/>;
+  rdfs:label """Lifting the Cage of Consent: A Data Perspective on Evolvable Trust Relationships"""@en;
+  foaf:maker p:beatriz_esteves, :me;
+  bibo:authorList (p:beatriz_esteves :me).
+
+<https://ruben.verborgh.org/publications/kisia_opal_2026/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/kisia_opal_2026/>;
+  rdfs:label """ODRL Policy Chains for the DGA’s Altruism and Intermediation Frameworks"""@en;
+  foaf:maker p:marlin_kisia, p:gabriela_kurteva, :me, p:beatriz_esteves;
+  bibo:authorList (p:marlin_kisia p:gabriela_kurteva :me p:beatriz_esteves).
+
+<https://ruben.verborgh.org/publications/slabbinck_iswc_2025/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/slabbinck_iswc_2025/>;
+  rdfs:label """LOAMA: Low-Code ODRL Access Management Application"""@en;
+  foaf:maker p:wout_slabbinck, p:lennert_de_rouck, p:joachim_van_herwegen, p:wouter_termont, p:beatriz_esteves, :me;
+  bibo:authorList (p:wout_slabbinck p:lennert_de_rouck p:joachim_van_herwegen p:wouter_termont p:beatriz_esteves :me).
+
+<https://ruben.verborgh.org/publications/demeester_iswc_2025/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/demeester_iswc_2025/>;
+  rdfs:label """Tackling the Write-to-Read Web of Data with Trustflows"""@en;
+  foaf:maker <http://ben.de-meester.org/#me>, <https://julianrojas.org/#me>, p:femke_ongenae, <https://pietercolpaert.be/#me>, :me;
+  bibo:authorList (<http://ben.de-meester.org/#me> <https://julianrojas.org/#me> p:femke_ongenae <https://pietercolpaert.be/#me> :me).
+
+<https://rubeneschauzier.github.io/r3-metric-data-processor/Revisiting_Link_Prioritization_for_Efficient_Traversal_in_Structured_Decentralized_Environments-camera-ready.pdf> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/eschauzier_iswc_2025/>;
   rdfs:label """Revisiting Link Prioritization for Efficient Traversal in Structured Decentralized Environments"""@en;
   foaf:maker p:ruben_eschauzier, <https://www.rubensworks.net/#me>, :me;
   bibo:authorList (p:ruben_eschauzier <https://www.rubensworks.net/#me> :me).
+
+<https://ruben.verborgh.org/publications/slabbinck_wop_2025/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/slabbinck_wop_2025/>;
+  rdfs:label """Incentivizing Sustainable Data Exchanges through Unique Contextualization of History and Destiny"""@en;
+  foaf:maker p:wout_slabbinck, p:beatriz_esteves, p:maarten_de_mildt, p:ruben_dedecker, <https://julianrojas.org/#me>, p:sofie_verbrugge, p:didier_colle, <https://pietercolpaert.be/#me>, :me;
+  bibo:authorList (p:wout_slabbinck p:beatriz_esteves p:maarten_de_mildt p:ruben_dedecker <https://julianrojas.org/#me> p:sofie_verbrugge p:didier_colle <https://pietercolpaert.be/#me> :me).
+
+<https://ruben.verborgh.org/publications/esteves_wop_2025/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/esteves_wop_2025/>;
+  rdfs:label """Capturing Requests and Context for ODRL-Based Access and Usage Control"""@en;
+  foaf:maker p:beatriz_esteves, p:wout_slabbinck, p:y_sellami, p:a_cimmino, p:v_rodriguez_doncel, :me;
+  bibo:authorList (p:beatriz_esteves p:wout_slabbinck p:y_sellami p:a_cimmino p:v_rodriguez_doncel :me).
+
+<https://dx.doi.org/10.1145/3757490> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/zhao_cscw_2025/>;
+  rdfs:label """Libertas: Privacy-Preserving Collaborative Computation for Decentralized Personal Data Stores"""@en;
+  foaf:maker p:rui_zhao, p:naman_goel, p:nitin_agrawal, p:jun_zhao, p:jake_stein, p:wael_s_albayaydh, :me, p:reuben_binns, <https://www.w3.org/People/Berners-Lee/card#i>, p:nigel_shadbolt;
+  bibo:authorList (p:rui_zhao p:naman_goel p:nitin_agrawal p:jun_zhao p:jake_stein p:wael_s_albayaydh :me p:reuben_binns <https://www.w3.org/People/Berners-Lee/card#i> p:nigel_shadbolt).
+
+<https://ruben.verborgh.org/publications/slabbinck_semantics_2025/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/slabbinck_semantics_2025/>;
+  rdfs:label """May the FORCE Be with You? A Framework for ODRL Rule Compliance through Evaluation"""@en;
+  foaf:maker p:wout_slabbinck, <https://julianrojas.org/#me>, p:beatriz_esteves, :me, <https://pietercolpaert.be/#me>;
+  bibo:authorList (p:wout_slabbinck <https://julianrojas.org/#me> p:beatriz_esteves :me <https://pietercolpaert.be/#me>).
+
+<https://dx.doi.org/10.1007/978-3-032-05409-8_11> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/hochstenbach_tpdl_2025/>;
+  rdfs:label """The Claims Network: Collecting Research, Education, Impact, and Leadership Claims on the Decentralized Web"""@en;
+  foaf:maker p:patrick_hochstenbach, <http://public.lanl.gov/herbertv/profile/#me>, :me;
+  bibo:authorList (p:patrick_hochstenbach <http://public.lanl.gov/herbertv/profile/#me> :me).
 
 <https://ruben.verborgh.org/publications/hochstenbach_opal_2025/#publication> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/hochstenbach_opal_2025/>;
@@ -2348,17 +2564,53 @@ p:claudia_d_amato a foaf:Person;
   foaf:maker p:wout_slabbinck, <https://julianrojas.org/#me>, p:beatriz_esteves, :me;
   bibo:authorList (p:wout_slabbinck <https://julianrojas.org/#me> p:beatriz_esteves :me).
 
+<https://ruben.verborgh.org/publications/desmet_hyperagents_2025/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/desmet_hyperagents_2025/>;
+  rdfs:label """A Vision on Algebraic Flows for Declarative Resource Descriptions"""@en;
+  foaf:maker p:jitse_de_smet, :me, <https://www.rubensworks.net/#me>;
+  bibo:authorList (p:jitse_de_smet :me <https://www.rubensworks.net/#me>).
+
+<https://dx.doi.org/10.2218/ijdc.v19i1.920> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/hochstenbach_ijdc_2025/>;
+  rdfs:label """Event Notifications and Event Logs: Transparent Sharing of Artifact Life Cycle Data"""@en;
+  foaf:maker p:patrick_hochstenbach, :me, <http://public.lanl.gov/herbertv/profile/#me>;
+  bibo:authorList (p:patrick_hochstenbach :me <http://public.lanl.gov/herbertv/profile/#me>).
+
+<https://dx.doi.org/10.21428/5676bf2d.a76a90cf> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/hochstenbach_ipres_2024/>;
+  rdfs:label """Transparent and Trustworthy Artifact Life Cycle Data"""@en;
+  foaf:maker p:patrick_hochstenbach, p:martin_klein, <http://public.lanl.gov/herbertv/profile/#me>, :me;
+  bibo:authorList (p:patrick_hochstenbach p:martin_klein <http://public.lanl.gov/herbertv/profile/#me> :me).
+
+<https://dx.doi.org/10.5281/zenodo.12579289> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/hochstenbach_or_2024/>;
+  rdfs:label """Using an Event Notification Network for Transparent Sharing of Artifact Life Cycle Data"""@en;
+  foaf:maker p:patrick_hochstenbach, :me, <http://public.lanl.gov/herbertv/profile/#me>;
+  bibo:authorList (p:patrick_hochstenbach :me <http://public.lanl.gov/herbertv/profile/#me>).
+
 <https://ruben.verborgh.org/publications/slabbinck_sosy_2024/#publication> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/slabbinck_sosy_2024/>;
   rdfs:label """Enforcing Usage Control Policies in Solid using Rule-Based Web Agents"""@en;
   foaf:maker p:wout_slabbinck, <https://julianrojas.org/#me>, p:beatriz_esteves, :me, <https://pietercolpaert.be/#me>;
   bibo:authorList (p:wout_slabbinck <https://julianrojas.org/#me> p:beatriz_esteves :me <https://pietercolpaert.be/#me>).
 
+<https://ruben.verborgh.org/publications/steinbach_sds_2024/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/steinbach_sds_2024/>;
+  rdfs:label """Inter-Pod Credential Exchange Protocol via Linked Data Notifications"""@en;
+  foaf:maker p:jonas_steinbach, p:gertjan_de_mulder, <http://ben.de-meester.org/#me>, p:beatriz_esteves, :me;
+  bibo:authorList (p:jonas_steinbach p:gertjan_de_mulder <http://ben.de-meester.org/#me> p:beatriz_esteves :me).
+
 <https://smessie.github.io/Article-ESWC2024-DFDP/> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/smessaert_sds_2024/>;
   rdfs:label """DFDP: A Declarative Form Description Pipeline for Decentralizing Web Forms"""@en;
   foaf:maker p:ieben_smessaert, p:patrick_hochstenbach, <http://ben.de-meester.org/#me>, <https://www.rubensworks.net/#me>, :me;
   bibo:authorList (p:ieben_smessaert p:patrick_hochstenbach <http://ben.de-meester.org/#me> <https://www.rubensworks.net/#me> :me).
+
+<https://ruben.verborgh.org/publications/akaichi_sds_2024/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/akaichi_sds_2024/>;
+  rdfs:label """Interoperable and Continuous Usage Control Enforcement in Dataspaces"""@en;
+  foaf:maker p:ines_akaichi, p:wout_slabbinck, p:julian_andres_rojas_melendez, p:casper_van_gheluwe, p:gabriele_bozzi, <https://pietercolpaert.be/#me>, :me, p:sabrina_kirrane;
+  bibo:authorList (p:ines_akaichi p:wout_slabbinck p:julian_andres_rojas_melendez p:casper_van_gheluwe p:gabriele_bozzi <https://pietercolpaert.be/#me> :me p:sabrina_kirrane).
 
 <https://dx.doi.org/10.1007/978-3-031-78952-6_52> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/vanherwegen_eswc_2024/>;
@@ -2372,6 +2624,18 @@ p:claudia_d_amato a foaf:Person;
   foaf:maker p:jonni_hanski, <https://www.rubensworks.net/#me>, :me;
   bibo:authorList (p:jonni_hanski <https://www.rubensworks.net/#me> :me).
 
+<https://ruben.verborgh.org/publications/tam_amw_2024/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/tam_amw_2024/>;
+  rdfs:label """Opportunities for Shape-Based Optimization of Link Traversal Queries"""@en;
+  foaf:maker p:bryan_elliott_tam, <https://www.rubensworks.net/#me>, <https://pietercolpaert.be/#me>, :me;
+  bibo:authorList (p:bryan_elliott_tam <https://www.rubensworks.net/#me> <https://pietercolpaert.be/#me> :me).
+
+<https://ruben.verborgh.org/publications/eschauzier_amw_2024/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/eschauzier_amw_2024/>;
+  rdfs:label """The R³ Metric: Measuring Performance of Link Prioritization during Traversal-Based Query Processing"""@en;
+  foaf:maker p:ruben_eschauzier, <https://www.rubensworks.net/#me>, :me;
+  bibo:authorList (p:ruben_eschauzier <https://www.rubensworks.net/#me> :me).
+
 <https://comunica.github.io/Article-EDBT2024-SolidQueryDemo/> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/taelman_edbt_2024/>;
   rdfs:label """Demonstration of Link Traversal SPARQL Query Processing over the Decentralized Solid Environment"""@en;
@@ -2384,11 +2648,23 @@ p:claudia_d_amato a foaf:Person;
   foaf:maker p:elias_crum, <https://www.rubensworks.net/#me>, p:bart_buelens, p:gokhan_ertaylan, :me;
   bibo:authorList (p:elias_crum <https://www.rubensworks.net/#me> p:bart_buelens p:gokhan_ertaylan :me).
 
+<https://dx.doi.org/10.1186/s13326-024-00303-4> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/debrouwer_jbs_2024/>;
+  rdfs:label """Optimized Continuous Homecare Provisioning through Distributed Data-Driven Semantic Services and Cross-Organizational Workflows"""@en;
+  foaf:maker p:mathias_de_brouwer, p:pieter_bonte, p:doerthe_arndt, p:miel_vander_sande, <https://natadimou.com/#me>, :me, p:filip_de_turck, p:femke_ongenae;
+  bibo:authorList (p:mathias_de_brouwer p:pieter_bonte p:doerthe_arndt p:miel_vander_sande <https://natadimou.com/#me> :me p:filip_de_turck p:femke_ongenae).
+
 <https://dx.doi.org/10.3233/SW-233396> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/werbrouck_swj_2024/>;
   rdfs:label """ConSolid: A Federated Ecosystem for Heterogeneous Multi-Stakeholder Projects"""@en;
   foaf:maker p:jeroen_werbrouck, p:pieter_pauwels, p:jakob_beetz, :me, p:erik_mannens;
   bibo:authorList (p:jeroen_werbrouck p:pieter_pauwels p:jakob_beetz :me p:erik_mannens).
+
+<https://dx.doi.org/10.3233/SW-243726> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/vanherwegen_swj_2024/>;
+  rdfs:label """The Community Solid Server: Supporting Research & Development in an Evolving Ecosystem"""@en;
+  foaf:maker p:joachim_van_herwegen, :me;
+  bibo:authorList (p:joachim_van_herwegen :me).
 
 <https://ruben.verborgh.org/publications/hochstenbach_code4lib_2023/#publication> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/hochstenbach_code4lib_2023/>;
@@ -3044,17 +3320,17 @@ p:claudia_d_amato a foaf:Person;
   foaf:maker p:laurens_de_vocht, p:selver_softic, :me, p:erik_mannens, p:martin_ebner, p:rik_van_de_walle;
   bibo:authorList (p:laurens_de_vocht p:selver_softic :me p:erik_mannens p:martin_ebner p:rik_van_de_walle).
 
-<https://ruben.verborgh.org/publications/maleshkova_swit_2017/#publication> a schema:ScholarlyArticle;
-  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/maleshkova_swit_2017/>;
-  rdfs:label """Proceedings of the Second Workshop on Semantic Web Technologies for the Internet of Things"""@en;
-  foaf:maker p:maria_maleshkova, :me, p:amelie_gyrard;
-  bibo:authorList (p:maria_maleshkova :me p:amelie_gyrard).
-
 <https://ruben.verborgh.org/publications/verborgh_desemweb_2017/#publication> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/verborgh_desemweb_2017/>;
   rdfs:label """Proceedings of the Workshop on Decentralizing the Semantic Web"""@en;
   foaf:maker :me, p:tobias_kuhn, p:andrei_sambra;
   bibo:authorList (:me p:tobias_kuhn p:andrei_sambra).
+
+<https://ruben.verborgh.org/publications/maleshkova_swit_2017/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/maleshkova_swit_2017/>;
+  rdfs:label """Proceedings of the Second Workshop on Semantic Web Technologies for the Internet of Things"""@en;
+  foaf:maker p:maria_maleshkova, :me, p:amelie_gyrard;
+  bibo:authorList (p:maria_maleshkova :me p:amelie_gyrard).
 
 <https://dx.doi.org/10.1049/iet-its.2016.0269> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/colpaert_iet_2017/>;
@@ -4016,15 +4292,15 @@ p:claudia_d_amato a foaf:Person;
   foaf:maker :me, p:rik_van_de_walle;
   bibo:authorList (:me p:rik_van_de_walle).
 
-<https://ruben.verborgh.org/publications/verborgh_dagstuhl_2013a/#publication> a schema:ScholarlyArticle;
-  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/verborgh_dagstuhl_2013a/>;
-  rdfs:label """Semantics and Hypermedia Are Each Other’s Solution"""@en;
-  foaf:maker :me, <http://tomayac.com/thomas_steiner.rdf#me>, p:erik_mannens, p:rik_van_de_walle;
-  bibo:authorList (:me <http://tomayac.com/thomas_steiner.rdf#me> p:erik_mannens p:rik_van_de_walle).
-
 <https://ruben.verborgh.org/publications/verborgh_dagstuhl_2013b/#publication> a schema:ScholarlyArticle;
   foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/verborgh_dagstuhl_2013b/>;
   rdfs:label """Connecting Web APIs and Linked Data through Semantic, Functional Descriptions"""@en;
+  foaf:maker :me, <http://tomayac.com/thomas_steiner.rdf#me>, p:erik_mannens, p:rik_van_de_walle;
+  bibo:authorList (:me <http://tomayac.com/thomas_steiner.rdf#me> p:erik_mannens p:rik_van_de_walle).
+
+<https://ruben.verborgh.org/publications/verborgh_dagstuhl_2013a/#publication> a schema:ScholarlyArticle;
+  foaf:isPrimaryTopicOf <https://ruben.verborgh.org/publications/verborgh_dagstuhl_2013a/>;
+  rdfs:label """Semantics and Hypermedia Are Each Other’s Solution"""@en;
   foaf:maker :me, <http://tomayac.com/thomas_steiner.rdf#me>, p:erik_mannens, p:rik_van_de_walle;
   bibo:authorList (:me <http://tomayac.com/thomas_steiner.rdf#me> p:erik_mannens p:rik_van_de_walle).
 
@@ -4665,6 +4941,7 @@ p:claudia_d_amato a foaf:Person;
      <https://dx.doi.org/10.1007/978-3-031-78952-6_32>
      <https://dx.doi.org/10.1007/978-3-031-78952-6_52>
      <https://dx.doi.org/10.1007/978-3-031-94578-6_11>
+     <https://dx.doi.org/10.1007/978-3-032-05409-8_11>
      <https://dx.doi.org/10.1007/978-3-319-11964-9_12>
      <https://dx.doi.org/10.1007/978-3-319-16462-5_16>
      <https://dx.doi.org/10.1007/978-3-319-18818-8_29>
@@ -4753,7 +5030,11 @@ p:claudia_d_amato a foaf:Person;
      <https://dx.doi.org/10.1145/3366424.3383528>
      <https://dx.doi.org/10.1145/3487553.3524630>
      <https://dx.doi.org/10.1145/3543873.3589756>
+     <https://dx.doi.org/10.1145/3757490>
      <https://dx.doi.org/10.1155/2014/150696>
+     <https://dx.doi.org/10.1186/s13326-024-00303-4>
+     <https://dx.doi.org/10.21428/5676bf2d.a76a90cf>
+     <https://dx.doi.org/10.2218/ijdc.v19i1.920>
      <https://dx.doi.org/10.2298/CSIS151028031D>
      <https://dx.doi.org/10.3233/978-1-61499-562-3-37>
      <https://dx.doi.org/10.3233/SW-180319>
@@ -4764,12 +5045,14 @@ p:claudia_d_amato a foaf:Person;
      <https://dx.doi.org/10.3233/SW-222945>
      <https://dx.doi.org/10.3233/SW-223116>
      <https://dx.doi.org/10.3233/SW-233396>
+     <https://dx.doi.org/10.3233/SW-243726>
      <https://dx.doi.org/10.3390/info3040790>
      <https://dx.doi.org/10.3745/JIPS.2011.7.1.199>
      <https://dx.doi.org/10.3789/isqv23n4.2011.04>
      <https://dx.doi.org/10.4018/IJSWIS.2016070103>
      <https://dx.doi.org/10.4018/IJSWIS.2017100108>
      <https://dx.doi.org/10.5220/0006733106710679>
+     <https://dx.doi.org/10.5281/zenodo.12579289>
      <https://dx.doi.org/https://doi.org/10.13052/jwe1540-9589.2045>
      <https://dylanvanassche.be/#me>
      <https://hdelva.be/articles/decentralized-footpaths/>
@@ -4846,6 +5129,8 @@ p:claudia_d_amato a foaf:Person;
      <https://ruben.verborgh.org/blog/2025/08/12/inside-the-insight-economy/>
      <https://ruben.verborgh.org/phd/>
      <https://ruben.verborgh.org/publications/>
+     <https://ruben.verborgh.org/publications/akaichi_sds_2024/#publication>
+     <https://ruben.verborgh.org/publications/akaichi_sds_2024/>
      <https://ruben.verborgh.org/publications/amanqui_icwe_2016/>
      <https://ruben.verborgh.org/publications/amanqui_wetice_2016/#publication>
      <https://ruben.verborgh.org/publications/amanqui_wetice_2016/>
@@ -4913,6 +5198,7 @@ p:claudia_d_amato a foaf:Person;
      <https://ruben.verborgh.org/publications/dastgheib_iswc_demo_2017/#publication>
      <https://ruben.verborgh.org/publications/dastgheib_iswc_demo_2017/>
      <https://ruben.verborgh.org/publications/debackere_consent_2022/>
+     <https://ruben.verborgh.org/publications/debrouwer_jbs_2024/>
      <https://ruben.verborgh.org/publications/debrouwer_www_demo_2020/>
      <https://ruben.verborgh.org/publications/dedecker_icwe_2021/>
      <https://ruben.verborgh.org/publications/dedecker_quweda_2022/>
@@ -4934,6 +5220,8 @@ p:claudia_d_amato a foaf:Person;
      <https://ruben.verborgh.org/publications/demeester_fgcs_2020/>
      <https://ruben.verborgh.org/publications/demeester_iswc_2015/#publication>
      <https://ruben.verborgh.org/publications/demeester_iswc_2015/>
+     <https://ruben.verborgh.org/publications/demeester_iswc_2025/#publication>
+     <https://ruben.verborgh.org/publications/demeester_iswc_2025/>
      <https://ruben.verborgh.org/publications/demeester_iswc_demo_2017/#publication>
      <https://ruben.verborgh.org/publications/demeester_iswc_demo_2017/>
      <https://ruben.verborgh.org/publications/demeester_iswc_poster_2016/#publication>
@@ -4976,6 +5264,8 @@ p:claudia_d_amato a foaf:Person;
      <https://ruben.verborgh.org/publications/depaepe_eswc_pn_2016/>
      <https://ruben.verborgh.org/publications/depaepe_iswc_poster_2016/#publication>
      <https://ruben.verborgh.org/publications/depaepe_iswc_poster_2016/>
+     <https://ruben.verborgh.org/publications/desmet_hyperagents_2025/#publication>
+     <https://ruben.verborgh.org/publications/desmet_hyperagents_2025/>
      <https://ruben.verborgh.org/publications/devocht_comsis_2017/>
      <https://ruben.verborgh.org/publications/devocht_eswc_challenge_2016/>
      <https://ruben.verborgh.org/publications/devocht_eswc_poster_2015/>
@@ -5024,11 +5314,16 @@ p:claudia_d_amato a foaf:Person;
      <https://ruben.verborgh.org/publications/domingue_trusdekw_2023/>
      <https://ruben.verborgh.org/publications/dumontier_ismbeccb_2017/#publication>
      <https://ruben.verborgh.org/publications/dumontier_ismbeccb_2017/>
+     <https://ruben.verborgh.org/publications/eschauzier_amw_2024/#publication>
+     <https://ruben.verborgh.org/publications/eschauzier_amw_2024/>
      <https://ruben.verborgh.org/publications/eschauzier_eswc_2023/#publication>
      <https://ruben.verborgh.org/publications/eschauzier_eswc_2023/>
+     <https://ruben.verborgh.org/publications/eschauzier_iswc_2025/>
      <https://ruben.verborgh.org/publications/eschauzier_quweda_2023/>
      <https://ruben.verborgh.org/publications/esteves_opal_2025/#publication>
      <https://ruben.verborgh.org/publications/esteves_opal_2025/>
+     <https://ruben.verborgh.org/publications/esteves_wop_2025/#publication>
+     <https://ruben.verborgh.org/publications/esteves_wop_2025/>
      <https://ruben.verborgh.org/publications/filipowska_semantics_2015/#publication>
      <https://ruben.verborgh.org/publications/filipowska_semantics_2015/>
      <https://ruben.verborgh.org/publications/ghaem_sigarchian_icel_2015/#publication>
@@ -5074,13 +5369,19 @@ p:claudia_d_amato a foaf:Person;
      <https://ruben.verborgh.org/publications/hochstenbach_code4lib_2023/>
      <https://ruben.verborgh.org/publications/hochstenbach_elag_2015/#publication>
      <https://ruben.verborgh.org/publications/hochstenbach_elag_2015/>
+     <https://ruben.verborgh.org/publications/hochstenbach_ijdc_2025/>
+     <https://ruben.verborgh.org/publications/hochstenbach_ipres_2024/>
      <https://ruben.verborgh.org/publications/hochstenbach_opal_2025/#publication>
      <https://ruben.verborgh.org/publications/hochstenbach_opal_2025/>
+     <https://ruben.verborgh.org/publications/hochstenbach_or_2024/>
      <https://ruben.verborgh.org/publications/hochstenbach_tpdl_2022/>
+     <https://ruben.verborgh.org/publications/hochstenbach_tpdl_2025/>
      <https://ruben.verborgh.org/publications/hochstenbach_trusdekw_2023/#publication>
      <https://ruben.verborgh.org/publications/hochstenbach_trusdekw_2023/>
      <https://ruben.verborgh.org/publications/hubain_docsi_2016/#publication>
      <https://ruben.verborgh.org/publications/hubain_docsi_2016/>
+     <https://ruben.verborgh.org/publications/kisia_opal_2026/#publication>
+     <https://ruben.verborgh.org/publications/kisia_opal_2026/>
      <https://ruben.verborgh.org/publications/kjernsmo_noise_2015/#publication>
      <https://ruben.verborgh.org/publications/kjernsmo_noise_2015/>
      <https://ruben.verborgh.org/publications/knoblock_iswc_2013/#publication>
@@ -5145,15 +5446,23 @@ p:claudia_d_amato a foaf:Person;
      <https://ruben.verborgh.org/publications/rojas_wsp_2018/>
      <https://ruben.verborgh.org/publications/saleem_quweda_2017/#publication>
      <https://ruben.verborgh.org/publications/saleem_quweda_2017/>
+     <https://ruben.verborgh.org/publications/slabbinck_iswc_2025/#publication>
+     <https://ruben.verborgh.org/publications/slabbinck_iswc_2025/>
      <https://ruben.verborgh.org/publications/slabbinck_iswc_poster_2023/#publication>
      <https://ruben.verborgh.org/publications/slabbinck_iswc_poster_2023/>
      <https://ruben.verborgh.org/publications/slabbinck_mepdaw_2022/#publication>
      <https://ruben.verborgh.org/publications/slabbinck_mepdaw_2022/>
+     <https://ruben.verborgh.org/publications/slabbinck_semantics_2025/#publication>
+     <https://ruben.verborgh.org/publications/slabbinck_semantics_2025/>
      <https://ruben.verborgh.org/publications/slabbinck_sosy_2024/#publication>
      <https://ruben.verborgh.org/publications/slabbinck_sosy_2024/>
+     <https://ruben.verborgh.org/publications/slabbinck_wop_2025/#publication>
+     <https://ruben.verborgh.org/publications/slabbinck_wop_2025/>
      <https://ruben.verborgh.org/publications/slabbink_eswc_2025/>
      <https://ruben.verborgh.org/publications/smessaert_sds_2024/>
      <https://ruben.verborgh.org/publications/staab_www_2018/>
+     <https://ruben.verborgh.org/publications/steinbach_sds_2024/#publication>
+     <https://ruben.verborgh.org/publications/steinbach_sds_2024/>
      <https://ruben.verborgh.org/publications/steiner_aaai_2015/#publication>
      <https://ruben.verborgh.org/publications/steiner_aaai_2015/>
      <https://ruben.verborgh.org/publications/steiner_aim_2013/#publication>
@@ -5211,6 +5520,8 @@ p:claudia_d_amato a foaf:Person;
      <https://ruben.verborgh.org/publications/taelman_www_demo_2018/>
      <https://ruben.verborgh.org/publications/taelman_www_dev_2018/>
      <https://ruben.verborgh.org/publications/taelman_www_poster_2017/>
+     <https://ruben.verborgh.org/publications/tam_amw_2024/#publication>
+     <https://ruben.verborgh.org/publications/tam_amw_2024/>
      <https://ruben.verborgh.org/publications/taxidou_dapd_2018/>
      <https://ruben.verborgh.org/publications/taxidou_msm_2015/#publication>
      <https://ruben.verborgh.org/publications/taxidou_msm_2015/>
@@ -5246,6 +5557,7 @@ p:claudia_d_amato a foaf:Person;
      <https://ruben.verborgh.org/publications/vanherwegen_iswc_2015/>
      <https://ruben.verborgh.org/publications/vanherwegen_iswc_demo_2018/>
      <https://ruben.verborgh.org/publications/vanherwegen_semsci_2017/>
+     <https://ruben.verborgh.org/publications/vanherwegen_swj_2024/>
      <https://ruben.verborgh.org/publications/vanhoecke_coiote_2015/>
      <https://ruben.verborgh.org/publications/vanhoecke_worldjournal_2014/>
      <https://ruben.verborgh.org/publications/vanhooland_dh_2012/#publication>
@@ -5362,7 +5674,9 @@ p:claudia_d_amato a foaf:Person;
      <https://ruben.verborgh.org/publications/werbrouck_swj_2024/>
      <https://ruben.verborgh.org/publications/wilkinson_peerjcs_2017/>
      <https://ruben.verborgh.org/publications/zaveri_eswc_2017/>
+     <https://ruben.verborgh.org/publications/zhao_cscw_2025/>
      <https://rubeneschauzier.github.io/QuWeDa2023-Link-Queue-Analysis-Camera-Ready/QuWeDa_2023_Link_Queue_Analysis_Final.pdf>
+     <https://rubeneschauzier.github.io/r3-metric-data-processor/Revisiting_Link_Prioritization_for_Efficient_Traversal_in_Structured_Decentralized_Environments-camera-ready.pdf>
      <https://rubensworks.github.io/article-ldtraversal-security-short/>
      <https://rubensworks.github.io/article-quoted-triples-index/>
      <https://smessie.github.io/Article-ESWC2024-DFDP/>
@@ -5372,6 +5686,7 @@ p:claudia_d_amato a foaf:Person;
      <https://www.rubensworks.net/#me>
      <https://www.thundr.be/profile/laurens.ttl#me>
      <https://www.w3.org/People/Berners-Lee/card#i>
+     p:a_cimmino
      p:aaron_straup_cope
      p:agata_filipowska
      p:aidan_hogan
@@ -5408,7 +5723,9 @@ p:claudia_d_amato a foaf:Person;
      p:bert_marcelis
      p:bjorn_de_vidts
      p:bruno_koninckx
+     p:bryan_elliott_tam
      p:carlos_pedrinaci
+     p:casper_van_gheluwe
      p:chris_poppe
      p:christian_beecks
      p:christine_chichester
@@ -5432,6 +5749,7 @@ p:claudia_d_amato a foaf:Person;
      p:dilvan_moreira
      p:dimitri_schuurman
      p:dimitris_kontokostas
+     p:doerthe_arndt
      p:dominique_ritze
      p:dorthe_arndt
      p:dwight_van_lancker
@@ -5465,7 +5783,9 @@ p:claudia_d_amato a foaf:Person;
      p:fridolin_wild
      p:friedemann_mattern
      p:gabor_korodi
+     p:gabriela_kurteva
      p:gabriela_montoya
+     p:gabriele_bozzi
      p:gaetan_martens
      p:gayane_sedrakyan
      p:geert_thijs
@@ -5495,10 +5815,12 @@ p:claudia_d_amato a foaf:Person;
      p:hong_sun
      p:ieben_smessaert
      p:ilaria_tiddi
+     p:ines_akaichi
      p:io_taxidou
      p:ioannis_chrysakis
      p:ivo_velitchkov
      p:jabran_bhatti
+     p:jake_stein
      p:jakob_beetz
      p:jan_adriaenssens
      p:jasper_verplanken
@@ -5511,17 +5833,21 @@ p:claudia_d_amato a foaf:Person;
      p:jerven_bolleman
      p:jesse_marsh
      p:jesse_wright
+     p:jitse_de_smet
      p:joachim_van_herwegen
      p:joaquim_gabarro_valles
      p:johannes_hercher
      p:john_breslin
      p:john_domingue
      p:jonas_breuer
+     p:jonas_steinbach
      p:jonni_hanski
      p:jose_luis_redondo_garcia
      p:joseph_tennis
      p:juan_cano
      p:juan_carlos_corrales
+     p:julian_andres_rojas_melendez
+     p:jun_zhao
      p:kai_eckert
      p:kai_schlegel
      p:kalina_bontcheva
@@ -5538,11 +5864,13 @@ p:claudia_d_amato a foaf:Person;
      p:laurens_de_graeve
      p:laurens_de_vocht
      p:leandro_ordonez_ante
+     p:lennert_de_rouck
      p:lieven_de_marez
      p:luca_matteis
      p:lucila_ohno_machado
      p:luda_balakireva
      p:luiz_olavo_bonino_da_silva_santos
+     p:maarten_de_mildt
      p:maarten_verwaest
      p:manglik_animesh
      p:manolis_koubarakis
@@ -5556,7 +5884,9 @@ p:claudia_d_amato a foaf:Person;
      p:markus_freudenberg
      p:markus_krotzsch
      p:marlies_van_der_wee
+     p:marlin_kisia
      p:martin_ebner
+     p:martin_klein
      p:martin_vanbrabant
      p:mathias_coeckelbergs
      p:mathias_de_brouwer
@@ -5578,11 +5908,14 @@ p:claudia_d_amato a foaf:Person;
      p:morris_swertz
      p:muhammad_saleem
      p:nadine_inhelder
+     p:naman_goel
      p:neil_mckenna
      p:nelia_lasierra
+     p:nigel_shadbolt
      p:nikolaos_loutas
      p:nikoleta_tsabanaki
      p:nils_walravens
+     p:nitin_agrawal
      p:nixon_lyndon
      p:nuria_queralt_rosinach
      p:olivier_janssens
@@ -5619,6 +5952,7 @@ p:claudia_d_amato a foaf:Person;
      p:raymond_terryn
      p:rebecca_guenther
      p:reinoud_bosch
+     p:reuben_binns
      p:ricardo_usbeck
      p:riccardo_tommasini
      p:rik_van_de_walle
@@ -5628,6 +5962,7 @@ p:claudia_d_amato a foaf:Person;
      p:ruben_dedecker
      p:ruben_eschauzier
      p:ruben_wambacq
+     p:rui_zhao
      p:sabrina_kirrane
      p:sahar_vahdati
      p:sam_coppens
@@ -5676,17 +6011,21 @@ p:claudia_d_amato a foaf:Person;
      p:tom_schrijvers
      p:tom_seymoens
      p:trish_whetzel
+     p:v_rodriguez_doncel
      p:vassilios_peristeras
      p:veronique_volders
      p:victor_de_boer
      p:vincent_haerinck
      p:vincenzo_catania
+     p:wael_s_albayaydh
      p:wesley_de_neve
      p:wim_dereuddre
      p:wim_van_lancker
      p:wout_slabbinck
      p:wouter_maroy
+     p:wouter_termont
      p:wouter_van_den_bosch
+     p:y_sellami
      p:yannick_prie
      p:yannis_roussakis
      p:younes_zeboudj
