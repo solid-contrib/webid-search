@@ -1,63 +1,47 @@
-@prefix : <#>.
+@prefix : <https://bourgeoa1.solidcommunity.net/profile/card#>.
 @prefix acl: <http://www.w3.org/ns/auth/acl#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix ldp: <http://www.w3.org/ns/ldp#>.
 @prefix schema: <http://schema.org/>.
 @prefix solid: <http://www.w3.org/ns/solid/terms#>.
 @prefix space: <http://www.w3.org/ns/pim/space#>.
-@prefix pro: <./>.
-@prefix inbox: </inbox/>.
-@prefix bou: </>.
+@prefix pro: <https://bourgeoa1.solidcommunity.net/profile/>.
+@prefix inbox: <https://bourgeoa1.solidcommunity.net/inbox/>.
+@prefix bou: <https://bourgeoa1.solidcommunity.net/>.
 @prefix n0: <https://>.
 @prefix sol: <https://solidcommunity.net/>.
 
-pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
-
-:me
-    a schema:Person, foaf:Person;
-    acl:trustedApp
-            [
-                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
-                acl:origin <https://bourgeoa.ga:3000>
-            ],
-            [
-                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
-                acl:origin <https://bourgeoa.ga:3100>
-            ],
-            [
-                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
-                acl:origin <https://bourgeoa.solidcommunity.net:8443>
-            ],
-            [
-                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
-                acl:origin <https://bourgeoa.solidweb.org>
-            ],
-            [
-                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
-                acl:origin <https://bourgeoa2.solidcommunity.net>
-            ],
-            [
-                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
-                acl:origin <https://solidweb.me>
-            ],
-            [
-                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
-                acl:origin <https://test-pod.solidcommunity.net:8443>
-            ],
-            [
-                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
-                acl:origin <https://timbl.com>
-            ],
-            [
-                acl:mode acl:Append, acl:Read, acl:Write;
-                acl:origin <https://bourgeoa.bourgeoa.ga:3100>
-            ],
-        [ acl:mode acl:Append, acl:Read, acl:Write; acl:origin n0:tester ];
-    ldp:inbox inbox:;
-    space:preferencesFile </settings/prefs.ttl>;
-    space:storage bou:;
-    solid:account bou:;
-    solid:oidcIssuer sol:;
-    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
-    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
-    foaf:name "bourgeoa1".
+<> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a schema:Person, foaf:Person;
+    acl:trustedApp _:b11202_b11194_n3-2610, _:b11202_b11194_n3-2611, _:b11202_b11194_n3-2612, _:b11202_b11194_n3-2613, _:b11202_b11194_n3-2614, _:b11202_b11194_n3-2615, _:b11202_b11194_n3-2616, _:b11202_b11194_n3-2617, _:b11202_b11194_n3-2618, _:b11202_b11194_n3-2619;
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    space:storage <../>;
+    solid:account <../>;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
+    foaf:name "bourgeoa1";
+    solid:community "https://solidos.solidcommunity.net/profile/card#me".
+_:b11202_b11194_n3-2610 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.ga:3000>.
+_:b11202_b11194_n3-2611 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.ga:3100>.
+_:b11202_b11194_n3-2612 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.solidcommunity.net:8443>.
+_:b11202_b11194_n3-2613 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.solidweb.org>.
+_:b11202_b11194_n3-2614 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa2.solidcommunity.net>.
+_:b11202_b11194_n3-2615 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solidweb.me>.
+_:b11202_b11194_n3-2616 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://test-pod.solidcommunity.net:8443>.
+_:b11202_b11194_n3-2617 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b11202_b11194_n3-2618 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.bourgeoa.ga:3100>.
+_:b11202_b11194_n3-2619 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin n0:tester.
