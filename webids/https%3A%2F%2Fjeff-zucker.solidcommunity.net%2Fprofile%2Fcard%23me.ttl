@@ -1,5 +1,6 @@
 @prefix : <#>.
 @prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix as: <https://www.w3.org/ns/activitystreams#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix ldp: <http://www.w3.org/ns/ldp#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
@@ -22,14 +23,17 @@
 @prefix c38: <https://noeldemartin.solidcommunity.net/profile/card#>.
 @prefix c40: <https://timbl.solidcommunity.net/profile/card#>.
 @prefix c32: <https://angelo.veltens.org/profile/card#>.
-@prefix profi: <./>.
-@prefix n3: <http://>.
-@prefix n4: <https://>.
-@prefix n5: <file://>.
 @prefix inb0: </inbox/>.
 @prefix sol: <https://solidcommunity.net/>.
+@prefix ap: </fedipod/ap/>.
+@prefix set: </settings/>.
+@prefix so: <https://solidproject.solidcommunity.net/>.
+@prefix a: <https://fedipod.net/u/jeffz/ap/>.
 
-profi:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+ap:actor
+    a foaf:OnlineAccount, as:Person;
+    foaf:accountName "@jeffz@jeff-zucker.solidcommunity.net".
+<> a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
 
 :id1731004640342 a soc:FacebookAccount; foaf:id "dubzed".
 
@@ -56,7 +60,7 @@ a soc:OtherAccount; rdfs:label "testaccount"; foaf:homepage <https:example.com>.
             ],
             [
                 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
-                acl:origin n3:localhost
+                acl:origin <http://localhost>
             ],
             [
                 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
@@ -68,13 +72,13 @@ a soc:OtherAccount; rdfs:label "testaccount"; foaf:homepage <https:example.com>.
             ],
             [
                 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
-                acl:origin n4:solid-node-client
+                acl:origin <https://solid-node-client>
             ],
             [
                 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
                 acl:origin <https://solid.github.io>
             ],
-        [ acl:mode acl:Append, acl:Read, acl:Write; acl:origin n5: ],
+        [ acl:mode acl:Append, acl:Read, acl:Write; acl:origin <file://> ],
             [
                 acl:mode acl:Append, acl:Read, acl:Write;
                 acl:origin <http://127.0.0.1:3001>
@@ -200,8 +204,8 @@ a soc:OtherAccount; rdfs:label "testaccount"; foaf:homepage <https:example.com>.
                 acl:origin <https://umai.noeldemartin.com>
             ];
     ldp:inbox inb0:;
-    space:preferencesFile </settings/prefs.ttl>;
-    space:storage lo:, je:, jef:, jeff:, <https://solidproject.solidcommunity.net/>;
+    space:preferencesFile set:prefs.ttl;
+    space:storage lo:, je:, jef:, jeff:, so:;
     solid:account jef:;
     solid:community c0:me, c:me;
     solid:oidcIssuer loc:, sol:;
@@ -210,10 +214,12 @@ a soc:OtherAccount; rdfs:label "testaccount"; foaf:homepage <https:example.com>.
         "fbd62817-9a1e-4871-abc0-d4d9547d6db6";
     solid:preferredObjectPronoun "him";
     solid:preferredSubjectPronoun "he";
-    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
-    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
-    foaf:account ( :id1731004640342 :id1731004699999 :id1731004729864 );
+    solid:privateTypeIndex set:privateTypeIndex.ttl;
+    solid:publicTypeIndex set:publicTypeIndex.ttl;
+    foaf:account
+    ( :id1731004640342 :id1731004699999 :id1731004729864 ), ap:actor;
     foaf:knows
     c32:me, c36:me, c37:me, c38:me, c24:me, c0:me, c:me, c40:me, c7:me;
     foaf:name "Jeff Zucker";
-    foaf:nick "jeffz".
+    foaf:nick "jeffz";
+    as:outbox a:outbox.
