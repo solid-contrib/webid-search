@@ -1,0 +1,85 @@
+@prefix : <https://bourgeoa.pivot-test.solidproject.org:3000/profile/card#>.
+@prefix as: <https://www.w3.org/ns/activitystreams#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix set: <https://bourgeoa.pivot-test.solidproject.org:3000/settings/>.
+@prefix bou: <https://bourgeoa.pivot-test.solidproject.org:3000/>.
+@prefix pivot: <https://pivot-test.solidproject.org:3000/>.
+@prefix inb: <https://bourgeoa.pivot-test.solidproject.org:3000/inbox/>.
+@prefix ap: <https://bourgeoa.pivot-test.solidproject.org:3000/fedipod/ap/>.
+@prefix car: <https://pod.mpeters.dev/michael/profile/card#>.
+@prefix ent: <http://www.wikidata.org/entity/>.
+@prefix a: <https://fedipod.net/u/bourgeoa%40bourgeoa.pivot-test.solidproject.org%3A3000/ap/>.
+
+<https://bourgeoa.pivot-test.solidproject.org:3000> solid:oidcIssuerRegistrationToken "3de3e196-84a8-4e3d-88cb-58db168986fe".
+ap:actor a foaf:OnlineAccount, as:Person;
+    foaf:accountName "@bourgeoa@bourgeoa.pivot-test.solidproject.org:3000".
+<> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a foaf:Person;
+    vcard:bday "1947-08-10";
+    vcard:fn "Alain Bourgeois";
+    vcard:hasAddress <#id1790436219423>;
+    vcard:hasEmail <#id1790436219253>;
+    vcard:hasTelephone <#id1790436219094>;
+    vcard:nickname "bourgeoa";
+    vcard:note "Finance manager in the Oil Industry. Active member of the Solid Community.";
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    space:storage <../>;
+    solid:oidcIssuer <https://pivot-test.solidproject.org:3000/>;
+    solid:preferredObjectPronoun "Him";
+    solid:preferredSubjectPronoun "He";
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
+    foaf:account ap:actor;
+    foaf:knows car:me, <https://sharon.pivot-test.solidproject.org:3000/profile/card#me>;
+    foaf:name "bourgeoa";
+    foaf:nick "bourgeoa";
+    as:outbox a:outbox.
+<#id1790436219094> a vcard:Cell;
+    vcard:value <tel:0651603319>.
+<#id1790436219253> a vcard:Home;
+    vcard:value <mailto:alain.bourgeois10@gmail.com>.
+<#id1790436219423> vcard:country-name "France";
+    vcard:locality "St Montan";
+    vcard:postal-code "07220";
+    vcard:region "75";
+    vcard:street-address "35 Rue Du Terral".
+<#id1790436902280> a solid:PastRole;
+    schema:description "Budget and optimisation at Lacq location";
+    schema:endDate "1990-06-01"^^xsd:date;
+    schema:startDate "1990-05-01"^^xsd:date;
+    vcard:role "Finance controller";
+    org:member <#me>;
+    org:organization <#id1790437479026>.
+<#id1790437479026> a schema:Corporation, vcard:Organization;
+    schema:name "SNPA".
+<#id1790437172977> a solid:PastRole;
+    schema:description "Financing and reporting";
+    schema:endDate "1995-01-01"^^xsd:date;
+    schema:startDate "1990-08-01"^^xsd:date;
+    vcard:role "Finance manager";
+    org:member <#me>;
+    org:organization <#id1790437479025>.
+<#id1790437479025> a schema:Corporation, vcard:Organization;
+    schema:name "Petroland";
+    org:location "Netherland".
+<#id1790437479027> a solid:FutureRole;
+    schema:description "Management and project lead budget reporting.";
+    schema:endDate "2026-12-01"^^xsd:date;
+    schema:startDate "2026-08-01"^^xsd:date;
+    vcard:role "Project lead";
+    org:member <#me>;
+    org:organization <#id1790437479028>.
+<#id1790437479028> a schema:Corporation, vcard:Organization;
+    schema:name "Elf Gabon";
+    org:location "Port-Gentil, Gabon";
+    solid:publicId ent:Q3050805.

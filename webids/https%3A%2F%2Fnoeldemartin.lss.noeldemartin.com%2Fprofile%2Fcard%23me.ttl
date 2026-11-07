@@ -1,0 +1,14 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://www.w3.org/ns/pim/space#> .
+@prefix ns1: <http://www.w3.org/ns/solid/terms#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+<> a foaf:PersonalProfileDocument .
+<#me>
+  a foaf:Person ;
+  ns0:storage </> ;
+  ns1:oidcIssuer <https://lss.noeldemartin.com> ;
+  ns1:privateTypeIndex </settings/privateTypeIndex> ;
+  vcard:hasPhoto </profile/avatar.jpg> ;
+  foaf:name "Noel De Martin" .
+
