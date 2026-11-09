@@ -1,0 +1,188 @@
+@prefix : <#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix lan: <https://www.w3.org/ns/iana/language-code/>.
+@prefix inbox: <../inbox/>.
+@prefix set: <../settings/>.
+@prefix mic: <../>.
+@prefix pod: </>.
+@prefix card: <http://localhost:3000/alice/profile/card#>.
+@prefix v: <https://www.w3.org/ns/cid/v1#>.
+@prefix lws: <https://www.w3.org/ns/lws#>.
+@prefix Mic: <https://www.xing.com/profile/Michael_Peters339/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+
+<> a foaf:PersonalProfileDocument.
+
+:id1777218171020
+vcard:country-name "Germany"; vcard:locality "Hamburg"; vcard:region "Hamburg".
+:id1777218195590 a soc:BlueSkyAccount; foaf:accountName "mpeters.dev".
+
+:id1777218341760
+a soc:MastodonAccount; foaf:accountName "https://techhub.social/m5x5".
+:id1777218341761 a soc:TwitterAccount; foaf:accountName "m5x5p".
+
+:id1777218538325 solid:publicId lan:de.
+
+:id1777218556885 solid:publicId lan:en.
+
+:id1777218579002 solid:publicId lan:en.
+
+:id1777218579003 solid:publicId lan:de.
+
+:id1780692356590 a soc:MatrixAccount; foaf:accountName "@m5x5:matrix.org".
+
+:id1780692356591 a soc:LinkedInAccount; foaf:accountName "m5x5/".
+
+:id1780692356592 a soc:GithubAccount; foaf:accountName "https://github.com/m5x5".
+
+:id1780692557852
+    a solid:CurrentRole;
+    schema:description
+        "I built landing pages, maintained SaaS products, and worked with modern web technologies like HTML5, CSS3, JavaScript, React, Next.js, Vite, Astro, Twig, Node, SASS, GSAP, and CMS solutions like Typo3. I also built 3D experiences with Three.js and Babylon.js, shipped pixel-perfect UIs with TailwindCSS/SCSS/PostCSS, and used Docker, DDEV, and NGINX for DevOps.";
+    schema:startDate "2022-06-01"^^xsd:date;
+    vcard:role "Web Developer";
+    org:member :me;
+    org:organization :id1787255959373 .
+:id1780692724394 solid:publicId <skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7>.
+
+:id1780692724395 solid:publicId <skill:69bbd53f-fbb0-4476-b4b2-ef7844464e28>.
+
+:id1780692778767 a vcard:Home; vcard:value <mailto:contact@mpeters.dev>.
+
+:id1783092470919
+    a solid:PastRole;
+    schema:endDate "2022-08-01"^^xsd:date;
+    schema:startDate "2020-06-01"^^xsd:date;
+    vcard:role "Cross-platform productivity system Leptum";
+    org:member :me;
+    org:organization :id1787255959374 .
+:id1783092709739
+    a solid:PastRole;
+    schema:endDate "2018-06-01"^^xsd:date;
+    schema:startDate "2017-04-01"^^xsd:date;
+    vcard:role "Image hosting website";
+    org:member :me;
+    org:organization :id1787255959377 .
+:id1783092709741
+    a solid:PastRole;
+    schema:endDate "2019-01-01"^^xsd:date;
+    schema:startDate "2016-01-01"^^xsd:date;
+    vcard:role "Organization & communication platform for schools (Schoolab)";
+    org:member :me;
+    org:organization :id1787255959376 .
+:id1783092709743
+    a solid:PastRole;
+    schema:endDate "2022-07-01"^^xsd:date;
+    schema:startDate "2017-07-01"^^xsd:date;
+    vcard:role "Full-stack Developer (React.js, Node.js)";
+    org:member :me;
+    org:organization :id1787255959375 .
+:id1787255959373
+    a schema:Corporation, vcard:Organization;
+    schema:name "webschuppen GmbH";
+    schema:uri "https://webschuppen.com";
+    org:location "Hamburg".
+:id1787255959374
+a schema:Corporation, vcard:Organization; schema:name "Self-Employed".
+:id1787255959375
+a schema:Corporation, vcard:Organization; schema:name "Self-Employed".
+:id1787255959376
+a schema:Corporation, vcard:Organization; schema:name "Self-employed".
+:id1787255959377
+a schema:Corporation, vcard:Organization; schema:name "Self-employed".
+:id1787256659234 solid:publicId [ schema:name "React" ].
+
+:id1787667726685 solid:publicId [ schema:name "Vite.js" ].
+
+:id1787667726686 solid:publicId [ schema:name "CSS3" ].
+
+:id1787667726687 solid:publicId [ schema:name "HTML5" ].
+
+:id1787667726688 solid:publicId [ schema:name "TailwindCSS" ].
+
+:id1787667818317 solid:publicId [ schema:name "GitLab Pipelines" ].
+
+:id1787667818318 solid:publicId [ schema:name "Linux" ].
+
+:id1787667818319 solid:publicId [ schema:name "Golang" ].
+
+:id1787667818320 solid:publicId [ schema:name "MongoDB" ].
+
+:id1787667818321 solid:publicId [ schema:name "Node.js" ].
+
+:id1787667818322 solid:publicId [ schema:name "Chrome Extensions" ].
+
+:id1787667818323 solid:publicId [ schema:name "Gatsby" ].
+
+:id1787667818324 solid:publicId [ schema:name "Flutter" ].
+
+:id1787667818325 solid:publicId [ schema:name "Webpack" ].
+
+:id1787667818326 solid:publicId [ schema:name "THREE.js" ].
+
+:id1790780107117
+    a soc:OtherAccount;
+    foaf:homepage Mic:;
+    foaf:icon
+        "data:image/svg+xml;utf8,%0A%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20%0A%20%20%20%20width%3D%2230%22%20%0A%20%20%20%20height%3D%2230%22%20%0A%20%20%20%20viewBox%3D%220%200%2030%2030%22%20%0A%20%20%20%20fill%3D%22none%22%0A%20%20%20%20aria-hidden%3D%22true%22%0A%20%20%20%20focusable%3D%22false%22%0A%20%20%3E%0A%20%20%20%20%3Crect%20width%3D%2230%22%20height%3D%2230%22%20rx%3D%225%22%20fill%3D%22black%22%20fill-opacity%3D%220.2%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M14.1093%206.74536C14.4804%206.01811%2015.5196%206.01811%2015.8907%206.74536L17.7665%2010.4209C17.9118%2010.7056%2018.1844%2010.9037%2018.5001%2010.9539L22.5754%2011.6021C23.3817%2011.7303%2023.7028%2012.7186%2023.1259%2013.2963L20.2099%2016.216C19.984%2016.4422%2019.8798%2016.7627%2019.9296%2017.0785L20.5726%2021.1546C20.6998%2021.9611%2019.8591%2022.5719%2019.1314%2022.2017L15.4534%2020.3307C15.1685%2020.1857%2014.8315%2020.1857%2014.5466%2020.3307L10.8686%2022.2017C10.1409%2022.5719%209.30023%2021.9611%209.42744%2021.1546L10.0704%2017.0785C10.1202%2016.7627%2010.016%2016.4422%209.79012%2016.216L6.87413%2013.2963C6.29716%2012.7186%206.61827%2011.7303%207.42462%2011.6021L11.4999%2010.9539C11.8156%2010.9037%2012.0882%2010.7056%2012.2335%2010.4209L14.1093%206.74536Z%22%20fill%3D%22%23F4F4F4%22%2F%3E%0A%20%20%3C%2Fsvg%3E%0A".
+:me
+    a schema:Person, foaf:Person;
+    schema:knowsLanguage
+        ( :id1777218556885 ), ( :id1777218579002 :id1777218579003 ),
+        ( :id1777218538325 ), ( :id1777218556885 ),
+        ( :id1777218579002 :id1777218579003 ), ( :id1777218538325 );
+    schema:mainEntityOfPage <>;
+    schema:skills
+        "JavaScript", :id1780692724394, :id1780692724395, :id1787256659234,
+        :id1787667726685, :id1787667726686, :id1787667726687, :id1787667726688,
+        :id1787667818317, :id1787667818318, :id1787667818319, :id1787667818320,
+        :id1787667818321, :id1787667818322, :id1787667818323, :id1787667818324,
+        :id1787667818325, :id1787667818326;
+    vcard:fn "Michael Peters";
+    vcard:hasAddress :id1777218171020;
+    vcard:hasEmail :id1780692778767;
+    vcard:hasPhoto <Michael%20Peters%20Avatar.png>;
+    vcard:note
+        "Leidenschaftlicher Web Entwickler mit starkem Hintergrund in Frontend Entwicklung. Engagiert, jeden Tag als Entwickler zu wachsen."@de,
+        "Passionate Web Developer with a strong background in Frontend Development. Committed to growing as a developer every day..";
+    ldp:inbox inbox:;
+    space:preferencesFile set:prefs.jsonld;
+    space:storage mic:;
+    solid:oidcIssuer pod:;
+    solid:oidcIssuerRegistrationToken "1db6eb07-b462-48ef-8670-53a77c77d8f9";
+    solid:privateTypeIndex
+        set:privateTypeIndex-af7e476c-fe95-48e3-bd71-48364e741a39,
+        set:privateTypeIndex-f227258e-2a8a-4c81-a2f7-eb0ca54295d5,
+        set:privateTypeIndex.jsonld;
+    solid:publicTypeIndex
+        set:publicTypeIndex,
+        set:publicTypeIndex-25bdd23a-18ea-48fe-b0db-5c192c0634d3,
+        set:publicTypeIndex-62f3c1fc-a5fd-412f-9284-18cf497f8f35,
+        set:publicTypeIndex.jsonld;
+    foaf:account
+            ( :id1780692356592 :id1777218341760 :id1780692356590
+            :id1777218195590 :id1777218341761 :id1780692356591 :id1790780107117
+            );
+    foaf:homepage "https://mpeters.dev";
+    foaf:isPrimaryTopicOf <>;
+    foaf:knows card:me;
+    foaf:mbox "mailto:inbox@mpeters.dev";
+    foaf:name "michael";
+    v:service :oidc.
+:oidc a lws:OpenIdProvider; v:serviceEndpoint pod: .
+
+lan:de schema:name "German".
+
+lan:en schema:name "English".
+
+<skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7> schema:name "JavaScript".
+
+<skill:69bbd53f-fbb0-4476-b4b2-ef7844464e28> schema:name "web programming".
+

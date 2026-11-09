@@ -1,0 +1,102 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix solid: <http://www.w3.org/ns/solid/terms#> .
+@prefix acl: <http://www.w3.org/ns/auth/acl#> .
+@prefix pim: <http://www.w3.org/ns/pim/space#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+<https://melvincarvalho.com/test/> <https://w3id.org/user#genesis> <gitmark:92fca7042aec42a799d2c0386c81fb2f24a1982ce42136400d859b375d1a3f2e:0> ;
+    <https://w3id.org/user#name> "Test" .
+<https://melvincarvalho.com/melt/> <https://w3id.org/user#genesis> <gitmark:0ed1beabefca1c86996d48d968c60930c26ee8a44a381356abc52bceb7c5729a:0> ;
+    <https://w3id.org/user#name> "MELT" .
+<https://melvincarvalho.com/bookmarks/> <https://w3id.org/user#genesis> <gitmark:b4f850d3d8c49bea52b44b0e6023a873f2e89167b2abb7284a9d5de2327f86d3:0> ;
+    <https://w3id.org/user#name> "Bookmarks" .
+<http://chores.gitmark.me/> <https://w3id.org/user#genesis> <gitmark:48a5e0fbf0cf4e660d10d20544e67e003eb973bdb80589cc6560d1bd6c6f1cbb:1> ;
+    <https://w3id.org/user#name> "Chores" .
+<https://melvincarvalho.com/letterboxd/> <https://w3id.org/user#genesis> <gitmark:c6a1405140efd1fcdd1a75f125de72a57783ad97150271174fcb3f8b768622e0:0> ;
+    <https://w3id.org/user#name> "Movies" .
+<http://taskify.org/> <https://w3id.org/user#name> "Taskify" .
+<https://melvincarvalho.com/art/> <https://w3id.org/user#name> "Art" .
+<https://solid-chat.com/app/> <https://w3id.org/user#name> "Solid Chat" .
+<https://melvincarvalho.com/charlie/> <https://w3id.org/user#name> "Charlie" .
+<https://melvincarvalho.com/todo.html> <https://w3id.org/user#name> "Todo" .
+<http://bart.netage.nl/foaf#bvl> foaf:name "Bart van Leeuwen" .
+<https://kingsley.idehen.net/public_home/kidehen/profile.ttl#i> foaf:name "Kingsley Idehen" .
+<http://bshambaugh.org/foaf.rdf> foaf:name "Brent Shambaugh" .
+<http://byoung@bigbluehat.com/#me> foaf:name "Benjamin Young" ;
+    foaf:img <https://pbs.twimg.com/profile_images/1122951400/logo_on_white.png> .
+<http://dr.jones.dk/me/#me> foaf:name "Jonas Smedegaard" .
+<http://mmt.me.uk/foaf.rdf#mischa> foaf:name "Mischa Tuffield" .
+<https://melvincarvalho.com/> a foaf:PersonalProfileDocument ;
+    dc:title "Melvin Carvalho" ;
+    foaf:primaryTopic <https://melvincarvalho.com/#me> ;
+    <https://w3id.org/user#genesis> <gitmark:c06e4b12945a0c279900c9d80491177d45fcf2971893a60a19afcf5c9604fb16:1> .
+<https://melvincarvalho.com/#key1> a <http://www.w3.org/ns/auth/cert#RSAPublicKey> ;
+    <http://www.w3.org/ns/auth/cert#modulus> "d798758afd0844f3668f88e728e735b34e94706dbcdc7ab85831402bb043a88508a7d7c4eb462dafd917e6d3058f59597c54739f830bbff9ff5d740c906ac480efe3e1c9d0a8e57de81a987a7fd0c1b68b4b4ca1e434aec07c4f43cd048a86e085d28f69b3e97c844d3aedb749c273639f0abfef3d5829fe85677b34364701132e4459b95acc334704f80c4de3e0e79f21acf282c401e73e7e577fbbc195a91132e215c411191bae3c67ed1c3d12934a9a8513bbe8aafc6e024701a1595b848c1fe5b5f6ac93891e339e3d181d48b3a57ae862b50096a40570dde7b3fa9f149a72f5bc7d5dc20099cd26015e20f7f3dc611b66f2c784997d993b9899c7afd25f"^^xsd:hexBinary ;
+    <http://www.w3.org/ns/auth/cert#exponent> 65537 ;
+    <http://xmlns.com/wot/0.1/fingerprint> "5B8F 3CDF 0A25 BADE 4F29  190F 114E F7BC 9460 4583" ;
+    <http://xmlns.com/wot/0.1/hex_id> "15f3dd63505f3160" ;
+    <http://xmlns.com/wot/0.1/pubkeyAddress> <https://melvincarvalho.com/melvincarvalho.asc> .
+<https://melvincarvalho.com/#key2> a <http://www.w3.org/ns/auth/cert#RSAPublicKey> ;
+    <http://www.w3.org/ns/auth/cert#modulus> "b25d628bba55990f5a0265c3847283bc0225fdd9fcdfc2eb0abb4c4187d46f58d26b65c48cfbb97804210cc41123b98b853e54743a33d2792a62e39b45f9be8fa23a1507fdb7c024297a21945c1a88e1a5879ed128ddd1294f70336045f415371ac2c2711c3143337ab25692a38fda40f8b95492063811948dad5df54edea2df6f8aef006a2b281a102590005c9bd4470f5cefefb9e9e48e900f8728b16d5d7e8d66289d26db6850f5b5bda5bbce168c42d3988df8a124c8eba4e0623e9121fd115fd31db696deec1cb70d12bce3ff9d199b26de35e28137cd24c39dcaf2c25f7388538ee86941fcdf295e9e7871610d608f2333341cb7ee78d2392496577efbff1ac7de3c886c7170e3e5482d30cf75679969f6f5c9ab46d422acb572399c2d7f068aaf02f784198ccba59483f7d8a1d0ffbde2494fc7c5e505adce6673b4d901ab1616f11b3a609f90c78f9bb624372248300a3b2913ecd9892ec964d60b197d96447938b2dcb86e9806ef4a3435aefc1c8b3660c1bcff5492a95a1aeeaa37019ebcf7ee744add279019aafa5dec3e9e43b5251ab707edcad48b5de1fbf80b17d02994bede25b0523a5225fad4f8d4fa75fe1a8f2f60f50907b2ff4965d1ef6b42e5262ca2c597a5a159ed28dea2362bb635b0da6ebef5e5d0dd1ffdbe75254f3aa0ac5626f023e8f0e8c444a1ed2a049c6dffb7ec2e3f29181463dac6721b"^^xsd:hexBinary ;
+    <http://www.w3.org/ns/auth/cert#exponent> 65537 .
+<https://melvincarvalho.com/#key3> a <http://www.w3.org/ns/auth/cert#RSAPublicKey> ;
+    <http://www.w3.org/ns/auth/cert#modulus> "F5840F089F926E542A24B74AC75D27B0633241209C01DF385D660B93BBE6C640AA9E8DE8312C91B790ED7EEEBA631410BB7C0FB6DF440385A71BFDB056EA28B8104547424C8879222A0BA3F94351C790BB90DB53904272F3CFDEE33FCEFB4464DBEE6ACF56A2C397A42B60008DDF53092CA162EFCD99931C53D942043AB58C738740A5FBED99F58EA4B15152AA4309D793903C0F7CFFEC3D1A0EB8F5DD7A8E750AB74DD2701AD2F8201774826827F28B85988F941C48699A1220246302876D274890FFDE703E1449EBE1E2DD85C2C05C001CED3098E957B141502BA8D17E0EFBFE71FD00B9CB31A6B44176F283AF5C610E02808CDD4EE93C29779CA8F1D58A29"^^xsd:hexBinary ;
+    <http://www.w3.org/ns/auth/cert#exponent> 65537 .
+<https://melvincarvalho.com/#key4> a <http://www.w3.org/ns/auth/cert#RSAPublicKey> ;
+    <http://www.w3.org/ns/auth/cert#modulus> "D8FAC32F722A702471B67F69C2F54D5DCA78DD53A6E72325E82407E7D6F9510D52BBD66745F80B874F0E597DEC843196DB3D015BA7948CDD2C6F4523E60BFAC316CD931C8B0E063E942DF4FFB36F6ADD7C801EF7B125430D2F6EEB06A80D7E8FF6323E3DEAE5D23A7E17187AD3E49B08AD63AC07C2994EF009F015AAACBA447914801B46146735153EF58635551A0908147F48BB390B8B1D0F4BFEF9DD7F6634AB8AADC078A9A40DDF570AB2B3415F4C495A8C98ECFDDE0E348578F00A3B7BF1510F442455D2A79F2437E66667FDE7E370D5603C5139736DBECB0B902929DBA3E74541D7D346C90505B5C424BFC557870970CC614BE5E678B853FABF91DE5BDB"^^xsd:hexBinary ;
+    <http://www.w3.org/ns/auth/cert#exponent> 65537 .
+<https://melvincarvalho.com/#me> a foaf:Person ;
+    solid:oidcIssuer <https://melvincarvalho.com/> ;
+    foaf:name "Melvin Carvalho" ;
+    vcard:note "Mathematician and web developer" ;
+    <https://w3id.org/user#ssh> "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCv7oij0RICbkWW2YF+uazrPtPT8s2hVpf+xGZRAQre88EDeMKZ2O+Z12vWhf+9juug/px6EAQ1MzbDz7gTDLMBOaMfVe/rHYhvcyX4iTLF5xLTaf1uUbduKY2a1pDOBLjWUKhdfmIFvu0af+qfZTrx45hAyo2UzlVB5TvidESDaDbgo+X3NDMg5guXF97XcTzgMWK4+ZsZh6pOdcUTq9xQU6fc9do7hrJAAo4MPDSuH5NejPLdx4tK3LiEod5YKEZgD3pUpSVJpJxELEHW3XyT0MjxKhqqKeRZfVdoYo30VS3WxrsJC0uRTvr1XPte/je3fsMJdrgSgg0yzlZmr4lJ", "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAgKE8E4AiZ4mAIidCJZZ5SdfRJoZaNV/TLxlZoEitGEqa9BuII382UP867jg5FbVRcJcHST35NMPdz4jAVw7sUgzC1iCeiJl/JLH0GIdqCYVLGtmSOzQFxrt47tHederfKu30F60lel9W/MiqkEWT1NiIrsMXxt35SWg5F60W7+S9IB/VkO/xbl/eqa1YcwkSW07WIBlt1K3Mg8SBlG6wcv/NCC0FFVyMoeb/YB/87kP4aLbK8eK0CvtEZElVD6e7w6cZ+EWLZhpAPpiXe9+nmqbmZVGes7IV8Fs9rtoYbyila3ZVoQ3r2Th811ymrIspqpUW3IF25nty77dX+LzWCT+8w==" ;
+    foaf:mbox "mailto:melvincarvalho@gmail.com" ;
+    <http://w3id.org/user#blog> <https://dev.to/melvincarvalho> ;
+    <http://w3id.org/user#account> <https://mastodon.social/@melvincarvalho> ;
+    <http://w3id.org/user#nostr> <did:nostr:de7ecd1e2976a6adb2ffa5f4db81a7d812c8bb6698aa00dcf1e76adb55efd645> ;
+    <http://w3id.org/user#matrix> <matrix:u/melvster:matrix.org> ;
+    foaf:nick "melvincarvalho" ;
+    <http://www.w3.org/2002/07/owl#sameAs> <urn:cuid:a74xt3jbin>, <https://melvin.me/#me> ;
+    pim:preferencesFile <https://melvin.solid.live/Preferences/prefs> ;
+    pim:storage <https://melvincarvalho.com/> ;
+    <https://w3id.org/user#app> <https://solid-chat.com/app/>, <https://melvincarvalho.com/charlie/>, <https://melvincarvalho.com/letterboxd/>, <https://melvincarvalho.com/bookmarks/>, <https://melvincarvalho.com/test/>, <http://chores.gitmark.me/>, <http://taskify.org/>, <https://melvincarvalho.com/art/>, <https://melvincarvalho.com/todo.html> ;
+    solid:keys <https://melvin.databox.me/keys/> ;
+    solid:inbox <https://melvin.solid.live/inbox/> ;
+    <http://www.w3.org/ns/ui#backgroundImage> <https://melvincarvalho.com/cover.png> ;
+    <https://w3id.org/cc#wallet> <http://melvincarvalho.com/wallet/small.ttl#this> ;
+    foaf:knows <https://sadecki.com/people/mark/webid#me>, <http://tobyinkster.co.uk/#i>, <http://wojciechpolak.org/foaf.rdf#me>, <https://deiu.me/profile#me>, <http://bart.netage.nl/foaf#bvl>, <http://presbrey.mit.edu/foaf#presbrey>, <https://silverbucket.net/#nkj>, <http://bshambaugh.org/foaf.rdf>, <http://byoung@bigbluehat.com/#me>, <https://chrisellis.databox.me/profile/card#me>, <https://jollyorc.solid.community/profile/card#me>, <https://angelo.veltens.org/profile/card#me>, <https://alejandroj.solid.community/profile/card#me>, <https://kingsley.idehen.net/public_home/kidehen/profile.ttl#i>, <https://www.w3.org/People/Berners-Lee/card#i>, <did:nostr:202501d0e023e55eda42f177ef27b0475fccc46402bd8af4bf921171ee042da9> ;
+    <https://w3id.org/user#tipjar> <https://zbd.gg/melvin> ;
+    <http://w3id.org/user#twitter> <http://twitter.com/melvincarvalho> ;
+    <http://w3id.org/user#github> <http://github.com/melvincarvalho> ;
+    <http://w3id.org/user#dna> <https://raw.githubusercontent.com/melvincarvalho/dna/master/dna.csv> ;
+    <https://w3id.org/cc#bitmark> <bitmark:bMELVsboxdPU2w3a75aKXYAiNQryfKbXpm> ;
+    <https://w3id.org/cc#testnet3> <bitcoin:miJHHEv94TWjGH6UDbPPf5RQ3LR9sfYHf7> ;
+    foaf:depiction <https://melvincarvalho.com/m3.jpg> ;
+    <http://www.w3.org/ns/auth/cert#key> <https://melvincarvalho.com/#key1>, <https://melvincarvalho.com/#key2>, <https://melvincarvalho.com/#key3>, <https://melvincarvalho.com/#key4> ;
+    solid:publicTypeIndex <https://melvin.solid.live/settings/publicTypeIndex.ttl> .
+<https://melvincarvalho.com/melvincarvalho.png> foaf:depiction <https://melvincarvalho.com/melvincarvalho.png> .
+<http://presbrey.mit.edu/foaf#presbrey> foaf:name "Joe Presbrey" .
+<http://tobyinkster.co.uk/#i> foaf:name "Toby Inkster" .
+<http://webr3.org/nathan#me> foaf:name "Nathan Rixham" ;
+    foaf:depiction <https://web.archive.org/web/20110202102702/http://a3.twimg.com/profile_images/532261191/tiny2.jpg> .
+<http://wojciechpolak.org/foaf.rdf#me> foaf:name "Wojciech Polak" .
+<http://www.w3.org/TR/rdfa-syntax> rdfs:seeAlso <https://melvincarvalho.com/likes> .
+<https://alejandroj.solid.community/profile/card#me> foaf:name "Alejandro Juan Garcia" .
+<https://angelo.veltens.org/profile/card#me> foaf:name "Angelo Veltens" .
+<https://www.w3.org/People/Berners-Lee/card#i> foaf:name "Tim Berners-Lee" .
+<https://chrisellis.databox.me/profile/card#me> foaf:name "Chris Ellis" .
+<https://deiu.me/profile#me> foaf:name "Andrei Sambra" .
+<https://jollyorc.solid.community/profile/card#me> foaf:name "Christian Buggedei" .
+<did:nostr:202501d0e023e55eda42f177ef27b0475fccc46402bd8af4bf921171ee042da9> foaf:name "FOAF Bot 2025" .
+<https://projectbitmark.slack.com/team/melvincarvalho#this> foaf:name "Melvin Carvalho" .
+<https://sadecki.com/people/mark/webid#me> foaf:name "Mark J Sadecki" .
+<https://silverbucket.net/#nkj> foaf:name "Nick Jennings" ;
+    foaf:depiction <https://silverbucket.net/img/avatar.png> .
+<https://melvincarvalho.com/#key2> <http://www.w3.org/ns/auth/cert#modulus> "b25d628bba55990f5a0265c3847283bc0225fdd9fcdfc2eb0abb4c4187d46f58d26b65c48cfbb97804210cc41123b98b853e54743a33d2792a62e39b45f9be8fa23a1507fdb7c024297a21945c1a88e1a5879ed128ddd1294f70336045f415371ac2c2711c3143337ab25692a38fda40f8b95492063811948dad5df54edea2df6f8aef006a2b281a102590005c9bd4470f5cefefb9e9e48e900f8728b16d5d7e8d66289d26db6850f5b5bda5bbce168c42d3988df8a124c8eba4e0623e9121fd115fd31db696deec1cb70d12bce3ff9d199b26de35e28137cd24c39dcaf2c25f7388538ee86941fcdf295e9e7871610d608f2333341cb7ee78d2392496577efbff1ac7de3c886c7170e3e5482d30cf75679969f6f5c9ab46d422acb572399c2d7f068aaf02f784198ccba59483f7d8a1d0ffbde2494fc7c5e505adce6673b4d901ab1616f11b3a609f90c78f9bb624372248300a3b2913ecd9892ec964d60b197d96447938b2dcb86e9806ef4a3435aefc1c8b3660c1bcff5492a95a1aeeaa37019ebcf7ee744add279019aafa5dec3e9e43b5251ab707edcad48b5de1fbf80b17d02994bede25b0523a5225fad4f8d4fa75fe1a8f2f60f50907b2ff4965d1ef6b42e5262ca2c597a5a159ed28dea2362bb635b0da6ebef5e5d0dd1ffdbe75254f3aa0ac5626f023e8f0e8c444a1ed2a049c6dffb7ec2e3f29181463dac6721b" ;
+    <http://www.w3.org/ns/auth/cert#exponent> 65537 .
