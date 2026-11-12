@@ -1,0 +1,205 @@
+@prefix : <#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix ui: <http://www.w3.org/ns/ui#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix p: <https://timea.solidcommunity.net/profile/>.
+@prefix ski: <http://data.europa.eu/esco/skill/>.
+@prefix Se: </Settings/>.
+@prefix c: <https://timea2.pivot-test.solidproject.org:3000/profile/card#>.
+@prefix pivot: <https://pivot-test.solidproject.org:3000/>.
+@prefix car19: <https://timea.solidcommunity.net/profile/card#>.
+@prefix inb: </inbox/>.
+@prefix sett: </settings/>.
+@prefix tim: </>.
+@prefix car21: <http://localhost:3100/timea3/profile/card#>.
+@prefix c32: <https://angelo.veltens.org/profile/card#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix card: <https://timea.pivot-test.solidproject.org:3000/profile/card#>.
+
+ski:19a8293b-8e95-4de3-983f-77484079c389 schema:name "Java (computer programming)".
+
+ski:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d schema:name "Javanese".
+
+<> a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1773653094066 solid:publicId ski:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d.
+
+:id1773738248352
+    a solid:PastRole;
+    schema:description "I work on the SolidOS grant";
+    schema:startDate "2026-01-01"^^xsd:date;
+    vcard:role "Tech Lead";
+    org:member :me;
+    org:organization :id1790364770224 .
+:id1773934979608 solid:publicId l:it.
+
+:id1774973026154
+    vcard:country-name "Austria";
+    vcard:locality "Vienna";
+    vcard:postal-code "1210";
+    vcard:street-address "Selma-Steinmetz-Gasse 6,7".
+:id1776890561061 solid:publicId l:es.
+
+:id1776890561062 solid:publicId l:en.
+
+:id1776890561063 solid:publicId l:de.
+
+:id1778157965576 a vcard:Home; vcard:value <mailto:timea.turdean@gmail.com>.
+
+:id1778588883873 a vcard:Cell; vcard:value <tel:436803153661>.
+
+:id1778923852162 solid:publicId ski:19a8293b-8e95-4de3-983f-77484079c389 .
+
+:id1779867140452 solid:publicId l:ro.
+
+:id1779867932493
+a soc:GithubAccount; foaf:accountName "https://github.com/timea-solid".
+:id1779867988066 a soc:LinkedInAccount; foaf:accountName "timeaturdean/".
+
+:id1779868019713 solid:publicId [ schema:name "Webpack" ].
+
+:id1779868019714 solid:publicId <skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7>.
+
+:id1779868019715 solid:publicId <skill:19a8293b-8e95-4de3-983f-77484079c389>.
+
+:id1779868019716 solid:publicId <skill:867137fb-ff1b-4ca3-99f3-cb6969aa2c68>.
+
+:id1779868074918
+    a solid:PastRole;
+    schema:description "...";
+    schema:endDate "2026-12-01"^^xsd:date;
+    schema:startDate "2025-01-01"^^xsd:date;
+    vcard:role "Master procrastinator";
+    org:member :me;
+    org:organization :id1790364770225 .
+:id1790364770224
+    a schema:Other, vcard:Organization;
+    schema:name "Self Employed";
+    org:location "Vienna".
+:id1790364770225
+    a schema:NGO, vcard:Organization;
+    schema:name "http://www.wikidata.org/entity/Q117892";
+    org:location "Vienna".
+:me
+    a foaf:Person;
+    schema:description "y<dv<fgysdfg";
+    schema:knowsLanguage
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 ),
+        ( :id1779867140452 :id1776890561062 :id1776890561063 :id1776890561061 );
+    schema:skills
+        :id1774000037607, :id1779868019713, :id1779868019714, :id1779868019715,
+        :id1779868019716;
+    wf:attachment p:18238146_10155235814682370_4572264504492849633_o.jpg;
+    vcard:bday "2010-05-12";
+    vcard:fn "Timea 3 Test";
+    vcard:hasAddress :id1774973026154;
+    vcard:hasEmail :id1773741782052, :id1773741793521, :id1778157965576;
+    vcard:hasPhoto
+        <039478C5-FEDF-4C47-B11F-6A7A05EDCEA7.jpg>, <font-showcase.png>,
+        <github_label_lifecycle.svg>, <IMG_8671.jpg>;
+    vcard:hasTelephone :id1773741795749, :id1774973020575, :id1778588883873;
+    vcard:nickname "Imy";
+    vcard:note "I just am";
+    vcard:role "Tech Lead";
+    ldp:inbox inb:;
+    space:preferencesFile Se:Preferences.ttl, sett:prefs.ttl;
+    space:storage tim:;
+    solid:community car19:me;
+    solid:oidcIssuer pivot:;
+    solid:preferredObjectPronoun "Her";
+    solid:preferredSubjectPronoun "She";
+    solid:privateTypeIndex sett:privateTypeIndex.ttl;
+    solid:profileBackgroundColor "#c83737"^^xsd:color;
+    solid:publicTypeIndex <publicTypeIndex.ttl>, sett:publicTypeIndex.ttl;
+    ui:sharedPreferences :SharedPreferences;
+    foaf:account
+        ( :id1779867988066 :id1779867932493 ),
+        ( :id1779867988066 :id1779867932493 );
+    foaf:knows
+        "https://timea4.pivot-test.solidproject.org:3000/profile/card#me",
+        car21:me, c32:me, card:me, car19:me, c:me;
+    foaf:nick "Imy".
+l:de schema:name "German"@en.
+
+l:en schema:name "English"@en.
+
+l:es schema:name "Spanish"@en.
+
+l:ro schema:name "Romanian"@en.
+
+<skill:19a8293b-8e95-4de3-983f-77484079c389>
+schema:name "Java (computer programming)".
+<skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7> schema:name "JavaScript".
+
+<skill:867137fb-ff1b-4ca3-99f3-cb6969aa2c68> schema:name "TypeScript".
+
