@@ -1,0 +1,131 @@
+@prefix : <https://sharon.pivot-test.solidproject.org:3000/profile/card#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sha: <https://sharon.pivot-test.solidproject.org:3000/>.
+@prefix pivot: <https://pivot-test.solidproject.org:3000/>.
+@prefix in: <https://sharon.pivot-test.solidproject.org:3000/inbox/>.
+@prefix w: <https://www.sharonstratsianis.com/>.
+@prefix www0: <https://www.unimelb.edu.au/>.
+@prefix www1: <https://www.microsoft.com/>.
+@prefix ca: <https://timea.solidcommunity.net/profile/card#>.
+@prefix c39: <https://testingsolidos.solidcommunity.net/profile/card#>.
+@prefix se: <https://sharon.pivot-test.solidproject.org:3000/settings/>.
+@prefix www2: <https://www.testing.com/>.
+@prefix c: <https://solidos.solidcommunity.net/profile/card#>.
+@prefix ent: <http://www.wikidata.org/entity/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+
+<> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a foaf:Person;
+    vcard:role "Software Engineer";
+    schema:knowsLanguage _:n3-73;
+    schema:skills <#id1779709485990>, <#id1787195219511>, <#id1790813887937>, <#id1773518713930>;
+    vcard:bday "1972-03-16";
+    vcard:fn "Sharon Stratsianis";
+    vcard:hasAddress <#id1776999476441>;
+    vcard:hasEmail <#id1776201571900>, <#id1786567411992>;
+    vcard:hasPhoto <camera-1786566293467.png>;
+    vcard:hasTelephone <#id1776201569366>, <#id1786567410739>;
+    vcard:nickname "Sam";
+    vcard:note "I'm an experienced PeopleSoft analyst and software engineer. I am testing something there is more Alex Jordan is a digital creator, tech enthusiast, and coffee lover based in Melbourne. They spend their time building responsive web applications, writing about modern UI design, and exploring local parks. Driven by curiosity, they are always learning new skills, testing emerging technologies, and looking for creative ways to solve complex digital problems.";
+    vcard:organization-name "Self Employed";
+    ldp:inbox <../inbox/>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    space:storage <../>;
+    solid:community c:me;
+    solid:oidcIssuer <https://pivot-test.solidproject.org:3000/>;
+    solid:preferredObjectPronoun "Her";
+    solid:preferredSubjectPronoun "She";
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#e7e4e4"^^xsd:color;
+    solid:profileHighlightColor "#963636"^^xsd:color;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
+    foaf:account _:n3-76;
+    foaf:homepage <https://www.sharonstratsianis.com/>, <https://www.testing.com/>;
+    foaf:knows c39:me, ca:me;
+    foaf:nick "Sam";
+    foaf:schoolHomepage <https://www.unimelb.edu.au/>;
+    foaf:weblog <https://www.sharonstratsianis.com/>;
+    foaf:workplaceHomepage www1:en-au.
+<#id1776201569366> a vcard:Home;
+    vcard:value <tel:24773233443>.
+<#id1776201571900> a vcard:Office;
+    vcard:value <mailto:testing@gmail.com>.
+<#id1776727830441> a solid:CurrentRole;
+    schema:description "This is a test ....";
+    schema:startDate "2022-02-01"^^xsd:date;
+    vcard:role "Software Engineer";
+    org:member <#me>;
+    org:organization <#id1787195698348>.
+<#id1787195698348> a schema:Corporation, vcard:Organization;
+    schema:name "http://www.wikidata.org/entity/Q2283";
+    schema:uri "www.sharonstratsianis.com";
+    org:location "Melbourne, Australia".
+<#id1776999184923> a solid:PastRole;
+    schema:description "tutor at swinburne";
+    schema:startDate "2019-03-01"^^xsd:date;
+    vcard:role "Computer Science Tutor";
+    org:member <#me>;
+    org:organization <#id1787195698349>;
+    schema:endDate "2024-11-01"^^xsd:date.
+<#id1787195698349> a vcard:Organization, schema:EducationalOrganization;
+    schema:name "Swinburne";
+    schema:uri "https://www.swinburne.edu.au/";
+    org:location "Hawthorn".
+<#id1776999476441> vcard:country-name "United States";
+    vcard:locality "Indio";
+    vcard:postal-code "92201";
+    vcard:region "California";
+    vcard:street-address "82712 Oleander".
+<#id1778563811458> solid:publicId l:en.
+l:en schema:name "English"@en.
+<#id1778563811459> solid:publicId l:el.
+l:el schema:name "Modern Greek"@en.
+_:n3-70 schema:name "React".
+<#id1779709485990> solid:publicId _:n3-70, _:n3-71.
+_:n3-71 schema:name "React".
+<#id1786567410739> a vcard:Cell;
+    vcard:value <tel:0477323344>.
+<#id1786567411992> a vcard:Home;
+    vcard:value <mailto:sstratsianis@yahoo.com>.
+_:n3-72 schema:name "Project Management".
+<#id1787195219511> solid:publicId _:n3-72.
+<#id1787195698350> a solid:PastRole;
+    schema:description "Results-driven Senior PeopleSoft Analyst with over eight years of experience optimizing Enterprise Resource Planning (ERP) systems to drive business efficiency. Proven track record in leading end-to-end implementations, complex system upgrades, and seamless data migrations across PeopleSoft HCM and FSCM modules. Adept at bridging the gap between technical teams and business stakeholders to deliver scalable solutions, custom workflows, and robust data analytics that align with organizational goals.";
+    schema:startDate "2026-03-01"^^xsd:date;
+    vcard:role "Senior PeopleSoft Analyst";
+    org:member <#me>;
+    org:organization <#id1787195698351>;
+    schema:endDate "2004-12-01"^^xsd:date.
+<#id1787195698351> a schema:Corporation, vcard:Organization;
+    solid:publicId ent:Q7167808;
+    schema:name "Peregrine Systems";
+    schema:uri "www.peregrinesystems.com";
+    org:location "San Diego".
+<#id1790813887937> solid:publicId <skill:85f46538-ae70-498a-bfbc-b8ddafe96c7d>.
+<skill:85f46538-ae70-498a-bfbc-b8ddafe96c7d> schema:name "levels of software testing".
+<#id1790813902638> a soc:GithubAccount;
+    foaf:accountName "mygithub".
+<#id1790813923956> a soc:FacebookAccount;
+    foaf:accountName "testing".
+<#id1790813981955> solid:publicId l:es.
+l:es schema:name "Spanish"@en.
+_:n3-73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1790813981955>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-74.
+_:n3-74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1778563811458>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-75.
+_:n3-75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1778563811459>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:n3-76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1790813923956>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3-77.
+_:n3-77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1790813902638>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
