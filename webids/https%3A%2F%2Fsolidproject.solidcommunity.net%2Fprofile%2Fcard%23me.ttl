@@ -99,5 +99,5 @@ This is the profile of the Solid Project itself. Its web site is at solidproject
     solid:profileHighlightColor "#5107f6"^^xsd:color;
     solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
     foaf:knows c:me;
-    foaf:name "Tim";
+    foaf:name "Solid Project";
     foaf:nick "SolidProject".

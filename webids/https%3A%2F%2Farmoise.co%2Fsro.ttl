@@ -1,11 +1,11 @@
 @prefix cred:  <https://www.w3.org/2018/credentials#> .
 @prefix schema: <http://schema.org/> .
-@prefix mp:    <https://mutual-aid.app/ns/core#> .
 @prefix solid: <http://www.w3.org/ns/solid/terms#> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix apods: <http://activitypods.org/ns/core#> .
 @prefix interop: <http://www.w3.org/ns/solid/interop#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix g1:    <https://portejunes.com/ns/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix acl:   <http://www.w3.org/ns/auth/acl#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
@@ -29,7 +29,7 @@
         apods:ignoredContacts          <https://armoise.co/sro/ignored-contacts> ;
         apods:rejectedContacts         <https://armoise.co/sro/rejected-contacts> ;
         dc:created                     "2021-12-22T11:05:19.896Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        dc:modified                    "2025-10-23T13:32:04.65Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        dc:modified                    "2026-10-09T13:28:24.102Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         schema:knowsLanguage           "fr" ;
         ldp:inbox                      <https://armoise.co/sro/inbox> ;
         pim:preferencesFile            <https://armoise.co/sro/data/4aa66148-180c-454b-ae05-678569002004> ;
@@ -40,6 +40,7 @@
         solid:publicTypeIndex          <https://armoise.co/sro/data/47c5d133-7703-4cd0-83e7-10b8d2815014> ;
         foaf:name                      "Sébastien" ;
         foaf:nick                      "sro" ;
+        foaf:tipjar                    <payto://g1/g1PW271xSA6pGzaSfCvDaQZRMjDSqjsygnXHr88ha6zeHPDjQ> ;
         sec:assertionMethod            <https://armoise.co/sro/data/a68bb0c1-db7b-42af-b3a0-e9a9e4be7ef8> ;
         sec:publicKey                  <https://armoise.co/sro/data/22b6f983-b0b6-4431-834f-8df909e1efe8> ;
         as:endpoints                   [ as:proxyUrl
