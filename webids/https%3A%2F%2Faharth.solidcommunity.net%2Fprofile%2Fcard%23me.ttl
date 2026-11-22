@@ -1,53 +1,53 @@
-@prefix : <https://aharth.solidcommunity.net/profile/card#>.
-@prefix acl: <http://www.w3.org/ns/auth/acl#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix ldp: <http://www.w3.org/ns/ldp#>.
-@prefix schema: <http://schema.org/>.
-@prefix solid: <http://www.w3.org/ns/solid/terms#>.
-@prefix space: <http://www.w3.org/ns/pim/space#>.
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
-@prefix pro: <https://aharth.solidcommunity.net/profile/>.
-@prefix inbox: <https://aharth.solidcommunity.net/inbox/>.
-@prefix n1: <https://aharth.solidcommunity.net/>.
-@prefix fo: <http://harth.org/andreas/foaf#>.
-@prefix c: <https://aharth.inrupt.net/profile/card#>.
-@prefix c5: <https://brennanr.solidcommunity.net/profile/card#>.
-@prefix c6: <https://camelialemnaru.solidcommunity.net/profile/card#>.
-@prefix c7: <https://chayaliebeskind.inrupt.net/profile/card#>.
-@prefix c8: <https://kaefer3000.solidcommunity.net/profile/card#>.
-@prefix c9: <https://manuelnoguera.inrupt.net/profile/card#>.
-@prefix c10: <https://micsik.inrupt.net/profile/card#>.
-@prefix c11: <https://mlefranc.solidcommunity.net/profile/card#>.
-@prefix c12: <https://ngarcia.solidcommunity.net/profile/card#>.
-@prefix orc: <https://orcid.org/>.
-@prefix c13: <https://skirrane.solidcommunity.net/profile/card#>.
-@prefix c14: <https://sunwalker.solidcommunity.net/profile/card#>.
-@prefix c15: <https://tkuhn.solidcommunity.net/profile/card#>.
-@prefix pmx: <http://purl.org/pmx#>.
-
-pro:card a foaf:PersonalProfileDocument;
-    foaf:maker <#me>;
-    pmx:config <https://aharth.solidcommunity.net/profile/config.ttl>;
-    foaf:primaryTopic <#me>.
-<#me> a schema:Person, foaf:Person;
-    vcard:fn "Andreas Harth";
-    solid:oidcIssuer <https://solidcommunity.net/>;
-    foaf:account _:n3-834;
-    ldp:inbox <https://aharth.solidcommunity.net/inbox/>;
-    space:preferencesFile <https://aharth.solidcommunity.net/settings/prefs.ttl>;
-    space:storage <https://aharth.solidcommunity.net/>;
-    solid:account <https://aharth.solidcommunity.net/>;
-    solid:privateTypeIndex <https://aharth.solidcommunity.net/settings/privateTypeIndex.ttl>;
-    solid:publicTypeIndex <https://aharth.solidcommunity.net/settings/publicTypeIndex.ttl>;
-    foaf:name "Andreas Harth";
-    pmx:cupa <https://cupa.solidweb.org/profile/card#me> ;
-    vcard:hasPhoto <https://aharth.solidcommunity.net/profile/Image_1758320685181.png>.
-_:n3-834 solid:oidcIssuer <https://solidcommunity.net/>;
-    foaf:accountName "aharth".
-<#dkg> a vcard:Group;
-    vcard:fn "Members of the EU COST Action Distributed Knowledge Graphs";
-    vcard:hasMember <#me>, fo:ah, c:me, c5:me, c6:me, c7:me, c8:me, c9:me, c10:me, c11:me, c12:me, orc:0000-0003-0503-6451, c13:me, c14:me, c15:me, _:b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3123, _:b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3124.
-_:b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3123 foaf:page orc:0000-0003-0503-6451.
-_:b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3124 foaf:username "mhamdaqa".
-<#id1538399933169> a vcard:Pref;
-    vcard:value <mailto:andreas@harth.org>.
+<https://aharth.solidcommunity.net/profile/card> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/PersonalProfileDocument> .
+<https://aharth.solidcommunity.net/profile/card> <http://xmlns.com/foaf/0.1/maker> <https://aharth.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card> <http://purl.org/pmx#config> <https://aharth.solidcommunity.net/profile/config.ttl> .
+<https://aharth.solidcommunity.net/profile/card> <http://xmlns.com/foaf/0.1/primaryTopic> <https://aharth.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/2006/vcard/ns#fn> "Andreas Harth" .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://xmlns.com/foaf/0.1/account> _:b7_b6_b5_n3-834 .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/ns/ldp#inbox> <https://aharth.solidcommunity.net/inbox/> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/ns/pim/space#preferencesFile> <https://aharth.solidcommunity.net/settings/prefs.ttl> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/ns/pim/space#storage> <https://aharth.solidcommunity.net/> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/ns/solid/terms#account> <https://aharth.solidcommunity.net/> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/ns/solid/terms#privateTypeIndex> <https://aharth.solidcommunity.net/settings/privateTypeIndex.ttl> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/ns/solid/terms#publicTypeIndex> <https://aharth.solidcommunity.net/settings/publicTypeIndex.ttl> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://xmlns.com/foaf/0.1/name> "Andreas Harth"@de .
+<https://aharth.solidcommunity.net/profile/card#me> <http://purl.org/pmx#cupa> <https://cupa.solidweb.org/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/2006/vcard/ns#hasPhoto> <https://aharth.solidcommunity.net/profile/Image_1758320685181.png> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/ns/org#memberOf> <https://aharth.solidcommunity.net/profile/card#org> .
+<https://aharth.solidcommunity.net/profile/card#me> <http://www.w3.org/ns/org#hasMembership> <https://aharth.solidcommunity.net/profile/card#membership> .
+_:b7_b6_b5_n3-834 <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/> .
+_:b7_b6_b5_n3-834 <http://xmlns.com/foaf/0.1/accountName> "aharth" .
+<https://aharth.solidcommunity.net/profile/card#org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization> .
+<https://aharth.solidcommunity.net/profile/card#org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<https://aharth.solidcommunity.net/profile/card#org> <http://xmlns.com/foaf/0.1/name> "FAU" .
+<https://aharth.solidcommunity.net/profile/card#org> <http://www.w3.org/ns/org#classification> <https://solid.ti.rw.fau.de/private/granergize/vocab.ttl#User> .
+<https://aharth.solidcommunity.net/profile/card#org> <http://xmlns.com/foaf/0.1/logo> <https://aharth.solidcommunity.net/profile/logo.png> .
+<https://aharth.solidcommunity.net/profile/card#membership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Membership> .
+<https://aharth.solidcommunity.net/profile/card#membership> <http://www.w3.org/ns/org#member> <https://aharth.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#membership> <http://www.w3.org/ns/org#organization> <https://aharth.solidcommunity.net/profile/card#org> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Group> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#fn> "Members of the EU COST Action Distributed Knowledge Graphs" .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://aharth.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <http://harth.org/andreas/foaf#ah> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://aharth.inrupt.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://brennanr.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://camelialemnaru.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://chayaliebeskind.inrupt.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://kaefer3000.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://manuelnoguera.inrupt.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://micsik.inrupt.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://mlefranc.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://ngarcia.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://orcid.org/0000-0003-0503-6451> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://skirrane.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://sunwalker.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> <https://tkuhn.solidcommunity.net/profile/card#me> .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> _:b7_b6_b5_b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3123 .
+<https://aharth.solidcommunity.net/profile/card#dkg> <http://www.w3.org/2006/vcard/ns#hasMember> _:b7_b6_b5_b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3124 .
+_:b7_b6_b5_b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3123 <http://xmlns.com/foaf/0.1/page> <https://orcid.org/0000-0003-0503-6451> .
+_:b7_b6_b5_b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3124 <http://xmlns.com/foaf/0.1/username> "mhamdaqa" .
+<https://aharth.solidcommunity.net/profile/card#id1538399933169> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Pref> .
+<https://aharth.solidcommunity.net/profile/card#id1538399933169> <http://www.w3.org/2006/vcard/ns#value> <mailto:andreas@harth.org> .
