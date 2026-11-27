@@ -2,6 +2,7 @@
 @prefix acl: <http://www.w3.org/ns/auth/acl#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
 @prefix schema: <http://schema.org/>.
 @prefix solid: <http://www.w3.org/ns/solid/terms#>.
 @prefix space: <http://www.w3.org/ns/pim/space#>.
@@ -12,108 +13,120 @@
 @prefix frie: <https://timbl.solidcommunity.net/friends.ttl#>.
 @prefix c30: <https://nada.solidcommunity.net/profile/card#>.
 @prefix c32: <https://angelo.veltens.org/profile/card#>.
-@prefix l: <https://www.w3.org/ns/iana/language-code/>.
 @prefix tim: <https://timbl.solidcommunity.net/>.
 @prefix fri: <https://timbl.solidcommunity.net/friend-requests-inbox/>.
-@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
-@prefix c: <https://solidproject.solidcommunity.net/profile/card#>.
-@prefix prof: <https://timbl.solidcommunity.net/profile/>.
+@prefix c: <https://solidos.solidcommunity.net/profile/card#>.
 @prefix inb: <https://timbl.solidcommunity.net/inbox/>.
-@prefix c8: <https://solidos.solidcommunity.net/profile/card#>.
 @prefix Pi: <https://timbl.solidcommunity.net/Pictures/>.
-@prefix n1: <https://www.w3.org/TR/activitypub/#>.
-@prefix sol: <https://solidcommunity.net/>.
+@prefix ent: <http://www.wikidata.org/entity/>.
+@prefix soli: <https://solidcommunity.net/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix inr: <https://inrupt.com/>.
+@prefix set: <https://timbl.solidcommunity.net/settings/>.
+@prefix card: <https://solidproject.solidcommunity.net/profile/card#>.
+@prefix n5: <https://www.w3.org/TR/activitypub/#>.
+@prefix pub: <https://timbl.solidcommunity.net/public/>.
 
-frie:this ldp:inbox <https://timbl.solidcommunity.net/friend-requests-inbox/>.
-prof:card a foaf:PersonalProfileDocument;
+ent:Q106746930 schema:name "Inrupt Inc."@en.
+<../friends.ttl#this> ldp:inbox <../friend-requests-inbox/>.
+<> a foaf:PersonalProfileDocument;
     foaf:maker <#me>;
     foaf:primaryTopic <#me>.
-<#me> ldp:inbox <https://timbl.solidcommunity.net/inbox/>;
+<#me> ldp:inbox <../inbox/>;
     a schema:Person, foaf:Person;
-    schema:knowsLanguage _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4702, _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4705;
-    vcard:bday "1955-06-08"^^xsd:date;
-    vcard:fn "Tim Berners-Lee (solidcommunity.net)";
-    vcard:hasEmail <#id1532484491415>;
-    vcard:hasPhoto <https://timbl.solidcommunity.net/profile/TBL%20by%20coz%20Solid%20purple.png>;
-    vcard:note "Pescatarian allergic to crustaceans \n";
-    vcard:organization-name "Inrupt Inc";
     vcard:role "Cofounder and CTO";
-    vcard:url c30:me, _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4707;
-    acl:trustedApp _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4708;
-    space:preferencesFile <https://timbl.solidcommunity.net/settings/prefs.ttl>;
-    space:storage <https://timbl.solidcommunity.net/>;
-    solid:account <https://timbl.solidcommunity.net/>;
-    solid:community c8:me, c:me;
+    schema:knowsLanguage _:b79447_n3-18986;
+    schema:skills <#id1795531124445>;
+    vcard:bday "1955-06-08";
+    vcard:fn "Tim Berners-Lee";
+    vcard:hasAddress <#id1795530522352>;
+    vcard:hasEmail <#id1532484491415>;
+    vcard:hasPhoto <TBL%20by%20coz%20Solid%20purple.png>;
+    vcard:nickname "timbl";
+    vcard:note "Pescatarian allergic to crustaceans ...";
+    vcard:organization-name "Inrupt Inc";
+    vcard:url c30:me, _:b79447_n3-18989;
+    acl:trustedApp _:b79447_n3-18990;
+    space:preferencesFile <../settings/prefs.ttl>;
+    space:storage <../>;
+    solid:account <../>;
+    solid:community c:me, card:me;
     solid:oidcIssuer <https://solidcommunity.net/>;
-    solid:preferredObjectPronoun "him";
-    solid:preferredRelativePronoun "his";
-    solid:preferredSubjectPronoun "he";
-    solid:privateTypeIndex <https://timbl.solidcommunity.net/settings/privateTypeIndex.ttl>;
+    solid:preferredObjectPronoun "Him";
+    solid:preferredSubjectPronoun "He";
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
     solid:profileBackgroundColor "#f0fffc"^^xsd:color;
     solid:profileHighlightColor "#341bee"^^xsd:color;
-    solid:publicTypeIndex <https://timbl.solidcommunity.net/profile/publicTypeIndex.ttl>;
-    solid:timeline <https://timbl.solidcommunity.net/Pictures/>;
-    foaf:account _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4709, _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4713;
-    foaf:knows c32:me;
+    solid:publicTypeIndex <publicTypeIndex.ttl>;
+    solid:timeline <../Pictures/>;
+    foaf:account _:b79447_n3-18991;
+    foaf:knows c32:me, <https://csarven.ca/#i>, <https://ericp.solidcommunity.net/profile/card#me>;
     foaf:name "Tim Berners-Lee (solidcommunity.net)";
     foaf:nick "timbl";
-    n1:following frie:this.
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4702 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619558022938>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4703.
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619557331243>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4706.
+    n5:following <../friends.ttl#this>.
+_:b79447_n3-18986 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619558022938>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b79447_n3-18987.
+<#id1795531124445> solid:publicId <skill:89f6560b-2194-45c9-9ece-d33049a73eef>.
+<#id1795530522352> vcard:country-name "UK";
+    vcard:locality "London".
 <#id1532484491415> a vcard:Work;
     vcard:value <mailto:cos@timbl.com>.
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4707 a vcard:WebID;
+_:b79447_n3-18989 a vcard:WebID;
     vcard:value "https://timbl.solidcommunity.net/profile/card#me".
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4708 acl:mode acl:Append, acl:Read, acl:Write;
+_:b79447_n3-18990 acl:mode acl:Append, acl:Read, acl:Write;
     acl:origin <https://martin.vincenttunru.com>.
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4709 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377167368>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4710.
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4713 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377167368>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4714.
-<#id1619558022938> solid:publicId l:en.
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4703 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619557331243>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4704.
-<#id1619557331243> solid:publicId l:fr.
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4706 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619555997749>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-<#id1732377167368> a soc:MastodonAccount;
-    foaf:accountName "@timbl@w3c.social".
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4710 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377224504>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4711.
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4714 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377224504>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-l:en schema:name "Englisch"@de.
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4704 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619555997749>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-l:fr schema:name "French"@en.
-<#id1619555997749> solid:publicId l:de.
-<#id1732377224504> a soc:OrcidAccount;
-    foaf:accountName "0000-0003-1279-3709".
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4711 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377604676>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4712.
-l:de schema:name "German"@en.
-<#id1732377604676> a soc:MatrixAccount;
-    foaf:accountName "@timbl-54d26c98db8155e6700f7312:gitter.im".
-_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4712 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377678776>;
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
-<#id1732377678776> a soc:BlueSkyAccount;
-    foaf:accountName "@timbl.bsky.social".
+_:b79447_n3-18991 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377167368>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b79447_n3-18992.
 <#id1532484371288> vcard:country-name "USA";
     vcard:locality "Cambridge";
     vcard:postal-code "02139";
     vcard:region "MA";
     vcard:street-address "32 Vassar Street MIT Building 32".
-che:js03vsbh stor:storeIn <https://timbl.solidcommunity.net/public/chess_20190211.ttl>;
-    schema:contributor <#me>.
+<#id1619555997749> solid:publicId l:de.
+l:de schema:name "German"@en.
+<#id1619557331243> solid:publicId l:fr.
+l:fr schema:name "French"@en.
+<#id1619558022938> solid:publicId l:en.
+l:en schema:name "Englisch"@de, "Englisch"@en.
+<#id1732377167368> a soc:MastodonAccount;
+    foaf:accountName "@timbl@w3c.social".
+<#id1732377224504> a soc:OrcidAccount;
+    foaf:accountName "0000-0003-1279-3709".
+<#id1732377604676> a soc:MatrixAccount;
+    foaf:accountName "@timbl-54d26c98db8155e6700f7312:gitter.im".
+<#id1732377678776> a soc:BlueSkyAccount;
+    foaf:accountName "timbl.bsky.social".
 <#id1739892183690> a solid:CurrentRole;
     vcard:role "CoFounder and CTO";
-    <http://www.w3.org/ns/org#member> <#me>;
-    <http://www.w3.org/ns/org#organization> <#id1739892184342>;
-    schema:description "Cofounder and CTO".
-<#id1739892184342> a schema:Corporation, vcard:Organization;
-    solid:publicId <http://www.wikidata.org/entity/Q106746930>;
-    schema:name "inrupt";
+    schema:description "Cofounder and CTO";
+    org:member <#me>;
+    org:organization <#id1739892184342>.
+<#id1739892184342> schema:name "inrupt";
+    a schema:Corporation, vcard:Organization;
+    solid:publicId ent:Q106746930;
     schema:uri <https://inrupt.com/>.
-<http://www.wikidata.org/entity/Q106746930> schema:name "Inrupt Inc."@en.
+<#id1777287143600> a solid:PastRole;
+    vcard:role "Fellow";
+    schema:description "The HEP lab in Geneva CH";
+    org:member <#me>;
+    org:organization <#id1777287275041>;
+    schema:endDate "1994-09-01"^^xsd:date;
+    schema:startDate "1984-09-01"^^xsd:date.
+<#id1777287275041> schema:name "CERN";
+    a vcard:Organization, schema:ResearchOrganization;
+    schema:uri "https://cern.ch/";
+    org:location "Geneva Switzerland".
+<skill:89f6560b-2194-45c9-9ece-d33049a73eef> schema:name "computer engineering".
+_:b79447_n3-18987 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619557331243>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b79447_n3-18988.
+_:b79447_n3-18988 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619555997749>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:b79447_n3-18992 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377224504>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b79447_n3-18993.
+_:b79447_n3-18993 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377604676>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b79447_n3-18994.
+_:b79447_n3-18994 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377678776>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<../public/chess_20190211.ttl#js03vsbh> stor:storeIn <../public/chess_20190211.ttl>;
+    schema:contributor <#me>.
